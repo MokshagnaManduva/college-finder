@@ -1,6 +1,6 @@
 # Local demo release checks
 
-Checked on 7 October 2026. The connected local demo passes the checks below. This record covers
+Checked on 8 October 2026. The connected local demo passes the checks below. This record covers
 the current demonstration dataset and student workspace; deployment and verified admissions data
 are separate release gates.
 

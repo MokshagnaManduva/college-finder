@@ -1,6 +1,6 @@
 # Reviewed course data
 
-Updated 7 October 2026. The connected local database contains eighteen reviewed claims across nine
+Updated 8 October 2026. The connected local database contains eighteen reviewed claims across nine
 existing courses: IIT Bombay Computer Science/Electrical Engineering and IIT Delhi Computer
 Science/Mechanical Engineering, IIT Madras Computer Science/Chemical Engineering, NIT Trichy
 Civil Engineering/Computer Science, and IISc Bachelor of Science (Research).

@@ -1,8 +1,10 @@
 # Free temporary demo: Vercel + Render
 
-Prepared 7 October 2026. The user selected dashboard setup, a Vercel frontend, and a free Render
+Prepared 8 October 2026. The user selected dashboard setup, a Vercel frontend, and a free Render
 API/PostgreSQL demo. No paid hosting is authorized. This project is the repository root; the
 sibling reference project is not part of the deployment.
+
+The private source repository is [MokshagnaManduva/college-finder](https://github.com/MokshagnaManduva/college-finder).
 
 ## What has been verified locally
 
