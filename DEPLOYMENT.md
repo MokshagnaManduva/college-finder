@@ -55,11 +55,13 @@ Open [Vercel](https://vercel.com/new), import the same private repository, and u
 | Build command | `npm run build:deploy` |
 | Output Directory | `dist` |
 | `VITE_DATA_MODE` | `api` |
-| `VITE_API_URL` | Actual Render HTTPS origin followed by `/api` |
+| `VITE_API_URL` | Actual Render API service HTTPS origin; `/api` is appended automatically |
 | `VITE_TEMPORARY_DEMO` | `true` |
 
 Set these environment variables for **Production** before building. The deployment build rejects
-the development `/api` default, HTTP URLs and fixture-only mode. SPA rewrites and asset caching
+the development `/api` default, HTTP/database/dashboard URLs and fixture-only mode. A bare HTTPS
+API origin or an origin ending in `/api` is accepted and normalized for the compiled frontend.
+SPA rewrites and asset caching
 are in [frontend/vercel.json](frontend/vercel.json). Frontend variables contain only public settings;
 the database URL and JWT secret belong only on Render.
 
