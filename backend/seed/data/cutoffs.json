@@ -1,0 +1,436 @@
+[
+  {
+    "slug": "iit-bombay",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 1,
+        "closingRank": 1200
+      },
+      {
+        "category": "OBC",
+        "openingRank": 1,
+        "closingRank": 2000
+      },
+      {
+        "category": "SC",
+        "openingRank": 1,
+        "closingRank": 5000
+      },
+      {
+        "category": "ST",
+        "openingRank": 1,
+        "closingRank": 8000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 1,
+        "closingRank": 1800
+      }
+    ]
+  },
+  {
+    "slug": "iit-delhi",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 100,
+        "closingRank": 2500
+      },
+      {
+        "category": "OBC",
+        "openingRank": 100,
+        "closingRank": 4000
+      },
+      {
+        "category": "SC",
+        "openingRank": 100,
+        "closingRank": 7000
+      },
+      {
+        "category": "ST",
+        "openingRank": 100,
+        "closingRank": 12000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 100,
+        "closingRank": 3500
+      }
+    ]
+  },
+  {
+    "slug": "iit-madras",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 50,
+        "closingRank": 2000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 50,
+        "closingRank": 3500
+      },
+      {
+        "category": "SC",
+        "openingRank": 50,
+        "closingRank": 6500
+      },
+      {
+        "category": "ST",
+        "openingRank": 50,
+        "closingRank": 10000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 50,
+        "closingRank": 3000
+      }
+    ]
+  },
+  {
+    "slug": "bits-pilani",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 500,
+        "closingRank": 8000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 500,
+        "closingRank": 12000
+      },
+      {
+        "category": "SC",
+        "openingRank": 500,
+        "closingRank": 18000
+      },
+      {
+        "category": "ST",
+        "openingRank": 500,
+        "closingRank": 25000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 500,
+        "closingRank": 10000
+      }
+    ]
+  },
+  {
+    "slug": "nit-trichy",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 3000,
+        "closingRank": 12000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 3000,
+        "closingRank": 18000
+      },
+      {
+        "category": "SC",
+        "openingRank": 3000,
+        "closingRank": 30000
+      },
+      {
+        "category": "ST",
+        "openingRank": 3000,
+        "closingRank": 45000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 3000,
+        "closingRank": 15000
+      }
+    ]
+  },
+  {
+    "slug": "vit-vellore",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 5000,
+        "closingRank": 50000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 5000,
+        "closingRank": 65000
+      },
+      {
+        "category": "SC",
+        "openingRank": 5000,
+        "closingRank": 80000
+      },
+      {
+        "category": "ST",
+        "openingRank": 5000,
+        "closingRank": 100000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 5000,
+        "closingRank": 60000
+      }
+    ]
+  },
+  {
+    "slug": "iisc-bangalore",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 10,
+        "closingRank": 800
+      },
+      {
+        "category": "OBC",
+        "openingRank": 10,
+        "closingRank": 1500
+      },
+      {
+        "category": "SC",
+        "openingRank": 10,
+        "closingRank": 4000
+      },
+      {
+        "category": "ST",
+        "openingRank": 10,
+        "closingRank": 6000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 10,
+        "closingRank": 1200
+      }
+    ]
+  },
+  {
+    "slug": "jadavpur-university",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 8000,
+        "closingRank": 25000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 8000,
+        "closingRank": 35000
+      },
+      {
+        "category": "SC",
+        "openingRank": 8000,
+        "closingRank": 50000
+      },
+      {
+        "category": "ST",
+        "openingRank": 8000,
+        "closingRank": 70000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 8000,
+        "closingRank": 30000
+      }
+    ]
+  },
+  {
+    "slug": "amity-university-noida",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 20000,
+        "closingRank": 80000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 20000,
+        "closingRank": 100000
+      },
+      {
+        "category": "SC",
+        "openingRank": 20000,
+        "closingRank": 120000
+      },
+      {
+        "category": "ST",
+        "openingRank": 20000,
+        "closingRank": 150000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 20000,
+        "closingRank": 90000
+      }
+    ]
+  },
+  {
+    "slug": "srm-university",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 10000,
+        "closingRank": 60000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 10000,
+        "closingRank": 75000
+      },
+      {
+        "category": "SC",
+        "openingRank": 10000,
+        "closingRank": 90000
+      },
+      {
+        "category": "ST",
+        "openingRank": 10000,
+        "closingRank": 110000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 10000,
+        "closingRank": 70000
+      }
+    ]
+  },
+  {
+    "slug": "pune-university",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 15000,
+        "closingRank": 55000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 15000,
+        "closingRank": 70000
+      },
+      {
+        "category": "SC",
+        "openingRank": 15000,
+        "closingRank": 85000
+      },
+      {
+        "category": "ST",
+        "openingRank": 15000,
+        "closingRank": 100000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 15000,
+        "closingRank": 65000
+      }
+    ]
+  },
+  {
+    "slug": "osmania-university",
+    "exam": "JEE",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 18000,
+        "closingRank": 65000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 18000,
+        "closingRank": 80000
+      },
+      {
+        "category": "SC",
+        "openingRank": 18000,
+        "closingRank": 95000
+      },
+      {
+        "category": "ST",
+        "openingRank": 18000,
+        "closingRank": 120000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 18000,
+        "closingRank": 75000
+      }
+    ]
+  },
+  {
+    "slug": "aiims-delhi",
+    "exam": "NEET",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 1,
+        "closingRank": 100
+      },
+      {
+        "category": "OBC",
+        "openingRank": 1,
+        "closingRank": 250
+      },
+      {
+        "category": "SC",
+        "openingRank": 1,
+        "closingRank": 1500
+      },
+      {
+        "category": "ST",
+        "openingRank": 1,
+        "closingRank": 3000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 1,
+        "closingRank": 200
+      }
+    ]
+  },
+  {
+    "slug": "manipal-university",
+    "exam": "NEET",
+    "categories": [
+      {
+        "category": "General",
+        "openingRank": 5000,
+        "closingRank": 30000
+      },
+      {
+        "category": "OBC",
+        "openingRank": 5000,
+        "closingRank": 45000
+      },
+      {
+        "category": "SC",
+        "openingRank": 5000,
+        "closingRank": 60000
+      },
+      {
+        "category": "ST",
+        "openingRank": 5000,
+        "closingRank": 80000
+      },
+      {
+        "category": "EWS",
+        "openingRank": 5000,
+        "closingRank": 40000
+      }
+    ]
+  }
+]

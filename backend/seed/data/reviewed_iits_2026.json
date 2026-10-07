@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "courses": [
+    {
+      "collegeSlug": "iit-bombay",
+      "courseId": "a2b49c90-68b0-58bd-8130-03374db0a2bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T16:46:06Z",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T16:46:06Z",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-bombay",
+      "courseId": "70206e4a-6a7c-55bf-ab22-6dc185ee72c6",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-delhi",
+      "courseId": "db12c89b-4c25-5b31-ace7-1a69324054bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-delhi",
+      "courseId": "7478a43c-d800-595a-8ba2-d33fb37a30bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25"
+          }
+        }
+      ]
+    }
+  ]
+}

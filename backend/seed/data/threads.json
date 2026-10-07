@@ -1,0 +1,99 @@
+[
+  {
+    "title": "How to prepare for JEE Advanced in the last 3 months?",
+    "body": "I have my JEE Advanced coming up in 3 months. Currently scoring around 150/360 in mock tests. What should be my strategy to improve? Which topics should I focus on for maximum score gain?",
+    "category": "Exams",
+    "answers": [
+      {
+        "body": "Focus on your strong subjects first. In Physics, revise Mechanics and Electrodynamics thoroughly. In Maths, Calculus and Coordinate Geometry have the highest weightage. For Chemistry, Organic reactions and Periodic properties are must-dos. Do at least 2 mock tests per week.",
+        "isAccepted": true
+      },
+      {
+        "body": "I was in a similar position last year. What worked for me was solving previous year papers (2015-2023) topic-wise. You'll notice patterns in the type of questions asked. Also, don't ignore Physical Chemistry - it's the easiest to score in.",
+        "isAccepted": false
+      }
+    ]
+  },
+  {
+    "title": "IIT Bombay vs IIT Delhi for Computer Science?",
+    "body": "I have got ranks that can get me CS at both IITs. Which one should I choose? I'm particularly interested in AI/ML research and startups. Would love to hear from current students or alumni.",
+    "category": "Admissions",
+    "collegeSlug": "iit-bombay",
+    "answers": [
+      {
+        "body": "IIT Bombay has a stronger startup ecosystem and is arguably better for CS in terms of peer group and coding culture. The placement packages are slightly higher too. However, IIT Delhi has amazing AI/ML labs and Prof. Mausam's group is world-renowned.",
+        "isAccepted": false
+      },
+      {
+        "body": "Both are equally good. Choose based on city preference. Mumbai offers more industry exposure while Delhi has government and policy connections. I chose IITB and have no regrets - the energy here is unmatched.",
+        "isAccepted": true
+      },
+      {
+        "body": "As an IITD alumni, I'd say both are excellent. IITD's Bharti School of Telecom is great for systems research. But honestly, at this level, your individual effort matters more than the institute name.",
+        "isAccepted": false
+      }
+    ]
+  },
+  {
+    "title": "Campus life at BITS Pilani — What to expect?",
+    "body": "I just got admitted to BITS Pilani for B.E. Computer Science through BITSAT. I'm excited but also nervous. What's the campus life really like? How are the hostels, food, clubs, and overall vibe?",
+    "category": "Campus Life",
+    "collegeSlug": "bits-pilani",
+    "answers": [
+      {
+        "body": "Congrats! BITS Pilani has one of the most vibrant campus lives in India. The fest culture is amazing - OASIS and APOGEE are legendary. Hostels are decent, food is okay (you'll get used to it). The best part is the freedom - no attendance, flexible timetable, and amazing clubs.",
+        "isAccepted": true
+      },
+      {
+        "body": "The Practice School program is unique to BITS and it's incredible for industry exposure. You'll get to work at top companies for 6 months. The Pilani campus is in the desert so summers are hot, but winters are pleasant. Make sure to join at least 2-3 clubs!",
+        "isAccepted": false
+      }
+    ]
+  },
+  {
+    "title": "NEET preparation strategy for Biology?",
+    "body": "I'm scoring well in Physics and Chemistry but struggling in Biology. My NEET is in 6 months. How should I approach NCERT for Biology? Any specific chapters that are high-yield?",
+    "category": "Exams",
+    "answers": [
+      {
+        "body": "Biology in NEET is 90% NCERT. Read NCERT line by line, literally. Focus on: Human Physiology (especially Digestion, Excretion, Nervous System), Genetics (Mendelian and Molecular), Ecology, and Plant Physiology. These chapters alone can give you 250+ marks in Biology.",
+        "isAccepted": true
+      },
+      {
+        "body": "Make diagrams for every chapter. Visual memory helps a lot in Biology. Also, solve MTG and Disha publications for extra practice. For Botany, focus on Plant Kingdom and Morphology of Flowering Plants.",
+        "isAccepted": false
+      }
+    ]
+  },
+  {
+    "title": "Placement stats reality check — Are packages inflated?",
+    "body": "I see colleges advertising 1 Crore+ packages but I'm skeptical. How much do average students actually earn after graduation? I'm looking at NITs specifically. Would appreciate honest answers from recent graduates.",
+    "category": "Placements",
+    "collegeSlug": "nit-trichy",
+    "answers": [
+      {
+        "body": "Great question. The \"highest package\" numbers often include international offers (converted to INR), stock options, and signing bonuses. The median package is a better metric. For NIT Trichy CS, the median is around 14-16 LPA which is still excellent. Non-CS branches see 8-12 LPA median.",
+        "isAccepted": false
+      },
+      {
+        "body": "As a 2023 NIT Trichy graduate, here's the reality: top 10% get 20+ LPA, middle 50% get 10-18 LPA, and bottom 30% get 6-10 LPA. Your package depends heavily on your skills, not just the college name. Focus on DSA, projects, and internships.",
+        "isAccepted": true
+      }
+    ]
+  },
+  {
+    "title": "Is it worth taking a drop year for JEE?",
+    "body": "I scored 89 percentile in JEE Mains this year. I have an option to join VIT Vellore or take a drop and try again. My parents are supportive either way. What would you advise?",
+    "category": "General",
+    "answers": [
+      {
+        "body": "It depends on your potential. If you genuinely feel you underperformed and can improve significantly, a drop year can be worth it. But be honest with yourself - many students score the same or even lower after a drop. VIT is a solid college with good placements.",
+        "isAccepted": false
+      },
+      {
+        "body": "I took a drop and improved from 88 to 99.2 percentile. The key was joining a proper coaching and being disciplined. However, I've also seen friends who didn't improve. My advice: if you have a clear strategy and strong discipline, go for it. Otherwise, VIT is great.",
+        "isAccepted": false
+      }
+    ]
+  }
+]

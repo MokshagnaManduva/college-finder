@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "courses": [
+    {
+      "collegeSlug": "iit-bombay",
+      "courseId": "a2b49c90-68b0-58bd-8130-03374db0a2bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Base statutory tuition for Indian UG new entrants in 2026\u201327, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026\u201327, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T16:46:06Z",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026\u201327, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T16:46:06Z",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        }
+      ]
+    }
+  ]
+}

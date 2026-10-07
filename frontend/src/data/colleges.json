@@ -1,0 +1,1294 @@
+[
+  {
+    "name": "Indian Institute of Technology Bombay",
+    "slug": "iit-bombay",
+    "location": "Powai, Mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "type": "Engineering",
+    "established": 1958,
+    "description": "IIT Bombay is one of the premier engineering institutions in India, known for its rigorous academic programs and cutting-edge research facilities.",
+    "facilities": [
+      "World-class labs",
+      "Olympic pool",
+      "Hospital",
+      "Metro connectivity",
+      "Research centers"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=800",
+    "id": "d7c1fd7e-6fee-5565-a627-ac54ea352704",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "a2b49c90-68b0-58bd-8130-03374db0a2bf",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 220000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "iit-bombay-1"
+      },
+      {
+        "id": "70206e4a-6a7c-55bf-ab22-6dc185ee72c6",
+        "name": "B.Tech Electrical Engineering",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 220000,
+        "feeBasis": "demo-assumption",
+        "seats": 90,
+        "legacyId": "iit-bombay-2"
+      },
+      {
+        "id": "c650c983-cd67-58d0-b3f0-b2768ed545df",
+        "name": "M.Tech Data Science",
+        "degree": "M.Tech",
+        "durationMonths": 24,
+        "annualTuition": 65000,
+        "feeBasis": "demo-assumption",
+        "seats": 60,
+        "legacyId": "iit-bombay-3"
+      },
+      {
+        "id": "dfc9b1f7-bb74-5f7f-9125-703f2a02634c",
+        "name": "MBA",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 350000,
+        "feeBasis": "demo-assumption",
+        "seats": 60,
+        "legacyId": "iit-bombay-4"
+      }
+    ],
+    "placements": {
+      "avgPackage": 2200000,
+      "highestPackage": 25000000,
+      "placementRate": 98,
+      "topRecruiters": [
+        "Google",
+        "Microsoft",
+        "Goldman Sachs",
+        "McKinsey",
+        "Apple"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "iit-bombay"
+  },
+  {
+    "name": "Indian Institute of Technology Delhi",
+    "slug": "iit-delhi",
+    "location": "Hauz Khas, New Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "type": "Engineering",
+    "established": 1961,
+    "description": "IIT Delhi is a premier engineering institution located in the heart of India's capital, with excellent industry connections and research output.",
+    "facilities": [
+      "State-of-art labs",
+      "Indoor stadium",
+      "Health center",
+      "Metro access",
+      "Incubation center"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800",
+    "id": "f598bfc6-932d-510e-9a81-55df745e78e2",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "db12c89b-4c25-5b31-ace7-1a69324054bf",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 215000,
+        "feeBasis": "demo-assumption",
+        "seats": 110,
+        "legacyId": "iit-delhi-1"
+      },
+      {
+        "id": "7478a43c-d800-595a-8ba2-d33fb37a30bf",
+        "name": "B.Tech Mechanical Engineering",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 215000,
+        "feeBasis": "demo-assumption",
+        "seats": 100,
+        "legacyId": "iit-delhi-2"
+      },
+      {
+        "id": "00c1a1d9-b9c6-5c1f-a3fa-d7962e7eb45e",
+        "name": "M.Tech AI & ML",
+        "degree": "M.Tech",
+        "durationMonths": 24,
+        "annualTuition": 60000,
+        "feeBasis": "demo-assumption",
+        "seats": 50,
+        "legacyId": "iit-delhi-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 2100000,
+      "highestPackage": 22000000,
+      "placementRate": 97,
+      "topRecruiters": [
+        "Amazon",
+        "Google",
+        "DE Shaw",
+        "Flipkart",
+        "Microsoft"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "iit-delhi"
+  },
+  {
+    "name": "Indian Institute of Technology Madras",
+    "slug": "iit-madras",
+    "location": "Adyar, Chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "established": 1959,
+    "description": "IIT Madras consistently ranked #1 in NIRF, offering exceptional programs across engineering, science, and humanities.",
+    "facilities": [
+      "Forest campus",
+      "Super-computing facility",
+      "Olympic athletics track",
+      "Medical center",
+      "Research parks"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1590012314607-cda9d9b699ae?w=800",
+    "id": "58592c02-5ab4-556b-8c01-02e74fc48f8f",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "1cf0c116-5fba-5ade-be7c-d2a830d51df3",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 200000,
+        "feeBasis": "demo-assumption",
+        "seats": 115,
+        "legacyId": "iit-madras-1"
+      },
+      {
+        "id": "468ccd2d-0f7f-56bf-adbf-db3b0643e905",
+        "name": "B.Tech Chemical Engineering",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 200000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "iit-madras-2"
+      },
+      {
+        "id": "eb276a10-a240-5fe4-b0f5-d4351957e556",
+        "name": "Ph.D Research",
+        "degree": "Ph.D",
+        "durationMonths": 60,
+        "annualTuition": 30000,
+        "feeBasis": "demo-assumption",
+        "seats": 200,
+        "legacyId": "iit-madras-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 2300000,
+      "highestPackage": 28000000,
+      "placementRate": 99,
+      "topRecruiters": [
+        "Google",
+        "Qualcomm",
+        "Samsung",
+        "Intel",
+        "Uber"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "iit-madras"
+  },
+  {
+    "name": "BITS Pilani",
+    "slug": "bits-pilani",
+    "location": "Vidya Vihar, Pilani",
+    "city": "Pilani",
+    "state": "Rajasthan",
+    "type": "Engineering",
+    "established": 1964,
+    "description": "BITS Pilani is a deemed university known for its practice school program, flexible academic curriculum, and strong alumni network.",
+    "facilities": [
+      "Desert campus",
+      "Medical college",
+      "Cricket ground",
+      "Library",
+      "Practice school"
+    ],
+    "accreditation": "NAAC A",
+    "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800",
+    "id": "f632a15a-11c7-5e47-9ff0-38ef79865cac",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "a7506ac6-67b7-512a-babb-806695d1a6c1",
+        "name": "B.E. Computer Science",
+        "degree": "B.E.",
+        "durationMonths": 48,
+        "annualTuition": 580000,
+        "feeBasis": "demo-assumption",
+        "seats": 200,
+        "legacyId": "bits-pilani-1"
+      },
+      {
+        "id": "71c06828-fbe5-5563-907c-86c3c01e6909",
+        "name": "B.E. Electronics",
+        "degree": "B.E.",
+        "durationMonths": 48,
+        "annualTuition": 580000,
+        "feeBasis": "demo-assumption",
+        "seats": 160,
+        "legacyId": "bits-pilani-2"
+      },
+      {
+        "id": "20e8f4d4-cdd3-5540-a846-747b31b06823",
+        "name": "M.Sc. Mathematics",
+        "degree": "M.Sc.",
+        "durationMonths": 24,
+        "annualTuition": 480000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "bits-pilani-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 1800000,
+      "highestPackage": 18000000,
+      "placementRate": 95,
+      "topRecruiters": [
+        "Microsoft",
+        "Goldman Sachs",
+        "Uber",
+        "Nutanix",
+        "Oracle"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "bits-pilani"
+  },
+  {
+    "name": "National Institute of Technology Trichy",
+    "slug": "nit-trichy",
+    "location": "Tanjore Main Road, Tiruchirappalli",
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "established": 1964,
+    "description": "NIT Trichy is consistently ranked as the top NIT in India, offering exceptional technical education with strong industry ties.",
+    "facilities": [
+      "River-side campus",
+      "Sports complex",
+      "Central library",
+      "Computing center",
+      "Hospital"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800",
+    "id": "78161a05-0496-56c0-ab42-45472a0a2de7",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "81e7a464-7301-5a0a-9c8c-f861c38980a8",
+        "name": "B.Tech Civil Engineering",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 145000,
+        "feeBasis": "demo-assumption",
+        "seats": 150,
+        "legacyId": "nit-trichy-1"
+      },
+      {
+        "id": "4d8c2bb3-fce0-50cd-aca0-0a1f0ca49479",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 145000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "nit-trichy-2"
+      },
+      {
+        "id": "e06446c1-3200-5a1b-9a9f-789107aaff1c",
+        "name": "M.Tech Structural Engineering",
+        "degree": "M.Tech",
+        "durationMonths": 24,
+        "annualTuition": 50000,
+        "feeBasis": "demo-assumption",
+        "seats": 40,
+        "legacyId": "nit-trichy-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 1200000,
+      "highestPackage": 14000000,
+      "placementRate": 93,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "L&T",
+        "Samsung",
+        "Qualcomm"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "nit-trichy"
+  },
+  {
+    "name": "Vellore Institute of Technology",
+    "slug": "vit-vellore",
+    "location": "Tiruvalam Road, Vellore",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "established": 1984,
+    "description": "VIT Vellore is a deemed university known for its state-of-art infrastructure, diverse student population, and strong placement record.",
+    "facilities": [
+      "Wi-fi campus",
+      "Olympic swimming pool",
+      "Multi-cuisine food court",
+      "Air-conditioned classrooms",
+      "Innovation center"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800",
+    "id": "40fc8312-fc5d-5bd4-bdc6-890b4af7b793",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "25192268-3147-5d9d-bf25-55d37b1092a9",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 380000,
+        "feeBasis": "demo-assumption",
+        "seats": 500,
+        "legacyId": "vit-vellore-1"
+      },
+      {
+        "id": "b89e1402-5fd9-5706-a3bc-6dec1b71c016",
+        "name": "B.Tech Biomedical Engineering",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 380000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "vit-vellore-2"
+      },
+      {
+        "id": "780637cf-8834-5e73-baae-53dadf187605",
+        "name": "MBA",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 450000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "vit-vellore-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 800000,
+      "highestPackage": 9000000,
+      "placementRate": 89,
+      "topRecruiters": [
+        "Wipro",
+        "TCS",
+        "Cognizant",
+        "Amazon",
+        "Deloitte"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "vit-vellore"
+  },
+  {
+    "name": "IIM Ahmedabad",
+    "slug": "iim-ahmedabad",
+    "location": "Vastrapur, Ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "Management",
+    "established": 1961,
+    "description": "IIM Ahmedabad is India's most prestigious management school and ranks among the best business schools in Asia.",
+    "facilities": [
+      "Louis Kahn campus",
+      "Case study library",
+      "Executive education center",
+      "Swimming pool",
+      "IIMA Club"
+    ],
+    "accreditation": "AACSB Accredited",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
+    "id": "f6c3f132-ea59-5cce-a0a8-5a27ec6206d5",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "f132b5da-2d50-5ea9-bcda-9803f015b731",
+        "name": "PGP (MBA)",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 2400000,
+        "feeBasis": "demo-assumption",
+        "seats": 400,
+        "legacyId": "iim-ahmedabad-1"
+      },
+      {
+        "id": "cf7aa311-06b1-5091-b0c2-ea09f276ce3a",
+        "name": "PGPX (Executive MBA)",
+        "degree": "Executive MBA",
+        "durationMonths": 12,
+        "annualTuition": 3200000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "iim-ahmedabad-2"
+      },
+      {
+        "id": "5bbadc8f-a7f8-545f-9d8f-c85bf76ee8ff",
+        "name": "Ph.D Management",
+        "degree": "Ph.D",
+        "durationMonths": 48,
+        "annualTuition": 100000,
+        "feeBasis": "demo-assumption",
+        "seats": 20,
+        "legacyId": "iim-ahmedabad-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 3500000,
+      "highestPackage": 85000000,
+      "placementRate": 100,
+      "topRecruiters": [
+        "BCG",
+        "McKinsey",
+        "Bain",
+        "Goldman Sachs",
+        "P&G"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "iim-ahmedabad"
+  },
+  {
+    "name": "IIM Bangalore",
+    "slug": "iim-bangalore",
+    "location": "Bannerghatta Road, Bengaluru",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "type": "Management",
+    "established": 1973,
+    "description": "IIM Bangalore is located in India's tech capital and is known for its strong ties with the startup ecosystem and global corporations.",
+    "facilities": [
+      "Green campus",
+      "Sports complex",
+      "NSRCEL incubator",
+      "Library",
+      "Guest house"
+    ],
+    "accreditation": "AACSB Accredited",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
+    "id": "000b0193-3cce-532e-97b9-6c196d28f6b3",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "27976a30-73a5-54d6-af5e-4eb90a510cfb",
+        "name": "PGP (MBA)",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 2300000,
+        "feeBasis": "demo-assumption",
+        "seats": 500,
+        "legacyId": "iim-bangalore-1"
+      },
+      {
+        "id": "448e558d-bea5-56c9-9093-47fe2cac7cb9",
+        "name": "PGPEM (Weekend MBA)",
+        "degree": "MBA",
+        "durationMonths": 36,
+        "annualTuition": 1800000,
+        "feeBasis": "demo-assumption",
+        "seats": 60,
+        "legacyId": "iim-bangalore-2"
+      }
+    ],
+    "placements": {
+      "avgPackage": 3200000,
+      "highestPackage": 72000000,
+      "placementRate": 100,
+      "topRecruiters": [
+        "Amazon",
+        "McKinsey",
+        "BCG",
+        "Flipkart",
+        "Google"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "iim-bangalore"
+  },
+  {
+    "name": "AIIMS New Delhi",
+    "slug": "aiims-delhi",
+    "location": "Ansari Nagar, New Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "type": "Medical",
+    "established": 1956,
+    "description": "AIIMS Delhi is India's premier medical institution, providing world-class medical education and healthcare services.",
+    "facilities": [
+      "2000-bed hospital",
+      "Trauma center",
+      "Research labs",
+      "Library",
+      "Hostel"
+    ],
+    "accreditation": "MCI Recognized",
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
+    "id": "92ed979f-9b98-5534-8520-46dc17fa05e6",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "7e47b7c1-4151-5764-8569-47b17d73c066",
+        "name": "MBBS",
+        "degree": "MBBS",
+        "durationMonths": 60,
+        "annualTuition": 6800,
+        "feeBasis": "demo-assumption",
+        "seats": 100,
+        "legacyId": "aiims-delhi-1"
+      },
+      {
+        "id": "4449d3a2-0c60-5bdc-b3d9-490eeeb39e7d",
+        "name": "M.D. General Medicine",
+        "degree": "M.D.",
+        "durationMonths": 36,
+        "annualTuition": 10000,
+        "feeBasis": "demo-assumption",
+        "seats": 30,
+        "legacyId": "aiims-delhi-2"
+      },
+      {
+        "id": "ac8451b3-a6d0-5ea6-93c0-75be5304d20d",
+        "name": "M.S. Surgery",
+        "degree": "M.S.",
+        "durationMonths": 36,
+        "annualTuition": 10000,
+        "feeBasis": "demo-assumption",
+        "seats": 25,
+        "legacyId": "aiims-delhi-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 1500000,
+      "highestPackage": 8000000,
+      "placementRate": 100,
+      "topRecruiters": [
+        "AIIMS hospitals",
+        "Apollo",
+        "Fortis",
+        "Max Healthcare",
+        "WHO"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "aiims-delhi"
+  },
+  {
+    "name": "Manipal Academy of Higher Education",
+    "slug": "manipal-university",
+    "location": "Madhav Nagar, Manipal",
+    "city": "Manipal",
+    "state": "Karnataka",
+    "type": "Medical",
+    "established": 1953,
+    "description": "Manipal is a well-known deemed university with strong medical, engineering and management programs and a vibrant campus life.",
+    "facilities": [
+      "University town",
+      "Kasturba Hospital",
+      "Beach proximity",
+      "Sports academy",
+      "International student support"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800",
+    "id": "ac36e41c-ad91-5fe9-ae71-7e42bb61613a",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "018d50c2-f348-5df8-936b-eba6082bea24",
+        "name": "MBBS",
+        "degree": "MBBS",
+        "durationMonths": 60,
+        "annualTuition": 1500000,
+        "feeBasis": "demo-assumption",
+        "seats": 250,
+        "legacyId": "manipal-university-1"
+      },
+      {
+        "id": "13b472e1-407d-57f8-923b-47e1d65c9238",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 480000,
+        "feeBasis": "demo-assumption",
+        "seats": 300,
+        "legacyId": "manipal-university-2"
+      },
+      {
+        "id": "d721e607-2153-5203-accb-4d1c685b6d33",
+        "name": "MBA",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 850000,
+        "feeBasis": "demo-assumption",
+        "seats": 200,
+        "legacyId": "manipal-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 900000,
+      "highestPackage": 7000000,
+      "placementRate": 85,
+      "topRecruiters": [
+        "Manipal Hospitals",
+        "Apollo",
+        "Fortis",
+        "TCS",
+        "Infosys"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "manipal-university"
+  },
+  {
+    "name": "Delhi University (DU)",
+    "slug": "delhi-university",
+    "location": "North Campus, Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "type": "Arts & Science",
+    "established": 1922,
+    "description": "University of Delhi is one of India's largest and most prestigious central universities, offering programs across arts, science, commerce, and law.",
+    "facilities": [
+      "60+ colleges",
+      "North & South campus",
+      "Central library",
+      "Sports complex",
+      "Arts theater"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=800",
+    "id": "c0dc1cc4-ac73-53f4-b2d7-2dfcdc0f0ba3",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "7bcc38f9-bee4-5d1b-9454-d3dfd4e67f9f",
+        "name": "B.A. Economics (Hons)",
+        "degree": "B.A.",
+        "durationMonths": 36,
+        "annualTuition": 15000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "delhi-university-1"
+      },
+      {
+        "id": "03c05d81-6870-5f02-8ee7-266a8e8231e4",
+        "name": "B.Sc. Computer Science",
+        "degree": "B.Sc.",
+        "durationMonths": 36,
+        "annualTuition": 12000,
+        "feeBasis": "demo-assumption",
+        "seats": 60,
+        "legacyId": "delhi-university-2"
+      },
+      {
+        "id": "3d2dd992-4dbe-5b16-8ca6-5e1da5e3508d",
+        "name": "LL.B. Law",
+        "degree": "LL.B.",
+        "durationMonths": 36,
+        "annualTuition": 18000,
+        "feeBasis": "demo-assumption",
+        "seats": 100,
+        "legacyId": "delhi-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 600000,
+      "highestPackage": 5000000,
+      "placementRate": 75,
+      "topRecruiters": [
+        "UPSC",
+        "Big 4",
+        "Banks",
+        "Media houses",
+        "NGOs"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "delhi-university"
+  },
+  {
+    "name": "Indian Institute of Science",
+    "slug": "iisc-bangalore",
+    "location": "CV Raman Road, Bengaluru",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "type": "Engineering",
+    "established": 1909,
+    "description": "IISc is India's top research university, globally renowned for scientific research and postgraduate education.",
+    "facilities": [
+      "400-acre green campus",
+      "Supercomputer facility",
+      "Botanical garden",
+      "Observatory",
+      "30+ research centers"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=800",
+    "id": "94961299-2e01-54f7-9545-497cf5e92af0",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "3a68467c-203d-5d07-97b3-81e9ef84945b",
+        "name": "B.Sc. Research",
+        "degree": "B.Sc.",
+        "durationMonths": 48,
+        "annualTuition": 35000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "iisc-bangalore-1"
+      },
+      {
+        "id": "e6ebbb1b-8529-58a8-b1e4-de7ddceb2c9e",
+        "name": "M.Tech Computational Science",
+        "degree": "M.Tech",
+        "durationMonths": 24,
+        "annualTuition": 35000,
+        "feeBasis": "demo-assumption",
+        "seats": 40,
+        "legacyId": "iisc-bangalore-2"
+      },
+      {
+        "id": "5f11e74f-2943-5ded-b484-d75f9fe85aea",
+        "name": "Ph.D Engineering",
+        "degree": "Ph.D",
+        "durationMonths": 60,
+        "annualTuition": 35000,
+        "feeBasis": "demo-assumption",
+        "seats": 500,
+        "legacyId": "iisc-bangalore-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 2800000,
+      "highestPackage": 50000000,
+      "placementRate": 99,
+      "topRecruiters": [
+        "Google Brain",
+        "DeepMind",
+        "Intel Labs",
+        "Qualcomm Research",
+        "ISRO"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "iisc-bangalore"
+  },
+  {
+    "name": "Jadavpur University",
+    "slug": "jadavpur-university",
+    "location": "Raja Subodh Chandra Mallick Road, Kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "type": "Engineering",
+    "established": 1955,
+    "description": "Jadavpur University is a premier state university in eastern India, known for its engineering, arts, and science faculties.",
+    "facilities": [
+      "Main & Salt Lake campus",
+      "Research labs",
+      "Cultural center",
+      "Library",
+      "Sports ground"
+    ],
+    "accreditation": "NAAC A",
+    "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=800",
+    "id": "6904b9fb-263d-5100-a20b-72429512b732",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "73e74daa-2102-5d76-98dd-6decaa5c3e47",
+        "name": "B.E. Computer Science",
+        "degree": "B.E.",
+        "durationMonths": 48,
+        "annualTuition": 12000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "jadavpur-university-1"
+      },
+      {
+        "id": "e28eb0b5-d227-5699-aa02-e06537d6716d",
+        "name": "B.E. Electronics",
+        "degree": "B.E.",
+        "durationMonths": 48,
+        "annualTuition": 12000,
+        "feeBasis": "demo-assumption",
+        "seats": 100,
+        "legacyId": "jadavpur-university-2"
+      },
+      {
+        "id": "a77ff6a9-c351-52b3-a230-2ffdcf434c2c",
+        "name": "M.A. Comparative Literature",
+        "degree": "M.A.",
+        "durationMonths": 24,
+        "annualTuition": 8000,
+        "feeBasis": "demo-assumption",
+        "seats": 40,
+        "legacyId": "jadavpur-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 900000,
+      "highestPackage": 8000000,
+      "placementRate": 85,
+      "topRecruiters": [
+        "TCS",
+        "Wipro",
+        "Infosys",
+        "IBM",
+        "Cognizant"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "jadavpur-university"
+  },
+  {
+    "name": "Christ University",
+    "slug": "christ-university",
+    "location": "Hosur Road, Bengaluru",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "type": "Arts & Science",
+    "established": 1969,
+    "description": "Christ University is a deemed university known for its holistic education, value-based learning, and strong liberal arts programs.",
+    "facilities": [
+      "Central campus",
+      "Chapel",
+      "Sports complex",
+      "Media lab",
+      "Incubation center"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800",
+    "id": "8397a441-0eb8-5bcc-bb0f-bebd3298edc9",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "be1a2cd5-3958-5f3f-a8c4-2cec608a7b20",
+        "name": "B.Com (Hons)",
+        "degree": "B.Com",
+        "durationMonths": 36,
+        "annualTuition": 180000,
+        "feeBasis": "demo-assumption",
+        "seats": 300,
+        "legacyId": "christ-university-1"
+      },
+      {
+        "id": "eb578b7f-e6b3-54d6-9665-1648da944ca3",
+        "name": "B.A. Media Studies",
+        "degree": "B.A.",
+        "durationMonths": 36,
+        "annualTuition": 160000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "christ-university-2"
+      },
+      {
+        "id": "d1e8a574-b976-5466-a8f5-bd08f17263af",
+        "name": "MBA",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 650000,
+        "feeBasis": "demo-assumption",
+        "seats": 180,
+        "legacyId": "christ-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 550000,
+      "highestPackage": 4500000,
+      "placementRate": 80,
+      "topRecruiters": [
+        "Big 4",
+        "HDFC",
+        "Axis Bank",
+        "Times Group",
+        "CCD"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "christ-university"
+  },
+  {
+    "name": "Amity University Noida",
+    "slug": "amity-university-noida",
+    "location": "Sector 125, Noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "type": "Engineering",
+    "established": 2005,
+    "description": "Amity University is a large private university offering diverse programs with modern infrastructure and extensive industry connections.",
+    "facilities": [
+      "Smart classrooms",
+      "Innovation hub",
+      "Food court",
+      "Sports facilities",
+      "Hostel"
+    ],
+    "accreditation": "NAAC A",
+    "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800",
+    "id": "02fb3115-35ab-5dcd-9c45-a787f115c7ad",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "8a61a06a-9b47-5121-b424-1e38914e0b31",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 320000,
+        "feeBasis": "demo-assumption",
+        "seats": 400,
+        "legacyId": "amity-university-noida-1"
+      },
+      {
+        "id": "f47c6a2d-ac7f-54c5-ba23-bd0aa9a6bef9",
+        "name": "BBA",
+        "degree": "BBA",
+        "durationMonths": 36,
+        "annualTuition": 250000,
+        "feeBasis": "demo-assumption",
+        "seats": 200,
+        "legacyId": "amity-university-noida-2"
+      },
+      {
+        "id": "df392dfd-9c1b-5ac3-bb1c-a93df38567ba",
+        "name": "MBA",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 550000,
+        "feeBasis": "demo-assumption",
+        "seats": 200,
+        "legacyId": "amity-university-noida-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 600000,
+      "highestPackage": 5000000,
+      "placementRate": 78,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "HCL",
+        "Accenture"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "amity-university-noida"
+  },
+  {
+    "name": "SRM Institute of Science and Technology",
+    "slug": "srm-university",
+    "location": "Kattankulathur, Chengalpattu",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "established": 1985,
+    "description": "SRM is a large private deemed university known for its engineering programs and research initiatives.",
+    "facilities": [
+      "700-acre campus",
+      "Hospital",
+      "Research park",
+      "Stadium",
+      "Multiple hostels"
+    ],
+    "accreditation": "NAAC A++",
+    "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800",
+    "id": "6ea6c83c-cdc6-5a52-85e5-f47245233cbd",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "74363da7-44e6-58eb-9b4f-2c37fbf0fb29",
+        "name": "B.Tech Computer Science",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 340000,
+        "feeBasis": "demo-assumption",
+        "seats": 600,
+        "legacyId": "srm-university-1"
+      },
+      {
+        "id": "9ff45084-663d-5682-bced-bd54725e7960",
+        "name": "B.Tech AI & ML",
+        "degree": "B.Tech",
+        "durationMonths": 48,
+        "annualTuition": 380000,
+        "feeBasis": "demo-assumption",
+        "seats": 240,
+        "legacyId": "srm-university-2"
+      },
+      {
+        "id": "6e47870c-9795-5d4c-ae48-e613cf28eacf",
+        "name": "M.Tech Software Engineering",
+        "degree": "M.Tech",
+        "durationMonths": 24,
+        "annualTuition": 200000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "srm-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 720000,
+      "highestPackage": 7000000,
+      "placementRate": 82,
+      "topRecruiters": [
+        "Amazon",
+        "TCS",
+        "Wipro",
+        "Zoho",
+        "Infosys"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "srm-university"
+  },
+  {
+    "name": "Symbiosis International University",
+    "slug": "symbiosis-pune",
+    "location": "Lavale, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "type": "Management",
+    "established": 2002,
+    "description": "Symbiosis is a multi-disciplinary deemed university known for its management, law, and design programs.",
+    "facilities": [
+      "Hill-top campus",
+      "International student center",
+      "Sports facilities",
+      "Medical center",
+      "Cafeteria"
+    ],
+    "accreditation": "NAAC A",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
+    "id": "8de1be8a-f0d5-51bd-9057-5528cedd85d0",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "c1a3714a-426f-5563-ad7b-db927a7d5412",
+        "name": "MBA",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 820000,
+        "feeBasis": "demo-assumption",
+        "seats": 180,
+        "legacyId": "symbiosis-pune-1"
+      },
+      {
+        "id": "8204b8f0-df09-5401-a82f-16c80733ce0d",
+        "name": "BBA",
+        "degree": "BBA",
+        "durationMonths": 36,
+        "annualTuition": 480000,
+        "feeBasis": "demo-assumption",
+        "seats": 200,
+        "legacyId": "symbiosis-pune-2"
+      },
+      {
+        "id": "c7f61bef-17a4-5ac7-b7ea-7dd09b314306",
+        "name": "B.A. LLB",
+        "degree": "B.A. LLB",
+        "durationMonths": 60,
+        "annualTuition": 550000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "symbiosis-pune-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 1100000,
+      "highestPackage": 9000000,
+      "placementRate": 91,
+      "topRecruiters": [
+        "Amazon",
+        "Deloitte",
+        "KPMG",
+        "Bosch",
+        "L'Oreal"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "symbiosis-pune"
+  },
+  {
+    "name": "Pune University (SPPU)",
+    "slug": "pune-university",
+    "location": "Ganeshkhind Road, Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "type": "Arts & Science",
+    "established": 1948,
+    "description": "Savitribai Phule Pune University is one of Maharashtra's largest universities with a vast network of affiliated colleges.",
+    "facilities": [
+      "500-acre campus",
+      "Botanical garden",
+      "Cultural center",
+      "Gym",
+      "Library"
+    ],
+    "accreditation": "NAAC A",
+    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800",
+    "id": "98f420ed-8554-565f-b6d4-052d74bad96f",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "0246fd0a-29e0-5b9a-afe2-20c50bba258b",
+        "name": "B.E. Computer Engineering",
+        "degree": "B.E.",
+        "durationMonths": 48,
+        "annualTuition": 28000,
+        "feeBasis": "demo-assumption",
+        "seats": 150,
+        "legacyId": "pune-university-1"
+      },
+      {
+        "id": "ba90eb73-43dc-5424-8129-e6228f5b1385",
+        "name": "B.Sc. IT",
+        "degree": "B.Sc.",
+        "durationMonths": 36,
+        "annualTuition": 22000,
+        "feeBasis": "demo-assumption",
+        "seats": 100,
+        "legacyId": "pune-university-2"
+      },
+      {
+        "id": "0ebc5c93-71e9-509c-8123-1f2fc8c73fd2",
+        "name": "M.B.A.",
+        "degree": "MBA",
+        "durationMonths": 24,
+        "annualTuition": 75000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "pune-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 500000,
+      "highestPackage": 4000000,
+      "placementRate": 72,
+      "topRecruiters": [
+        "Infosys",
+        "TCS",
+        "Wipro",
+        "HDFC",
+        "L&T"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "pune-university"
+  },
+  {
+    "name": "Osmania University",
+    "slug": "osmania-university",
+    "location": "Amberpet, Hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "type": "Arts & Science",
+    "established": 1918,
+    "description": "Osmania University is one of the oldest and most prestigious universities in south-central India, known for arts and science programs.",
+    "facilities": [
+      "Heritage buildings",
+      "Museum",
+      "Sports",
+      "Library",
+      "Research centers"
+    ],
+    "accreditation": "NAAC A",
+    "image": "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=800",
+    "id": "17d21449-c044-59b5-bcc5-71f3b4dd714d",
+    "dataStatus": "demo",
+    "courses": [
+      {
+        "id": "34fe1a3c-5bbc-5f30-b446-2519ce35533f",
+        "name": "B.E. Civil Engineering",
+        "degree": "B.E.",
+        "durationMonths": 48,
+        "annualTuition": 22000,
+        "feeBasis": "demo-assumption",
+        "seats": 120,
+        "legacyId": "osmania-university-1"
+      },
+      {
+        "id": "bc6618b4-ecc2-53d9-b1ea-95012129ef79",
+        "name": "B.A. Political Science",
+        "degree": "B.A.",
+        "durationMonths": 36,
+        "annualTuition": 15000,
+        "feeBasis": "demo-assumption",
+        "seats": 80,
+        "legacyId": "osmania-university-2"
+      },
+      {
+        "id": "129b2a37-e8cb-5af1-8809-8de69dfb2cc1",
+        "name": "M.Sc. Chemistry",
+        "degree": "M.Sc.",
+        "durationMonths": 24,
+        "annualTuition": 18000,
+        "feeBasis": "demo-assumption",
+        "seats": 50,
+        "legacyId": "osmania-university-3"
+      }
+    ],
+    "placements": {
+      "avgPackage": 450000,
+      "highestPackage": 3500000,
+      "placementRate": 68,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "State government",
+        "Banks",
+        "DRDO"
+      ],
+      "reportingYear": null,
+      "scope": null
+    },
+    "legacyId": "osmania-university"
+  }
+]

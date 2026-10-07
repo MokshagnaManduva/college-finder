@@ -1,0 +1,27 @@
+[
+  {
+    "comment": "Excellent faculty and world-class infrastructure. The placements are outstanding.",
+    "rating": 5,
+    "year": 2023
+  },
+  {
+    "comment": "Great learning environment with abundant research opportunities and industry exposure.",
+    "rating": 4.5,
+    "year": 2023
+  },
+  {
+    "comment": "The campus life is vibrant and the peer learning environment is exceptional.",
+    "rating": 4,
+    "year": 2022
+  },
+  {
+    "comment": "Fees are high but the ROI is definitely worth it given the placement packages.",
+    "rating": 4,
+    "year": 2022
+  },
+  {
+    "comment": "Faculty is knowledgeable but workload can be intense. Good for serious students.",
+    "rating": 3.5,
+    "year": 2023
+  }
+]

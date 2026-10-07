@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "courses": [
+    {
+      "collegeSlug": "iit-bombay",
+      "courseId": "a2b49c90-68b0-58bd-8130-03374db0a2bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T16:46:06Z",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T16:46:06Z",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-bombay",
+      "courseId": "70206e4a-6a7c-55bf-ab22-6dc185ee72c6",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+          "source": {
+            "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+            "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-delhi",
+      "courseId": "db12c89b-4c25-5b31-ace7-1a69324054bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-delhi",
+      "courseId": "7478a43c-d800-595a-8ba2-d33fb37a30bf",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary.",
+          "source": {
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+            "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+            "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-madras",
+      "courseId": "1cf0c116-5fba-5ade-be7c-d2a830d51df3",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras.",
+          "source": {
+            "title": "IIT Madras Jul–Nov 2026 fee circular, Annexure I (PDF page 5)",
+            "url": "https://fees.iitm.ac.in/assets/circular/Institute_fee_circular_for_jul_nov_2026.pdf#page=5",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "7b14be024226db07006d6e3b561959fa3c817dec2ada077308e5cbe9bf824570"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 8,
+          "rawUnit": "semesters",
+          "notes": "The 2015-onward ordinance specifies eight regular semesters, corroborated by the current institute undergraduate page listing a four-year B.Tech. Converted to 48 planning months using two semesters per year; this is standard programme length, not teaching weeks or a guarantee of individual completion time.",
+          "source": {
+            "title": "IIT Madras B.Tech ordinances from 2015 onward, O.3 (PDF page 5)",
+            "url": "https://www.iitm.ac.in/sites/default/files/Ordinances/b.tech-2015.pdf#page=5",
+            "reportingYear": 2015,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a1354f1519366f5a996573153c4ac6deaeb8e28c18cc5acd62f23d2ab18fe93e"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iit-madras",
+      "courseId": "468ccd2d-0f7f-56bf-adbf-db3b0643e905",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 100000,
+          "rawUnit": "INR/semester",
+          "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras.",
+          "source": {
+            "title": "IIT Madras Jul–Nov 2026 fee circular, Annexure I (PDF page 5)",
+            "url": "https://fees.iitm.ac.in/assets/circular/Institute_fee_circular_for_jul_nov_2026.pdf#page=5",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "7b14be024226db07006d6e3b561959fa3c817dec2ada077308e5cbe9bf824570"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 8,
+          "rawUnit": "semesters",
+          "notes": "The 2015-onward ordinance specifies eight regular semesters, corroborated by the current institute undergraduate page listing a four-year B.Tech. Converted to 48 planning months using two semesters per year; this is standard programme length, not teaching weeks or a guarantee of individual completion time.",
+          "source": {
+            "title": "IIT Madras B.Tech ordinances from 2015 onward, O.3 (PDF page 5)",
+            "url": "https://www.iitm.ac.in/sites/default/files/Ordinances/b.tech-2015.pdf#page=5",
+            "reportingYear": 2015,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a1354f1519366f5a996573153c4ac6deaeb8e28c18cc5acd62f23d2ab18fe93e"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "nit-trichy",
+      "courseId": "81e7a464-7301-5a0a-9c8c-f861c38980a8",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 62500,
+          "rawUnit": "INR/semester",
+          "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy.",
+          "source": {
+            "title": "NIT Trichy B.Tech fee structure, 2026 admission batch (PDF page 1)",
+            "url": "https://www.nitt.edu/home/academics/fees_section/ug_courses_fee_structure/B.Tech%202026.pdf#page=1",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "e69d5f107fa8518f1ea28f430a28f9278d2113ca2610092ea159caf408c741f1"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 8,
+          "rawUnit": "semesters",
+          "notes": "The regulations applicable from the 2024 batch define a normal eight-semester B.Tech. Converted to 48 planning months using two regular semesters per year. This describes standard programme length; permitted extensions, breaks and individual completion time are separate.",
+          "source": {
+            "title": "NIT Trichy B.Tech Regulations 2024, B.19.0 (PDF page 23)",
+            "url": "https://www.nitt.edu/home/academics/rules/Regulations_B.Tech._2024.pdf#page=23",
+            "reportingYear": 2024,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a621afa7e7f6bded15029b79c4a887882304d89ff9ea46f160820341fef5c267"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "nit-trichy",
+      "courseId": "4d8c2bb3-fce0-50cd-aca0-0a1f0ca49479",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 62500,
+          "rawUnit": "INR/semester",
+          "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy.",
+          "source": {
+            "title": "NIT Trichy B.Tech fee structure, 2026 admission batch (PDF page 1)",
+            "url": "https://www.nitt.edu/home/academics/fees_section/ug_courses_fee_structure/B.Tech%202026.pdf#page=1",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "e69d5f107fa8518f1ea28f430a28f9278d2113ca2610092ea159caf408c741f1"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 8,
+          "rawUnit": "semesters",
+          "notes": "The regulations applicable from the 2024 batch define a normal eight-semester B.Tech. Converted to 48 planning months using two regular semesters per year. This describes standard programme length; permitted extensions, breaks and individual completion time are separate.",
+          "source": {
+            "title": "NIT Trichy B.Tech Regulations 2024, B.19.0 (PDF page 23)",
+            "url": "https://www.nitt.edu/home/academics/rules/Regulations_B.Tech._2024.pdf#page=23",
+            "reportingYear": 2024,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "a621afa7e7f6bded15029b79c4a887882304d89ff9ea46f160820341fef5c267"
+          }
+        }
+      ]
+    },
+    {
+      "collegeSlug": "iisc-bangalore",
+      "courseId": "3a68467c-203d-5d07-97b3-81e9ef84945b",
+      "facts": [
+        {
+          "kind": "tuition",
+          "rawValue": 80000,
+          "rawUnit": "INR/year",
+          "notes": "Bachelor of Science (Research), students joining from AY 2026–27 onward: General/EWS/OBC annual tuition before applicable financial support. This is an annual rate, not a semester fee; earlier entrants have a different rate. SC/ST/PwD tuition is waived. Other academic fees, hostel, mess and deposits are excluded; confirm applicable support and future rates with IISc.",
+          "source": {
+            "title": "IISc fee circular, AY 2026–27, new entrants section 1A (PDF page 1)",
+            "url": "https://bs-ug.iisc.ac.in/assets/Fee-Structure-Circular-AY-2026-27.pdf#page=1",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "f2167ea7e472beba5ff648b971b54bf64a6e5768a8a7b796e5a2ff9b1455d914"
+          }
+        },
+        {
+          "kind": "duration",
+          "rawValue": 4,
+          "rawUnit": "years",
+          "notes": "The handbook defines the four-year Bachelor of Science (Research), organised into eight semesters. The current 2026 admissions page also describes a four-year programme. This is standard programme duration; optional further study and individual extensions are separate.",
+          "source": {
+            "title": "IISc UG Handbook 2025–26, section 1.1 (PDF page 4)",
+            "url": "https://bs-ug.iisc.ac.in/assets/UG-HandBook-25-26.pdf#page=4",
+            "reportingYear": 2025,
+            "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+            "reviewer": "College Finder source review",
+            "documentSha256": "58fdcb4b1f8e0b9595268324a7f7789973095d5bd78882a45145e7a79ea04c73"
+          }
+        }
+      ]
+    }
+  ]
+}
