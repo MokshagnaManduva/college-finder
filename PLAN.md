@@ -330,9 +330,11 @@ provenance, env variables and deployment.
 **Gate:** only working first-release features ship; honest data labels; required checks pass;
 unresolved limitations are documented before deployment.
 
-Deployment setup now targets a free temporary Vercel frontend and Render API/PostgreSQL through
-the dashboards. Configuration and a clean-database rehearsal pass; live resource creation, actual
-URL binding and deployed browser checks remain pending. See `DEPLOYMENT.md`.
+The free temporary Vercel frontend and Render API/PostgreSQL are deployed through the dashboards.
+Configuration, clean-database rehearsal, actual URL/CORS binding and deployed HTTP/API smoke
+checks pass. Safari loaded the live Home/Explore pages and passed Sources visual checks at
+desktop and 360 px, including disclosure keyboard behavior and the course-specific detail link.
+See `DEPLOYMENT.md`.
 
 ### Phase 5A — Reviewed course-data pilot (implemented; expansion pending)
 
@@ -342,8 +344,8 @@ those claims from demo reseeding. Render mixed data statuses honestly and suppre
 tuition highlights. The current local pilot covers nine courses' tuition and duration; expand reviewed
 coverage before calling the admissions directory verified. See `SOURCE_REVIEW.md`.
 Retained document checksums are required on apply, and the public Sources page distinguishes
-claim-level coverage from college-wide verification. Its new browser walkthrough is pending
-Safari input recovery; coverage calculations and API data pass checks.
+claim-level coverage from college-wide verification. Its deployed Safari walkthrough, coverage
+calculations and API checks pass.
 The importer retains semester-based duration and explicitly converts it into planning months.
 The current batch adds IIT Madras, NIT Trichy and IISc, retaining the earlier Bombay/Delhi reviews.
 

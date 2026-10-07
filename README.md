@@ -137,7 +137,8 @@ For deployment, build `backend/Dockerfile`, provide `DATABASE_URL`, `JWT_SECRET`
 and use its default command, which runs Alembic migrations before serving traffic. Build the frontend with `VITE_API_URL` pointing
 to the public backend `/api` URL, and configure SPA rewrites to `index.html`. Match `FRONTEND_URL`
 to the deployed frontend origin. Keep `ALLOW_DEMO_SEED=false` outside explicit demo environments.
-Deployment, a fully reviewed admissions catalog, password recovery, email verification and historical
+The [free demo is deployed](https://college-finder-peach.vercel.app), and its HTTP/API checks pass.
+A fully reviewed admissions catalog, password recovery, email verification and historical
 cutoff exploration remain future work. Dashboard configuration and a clean-database deployment
 rehearsal are prepared in [DEPLOYMENT.md](DEPLOYMENT.md). The selected free Render demo has
 an explicit empty-catalog bootstrap and never creates the shared demo login. The current directory catalog loads all records for UI

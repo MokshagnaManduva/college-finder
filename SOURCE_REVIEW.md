@@ -111,8 +111,11 @@ The public `/sources` page reports tuition/duration claim coverage separately, l
 course evidence, and offers optional reviewer/hash details. Counts are based on evidence that
 matches the current course values; inconsistent claims do not count as reviewed. Nine of 57
 courses currently have both claims reviewed, citing eight retained PDFs. College records remain demo.
-The new Sources-page browser walkthrough is pending because Safari navigation and clipboard
-input stopped responding during verification. Its coverage calculations and live API data pass checks.
+The deployed Sources page passed Safari checks at desktop and 360 × 900 px emulation: coverage
+counts, original units, reporting years/dates, reviewer/hash details and narrow-screen wrapping.
+Space collapsed a review disclosure; a course link selected Electrical Engineering on detail.
+Responsive mode was exited afterward. These checks do not constitute a physical-device or full
+assistive-technology audit. Coverage calculations and the deployed API data also pass checks.
 The live nine-course import also left the authenticated demo workspace unchanged. Replay and
 demo reseeding are covered by the integration suite. Container verification is recorded in
 `RELEASE_CHECKS.md`.

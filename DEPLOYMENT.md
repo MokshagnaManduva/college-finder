@@ -16,8 +16,23 @@ PostgreSQL 16 database, its default command applied both Alembic migrations, ato
 The HTTP rehearsal checked production frontend routes/assets, readiness, CORS, discovery,
 comparison, registration, login and workspace create/edit/read/delete. Restarting the API preserved
 the catalog and skipped bootstrap. These are local rehearsal results, not a deployed-site pass.
-Safari's Sources-page visual walkthrough remains pending because automated keyboard input
-does not submit navigation; HTTP/API checks do not replace the visual walkthrough.
+HTTP/API checks do not replace the visual browser walkthrough.
+
+## Live deployment status
+
+On 8 October 2026, Vercel successfully deployed commit `01a3a55`. The frontend is
+[college-finder-peach.vercel.app](https://college-finder-peach.vercel.app), with the API at
+[college-finder-demo-api.onrender.com](https://college-finder-demo-api.onrender.com/api/health/ready).
+The compiled frontend targets that API's `/api` URL. The configured frontend origin now passes
+CORS preflight. The deployed smoke script passed frontend routes/assets, health/readiness,
+reviewed data, discovery, comparison, registration, login and workspace create/edit/read/delete.
+A labelled smoke-test account remains on the temporary database; its workspace entry was removed.
+Safari visibly loaded the live Home/Explore pages and completed the Sources walkthrough at
+desktop and 360 × 900 px in Responsive Design Mode. Coverage counts, annual/semester notes,
+reviewer/hash details and narrow-screen wrapping passed. Space collapsed the review disclosure,
+and the Electrical Engineering course link selected that course on detail. Responsive mode was
+exited after checking. This is desktop emulation; physical-phone and full screen-reader checks
+remain separate.
 
 ## 1. Create the backend and database on Render
 
@@ -99,8 +114,8 @@ Workspace, then sign in, edit a test note and reload. Open `/sources`: expect 9 
 follow an electrical/chemical/mechanical course link to confirm that course is selected. Check
 the Sources layout at desktop and 360 px. Record the actual result in `RELEASE_CHECKS.md`.
 
-Public URLs, deployed checks and the new Sources visual check are still pending. Send the two
-actual URLs back to Codex after connecting the dashboards so those checks can be completed.
+The public URLs, deployed HTTP/API checks and Sources visual walkthrough are recorded above.
+Broader physical-device/accessibility checks remain separate.
 
 ## Provider references
 

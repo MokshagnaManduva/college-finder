@@ -1,8 +1,8 @@
-# Local demo release checks
+# Demo release checks
 
-Checked on 8 October 2026. The connected local demo passes the checks below. This record covers
-the current demonstration dataset and student workspace; deployment and verified admissions data
-are separate release gates.
+Checked on 8 October 2026. Local checks and deployed HTTP/API checks pass as recorded below.
+This record covers the demonstration dataset and student workspace; a fully reviewed admissions
+directory remains a separate release gate.
 
 ## Verification
 
@@ -20,10 +20,12 @@ are separate release gates.
 | Zoom | Safari's website settings confirmed 200%. Workspace reflow and comparison scrolling remained usable; restored actual size afterward. |
 | Dialog keyboard | Tab reached the stage field; Escape closed the notes dialog and returned focus to the entry's Edit button. |
 | Live data labels | API retains 19 colleges and 57 courses. Eighteen claims across nine courses at five institutions are source-linked; unrelated college/course/placement facts retain demo status. Placement reporting year/scope remain unknown. |
-| Expanded sources | Live API exposes 9 reviewed tuition claims, 9 reviewed duration claims and 8 document hashes. Annual tuition is not doubled; semester duration is retained with conversion assumptions. Replay/reseeding checks pass. Live import left the authenticated demo workspace unchanged. Public Sources coverage calculations pass tests; its browser walkthrough awaits Safari input recovery. |
+| Expanded sources | Live API exposes 9 reviewed tuition claims, 9 reviewed duration claims and 8 document hashes. Annual tuition is not doubled; semester duration is retained with conversion assumptions. Replay/reseeding checks pass. Live import left the authenticated demo workspace unchanged. Coverage calculations pass tests. |
 | Source pilot | Safari checked original/annualized tuition, source links/year/date and scope notes at desktop and 360 px. A three-option mixed-source comparison had no lowest-tuition highlight. |
 | Deployment rehearsal | Full Python 3.13 Dockerfile built. Default startup migrated fresh isolated PostgreSQL 16 and atomically bootstrapped the demo catalog/18 claims without creating users. Node 24 tests/build passed. HTTP smoke covered routes/assets, CORS, discovery, comparison and isolated account/workspace persistence; restarting preserved data. |
-| Hosting setup | User selected free Vercel/Render dashboard setup. Blueprint, guarded frontend build and operator guide are prepared. Public resources/URLs and deployed/browser checks are pending. |
+| Hosting setup | Free demo is live at https://college-finder-peach.vercel.app with the Render API. Vercel deployed `01a3a55`; normalized API URL is in the frontend bundle. |
+| Deployed HTTP/API | Production routes/assets, readiness, exact frontend CORS origin, discovery, comparison, reviewed claims, registration/login and workspace create/edit/read/delete pass. A labelled test account remains; its disposable entry was removed. |
+| Deployed Safari | Live Home/Explore loaded. Sources passed at desktop and 360 × 900 px emulation: coverage counts, source notes, wrapped hashes, reviewer disclosure and Space-to-collapse. The Electrical Engineering link selected the correct course. Returned to normal desktop mode afterward. |
 
 The checks use Safari desktop emulation, not a physical phone or a full assistive-technology audit.
 Registration, expired-session handling, ownership and simultaneous-import behavior are covered by
