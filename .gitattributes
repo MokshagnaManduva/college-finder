@@ -1,0 +1,4 @@
+
+# Preserve exact retained source bytes, including original HTML line endings.
+backend/seed/evidence/*.html binary
+backend/seed/evidence/*.pdf binary

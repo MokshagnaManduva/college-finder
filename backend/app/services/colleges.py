@@ -27,7 +27,15 @@ LOADS = (
 
 def serialize_college(college: College) -> CollegeOut:
     values = {metric.kind: metric for metric in college.metrics}
+    median = values.get("medianPackage")
     placements = PlacementsOut(
+        median_package=int(median.amount) if median else None,
+        graduates=int(values["graduates"].amount) if "graduates" in values else None,
+        placed=int(values["placed"].amount) if "placed" in values else None,
+        higher_studies=int(values["higherStudies"].amount) if "higherStudies" in values else None,
+        reporting_year=median.source.reporting_year if median else None,
+        scope=median.scope if median else None,
+        source=median.source if median else None,
         avg_package=int(values["avgPackage"].amount) if "avgPackage" in values else None,
         highest_package=int(values["highestPackage"].amount)
         if "highestPackage" in values
@@ -72,6 +80,7 @@ def serialize_college(college: College) -> CollegeOut:
                 ),
             )
             for course in college.courses
+            if course.published
         ],
         placements=placements,
         metrics=college.metrics,
@@ -83,7 +92,7 @@ def literal_pattern(value: str) -> str:
 
 
 def qualifying_courses(query: CollegeQuery, preferences: Preferences | None):
-    conditions = []
+    conditions = [Course.published.is_(True)]
     if query.search.strip():
         pattern = f"%{literal_pattern(query.search.strip())}%"
         conditions.append(
@@ -155,7 +164,7 @@ async def list_colleges(
     if query.sort == "tuition":
         orders.append(grouped.c.tuition.asc().nulls_last())
     elif query.sort == "established":
-        orders.append(College.established.asc())
+        orders.append(College.established.asc().nulls_last())
     orders.extend([func.lower(College.name).asc(), College.slug.asc()])
     records = await db.scalars(
         select(College)
@@ -180,9 +189,15 @@ async def get_catalog(db: AsyncSession) -> list[CollegeOut]:
 
 async def get_filters(db: AsyncSession) -> FiltersOut:
     states = await db.scalars(select(College.state).distinct().order_by(College.state))
-    degrees = await db.scalars(select(Course.degree).distinct().order_by(Course.degree))
+    degrees = await db.scalars(
+        select(Course.degree).where(Course.published.is_(True)).distinct().order_by(Course.degree)
+    )
     low, high = (
-        await db.execute(select(func.min(Course.annual_tuition), func.max(Course.annual_tuition)))
+        await db.execute(
+            select(func.min(Course.annual_tuition), func.max(Course.annual_tuition)).where(
+                Course.published.is_(True)
+            )
+        )
     ).one()
     return FiltersOut(
         states=list(states), degrees=list(degrees), tuition_range={"min": low, "max": high}
@@ -212,6 +227,10 @@ async def compare_options(db: AsyncSession, options):
     output = []
     for option in options:
         await validate_option(db, option.college_id, option.course_id)
+        if option.course_id is not None:
+            course = await db.get(Course, option.course_id)
+            if not course.published:
+                raise HTTPException(422, "Selected programme is archived; workspace notes are kept")
         college = await db.scalar(
             select(College).where(College.id == option.college_id).options(*LOADS)
         )

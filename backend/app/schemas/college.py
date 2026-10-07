@@ -14,10 +14,13 @@ class SourceOut(APIModel):
     url: str | None
     reporting_year: int | None
     verified_at: datetime | None
+    document_sha256: str | None = None
+    document_format: str | None = None
+    notes: str | None = None
 
 
 class FactOut(APIModel):
-    raw_value: int
+    raw_value: float
     raw_unit: str
     factor: int
     normalized_value: int
@@ -48,6 +51,11 @@ class PlacementsOut(APIModel):
     top_recruiters: list[str] = Field(default_factory=list)
     reporting_year: int | None = None
     scope: str | None = None
+    median_package: int | None = None
+    graduates: int | None = None
+    placed: int | None = None
+    higher_studies: int | None = None
+    source: SourceOut | None = None
 
 
 class MetricOut(APIModel):
@@ -66,7 +74,7 @@ class CollegeOut(APIModel):
     city: str
     state: str
     type: str
-    established: int
+    established: int | None
     description: str
     image: str
     accreditation: str

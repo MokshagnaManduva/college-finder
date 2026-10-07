@@ -56,6 +56,8 @@ async def seed_data(db: AsyncSession, *, commit: bool = True):
     records = json.loads(DATA.read_text())
     for record in records:
         college_id = stable_id("college", record["slug"])
+        if await db.scalar(select(College.catalog_release).where(College.id == college_id)):
+            continue
         values = {
             key: record[key]
             for key in [

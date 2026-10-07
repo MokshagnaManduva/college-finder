@@ -1,41 +1,26 @@
-"""Opt-in initialization of an empty hosted demo; never creates users or resets data."""
+"""Opt-in, versioned official catalog initialization or upgrade; no users are created."""
 
 import asyncio
-from pathlib import Path
-
-from sqlalchemy import func, select
-from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import get_settings
 from app.db.session import get_engine, get_session_factory
-from app.models import College
-from app.schemas.review import ReviewManifest
-from app.services.review import import_review
-from seed.review import verify_documents
-from seed.seed import seed_data
+from seed.catalog import apply_catalog, load_catalog
 
 
-async def bootstrap_catalog(db: AsyncSession) -> bool:
+async def bootstrap_catalog(db) -> bool:
+    # Retain the existing hosted environment key so deployments upgrade in place.
     if not get_settings().bootstrap_demo_catalog:
         return False
-    root = Path(__file__).parent
-    manifest = ReviewManifest.model_validate_json(
-        (root / "data/reviewed_directory_2026.json").read_text()
-    )
-    verify_documents(manifest, root / "evidence")
+    catalog, digest = load_catalog()
     async with db.begin():
-        if await db.scalar(select(func.count()).select_from(College)):
-            return False
-        await seed_data(db, commit=False)
-        await import_review(db, manifest, apply=True)
-    return True
+        return await apply_catalog(db, catalog, digest)
 
 
 async def run():
     try:
         async with get_session_factory()() as db:
-            initialized = await bootstrap_catalog(db)
-        print("Hosted demo catalog initialized." if initialized else "Catalog left unchanged.")
+            changed = await bootstrap_catalog(db)
+        print("Official catalog upgraded." if changed else "Catalog already current or disabled.")
     finally:
         await get_engine().dispose()
 

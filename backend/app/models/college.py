@@ -1,7 +1,7 @@
 from datetime import datetime
 from uuid import UUID
 
-from sqlalchemy import CheckConstraint, ForeignKey, UniqueConstraint
+from sqlalchemy import CheckConstraint, ForeignKey, UniqueConstraint, func
 from sqlalchemy.dialects.postgresql import ARRAY, JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.types import DateTime, Numeric, Text
@@ -23,6 +23,9 @@ class DataSource(UUIDPrimaryKey, Base):
     url: Mapped[str | None]
     reporting_year: Mapped[int | None]
     verified_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    document_sha256: Mapped[str | None]
+    document_format: Mapped[str | None]
+    notes: Mapped[str | None] = mapped_column(Text)
 
 
 class College(UUIDPrimaryKey, Timestamps, Base):
@@ -33,12 +36,13 @@ class College(UUIDPrimaryKey, Timestamps, Base):
     city: Mapped[str]
     state: Mapped[str] = mapped_column(index=True)
     type: Mapped[str] = mapped_column(index=True)
-    established: Mapped[int]
+    established: Mapped[int | None]
     description: Mapped[str] = mapped_column(Text)
     image: Mapped[str] = mapped_column(default="", server_default="")
     accreditation: Mapped[str] = mapped_column(default="", server_default="")
     facilities: Mapped[list[str]] = mapped_column(ARRAY(Text))
     source_id: Mapped[UUID] = mapped_column(ForeignKey("data_sources.id"))
+    catalog_release: Mapped[str | None]
     source: Mapped[DataSource] = relationship(lazy="raise")
 
     courses: Mapped[list["Course"]] = relationship(
@@ -75,6 +79,7 @@ class Course(UUIDPrimaryKey, Base):
     fee_basis: Mapped[str]
     seats: Mapped[int | None]
     position: Mapped[int]
+    published: Mapped[bool] = mapped_column(default=True, server_default="true")
     source_id: Mapped[UUID] = mapped_column(ForeignKey("data_sources.id"))
     college: Mapped[College] = relationship(back_populates="courses", lazy="raise")
     source: Mapped[DataSource] = relationship(lazy="raise")
@@ -91,7 +96,7 @@ class CourseFact(UUIDPrimaryKey, Timestamps, Base):
     )
     course_id: Mapped[UUID] = mapped_column(ForeignKey("courses.id", ondelete="CASCADE"))
     kind: Mapped[str]
-    raw_value: Mapped[int]
+    raw_value: Mapped[float] = mapped_column(Numeric(14, 2))
     raw_unit: Mapped[str]
     factor: Mapped[int]
     normalized_value: Mapped[int]
@@ -123,3 +128,10 @@ class CollegeMetric(UUIDPrimaryKey, Base):
     scope: Mapped[str | None]
     source_id: Mapped[UUID] = mapped_column(ForeignKey("data_sources.id"))
     source: Mapped[DataSource] = relationship(lazy="raise")
+
+
+class CatalogRelease(Base):
+    __tablename__ = "catalog_releases"
+    version: Mapped[str] = mapped_column(primary_key=True)
+    manifest_sha256: Mapped[str]
+    applied_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

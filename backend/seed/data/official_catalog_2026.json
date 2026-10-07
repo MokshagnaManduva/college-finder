@@ -1,0 +1,1504 @@
+{
+  "version": "official-2026-10-08-r2",
+  "sources": {
+    "bombay-profile": {
+      "url": "https://www.iitb.ac.in/",
+      "documentSha256": "d7fa333094f55b8b2f488d3b733a97564ea870f5dbbdcfca21eb5a4211c26af8",
+      "documentFormat": "html",
+      "title": "IIT Bombay official website",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution identity and Mumbai campus; published programme and financial claims have separate sources."
+    },
+    "bombay-bachelors": {
+      "url": "https://acad.iitb.ac.in/admissions/bachelors",
+      "documentSha256": "3321334f705ac246177a4f362316fd3533f678abc3b85fa936ce1606ce1f9f46",
+      "documentFormat": "html",
+      "title": "IIT Bombay bachelor admissions",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Programme names; four-year B.Tech options are distinct from five-year dual degrees."
+    },
+    "delhi-profile": {
+      "url": "https://home.iitd.ac.in/for-faculty-thinking-what-iitd.php",
+      "documentSha256": "b6e2d8ca22aaee158ac6c055fc0a666083df1b6be1e620f33232028a705e0e6a",
+      "documentFormat": "html",
+      "title": "IIT Delhi institution profile",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution history, Hauz Khas campus and academic focus; establishment year 1961."
+    },
+    "delhi-prospectus": {
+      "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+      "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
+      "status": "verified",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+      "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+      "documentFormat": "pdf",
+      "notes": "2026–27 prospectus: programme list and four-year B.Tech structure; tuition has category-dependent remissions."
+    },
+    "madras-profile": {
+      "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
+      "documentSha256": "2a4f2cc711b231064521d772d57ea028a31b3298bbbd19ffbe55d57d8734f119",
+      "documentFormat": "html",
+      "title": "IIT Madras institution profile",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution identity, Chennai campus, academic focus and inauguration in 1959."
+    },
+    "bits-profile": {
+      "url": "https://www.bits-pilani.ac.in/pilani/",
+      "documentSha256": "2c99e556beefaba5852939df31f05fac41f65ec9715b2953c0a123af04887481",
+      "documentFormat": "html",
+      "title": "BITS Pilani — Pilani campus",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Pilani campus identity and academic programmes. Other BITS campuses have distinct admissions and campus contexts."
+    },
+    "bits-tuition": {
+      "url": "https://admissions.bits-pilani.ac.in/FD/FD_fee.html?22042026",
+      "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e",
+      "documentFormat": "html",
+      "title": "BITS first-degree fee schedule 2026–27",
+      "status": "verified",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional."
+    },
+    "bits-cse": {
+      "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/b-e-computer-science/",
+      "documentSha256": "82bcbfa802e4f8ee536cde691981e4734732a93846349b4c65131e6aa1c37b81",
+      "documentFormat": "html",
+      "title": "BITS B.E. Computer Science programme",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Programme offered at Pilani, Goa and Hyderabad; four-year single integrated first degree. Dual-degree duration is different."
+    },
+    "bits-math": {
+      "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/m-sc-mathematics/",
+      "documentSha256": "75858fd8de6c15b47bba7cb677010eb51f9940cf3aa4ebd23e69dc1f7ef797cf",
+      "documentFormat": "html",
+      "title": "BITS M.Sc. Mathematics (integrated first degree) programme",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Programme offered at Pilani, Goa and Hyderabad; four-year single integrated first degree. Dual-degree duration is different."
+    },
+    "trichy-profile": {
+      "url": "https://www.nitt.edu/home/about/",
+      "documentSha256": "037d022aa6dcd34349f6d86e9502d357c77a427e4157208281ebb8362bc3f26a",
+      "documentFormat": "html",
+      "title": "NIT Tiruchirappalli institution profile",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution identity, academic mission and Tiruchirappalli campus."
+    },
+    "vit-profile": {
+      "url": "https://vit.ac.in/about-vit",
+      "documentSha256": "1e448be45ff3e12d4fd5060787097e74968c377ef5779257c21581bd4b70d1d6",
+      "documentFormat": "html",
+      "title": "VIT institution profile",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Vellore institution profile: founded in 1984 as Vellore Engineering College; university status in 2001."
+    },
+    "vit-cse": {
+      "url": "https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses",
+      "documentSha256": "8e2b007a60e54479b702039ef96fbc07c4bf53ffa7038a3a4fb85e97524580c2",
+      "documentFormat": "html",
+      "title": "VIT Vellore School of Computer Science programmes",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Core Computer Science and Engineering programme at Vellore; current campus programme list."
+    },
+    "vit-duration": {
+      "url": "https://vit.ac.in/sites/default/files/programmes-offered-ug.pdf",
+      "documentSha256": "5d0d5606d42d33d3a2a3454f1dc3574ea1091159b9f401dd3ced84aa084e49ff",
+      "documentFormat": "pdf",
+      "title": "VIT undergraduate programme directory",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Undated official directory: B.Tech programmes last four years; core CSE includes Vellore, identified as campus (1). Confirmed against the current Vellore programme page."
+    },
+    "vit-fees": {
+      "url": "https://vit.ac.in/admission/ug/fee-structure",
+      "documentSha256": "5959b75d4cc05e1f1c91f14b02a1825962b8b085304faaed0895e763fc298c50",
+      "documentFormat": "html",
+      "title": "VIT undergraduate fee structure",
+      "status": "verified",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Group B, no-scholarship fee category 5: ₹4,90,000 tuition per year. Lower scholarship categories and counselling allocation change tuition. ₹5,000 caution deposit is separate."
+    },
+    "iima-profile": {
+      "url": "https://www.iima.ac.in/the-institute/about-iima",
+      "documentSha256": "34e3f9343512723d9d0eeed2684d96a7a6a1d7959d7db44468f66b6ffb73e42b",
+      "documentFormat": "html",
+      "title": "IIM Ahmedabad official institution page",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution identity and management education; programme duration has a separate official source."
+    },
+    "iima-pgp": {
+      "url": "https://iima.ac.in/academics/mba/about-program",
+      "documentSha256": "cb2d0d6297093511328d839193473ba8780359054df79128caa53c702dd6605f",
+      "documentFormat": "html",
+      "title": "IIM Ahmedabad PGP programme",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Two-year full-time Post Graduate Programme in Management; no fee figure taken from this page."
+    },
+    "iimb-pgp-index": {
+      "title": "IIM Bangalore PGP official programme page",
+      "url": "https://www.iimb.ac.in/index.php/programmes/pgp",
+      "status": "unverified",
+      "reportingYear": null,
+      "verifiedAt": null,
+      "documentSha256": null,
+      "documentFormat": null,
+      "notes": "Institution and two-year full-time MBA identity from the indexed official programme page; retained original document is unavailable."
+    },
+    "iimb-pgpem-index": {
+      "title": "IIM Bangalore PGPEM admissions",
+      "url": "https://www.iimb.ac.in/admissions/pgpem-admissions/admission-process",
+      "status": "unverified",
+      "reportingYear": null,
+      "verifiedAt": null,
+      "documentSha256": null,
+      "documentFormat": null,
+      "notes": "Two-year weekend MBA for working professionals; official indexed 2027–29 admission page. No fee or seat count is inferred."
+    },
+    "aiims-mbbs": {
+      "url": "https://docs.aiimsexams.ac.in/sites/Prospectus_1.pdf",
+      "documentSha256": "a7c5c1829266b41edc937e773676b70b94665e307c918fa56cf3e475210632e2",
+      "documentFormat": "pdf",
+      "title": "AIIMS New Delhi MBBS prospectus 2023",
+      "status": "verified",
+      "reportingYear": 2023,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF pp. 2–3: institution established under the 1956 Act; MBBS minimum five-and-a-half years including one-year compulsory internship. This older document is used for structure, not 2026 eligibility or seats."
+    },
+    "manipal-profile": {
+      "url": "https://www.manipal.edu/mu/about-us.html",
+      "documentSha256": "d03d867817be1ee59e8f97ee3e61123058e70784a755a7502e5a0fca61137122",
+      "documentFormat": "html",
+      "title": "Manipal Academy of Higher Education official website",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "MAHE institution identity and Manipal location. This entry does not merge fees or outcomes across MAHE campuses."
+    },
+    "manipal-cse": {
+      "url": "https://www.manipal.edu/mit/program-list/btech/btech-computer-science-engineering.html",
+      "documentSha256": "b6206776fe01088584362339d832b1fe17deea5a56ff26801c092ef278f64e80",
+      "documentFormat": "html",
+      "title": "MIT Manipal Computer Science and Engineering",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "B.Tech CSE at MIT Manipal: four years / eight semesters; campus-specific programme page."
+    },
+    "du-bulletin": {
+      "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
+      "documentSha256": "75cf271b3fbcc96ea64d1584b571c93fffc5fcd513fb9f123c7a866651842531",
+      "documentFormat": "pdf",
+      "title": "University of Delhi undergraduate bulletin 2026–27",
+      "status": "verified",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF pp. 7, 16–17, 28 and 37: institution established in 1922 and undergraduate programme identities. Course fees and teaching colleges vary; no single university-wide tuition is inferred."
+    },
+    "du-framework": {
+      "url": "https://academicaffairs.du.ac.in/",
+      "documentSha256": "2025dff70c0d90b0585742643711e8ad9bcd3d8a5109fff3664fcb8d5f396d7a",
+      "documentFormat": "html",
+      "title": "University of Delhi academic affairs — UGCF",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Four-year undergraduate framework implemented under UGCF 2022; multiple exit options. Planning duration uses the full four-year pathway, not an earlier exit."
+    },
+    "iisc-profile": {
+      "url": "https://www.iisc.ac.in/about/general-information/",
+      "documentSha256": "b12296c331c84d71bf3d5947e8d85b94e0a5c0d779dbfc9aaf264d6ef1ff303a",
+      "documentFormat": "html",
+      "title": "IISc general information",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution identity, Bengaluru location and links to undergraduate, postgraduate and research programmes."
+    },
+    "jadavpur-profile": {
+      "url": "https://jadavpuruniversity.in/about/",
+      "documentSha256": "60fc73955a34f8455d2b9413360ffbbefa08dd1e8a774856b86bdfa5ebaabce5",
+      "documentFormat": "html",
+      "title": "Jadavpur University institution profile",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "State university established on 24 December 1955; Kolkata main campus and academic disciplines."
+    },
+    "jadavpur-courses": {
+      "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
+      "documentSha256": "982a50c98ae67f7cb52e7064debf14cdb83b7bf8c532de1902a301470f961ea4",
+      "documentFormat": "html",
+      "title": "Jadavpur University programme and duration directory",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "University programme table: B.E. Computer Science and Engineering and B.E. Electronics and Telecommunication Engineering are four-year programmes. Admissions route on this page concerns foreign students; no eligibility or fee assumptions are reused."
+    },
+    "christ-profile": {
+      "url": "https://christuniversity.in/history",
+      "documentSha256": "e64250f2d7fd2b5e54995b0ac0fe96c4774545d939b6280715dc08d85c49c9fe",
+      "documentFormat": "html",
+      "title": "CHRIST institution history",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Founded as Christ College in 1969; Bengaluru central-campus institution history."
+    },
+    "christ-mba": {
+      "url": "https://christuniversity.in/courses/MzM0",
+      "documentSha256": "4b78a02dd1dd14ce0f9ec17e18a8dddec6fa20ef6e7be638024dc5e586114a10",
+      "documentFormat": "html",
+      "title": "CHRIST Bangalore Central Campus MBA",
+      "status": "verified",
+      "reportingYear": 2027,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Standard full-time MBA: two years / six trimesters. Published page currently concerns 2027 admission; dual-degree fees and eligibility are not reused."
+    },
+    "amity-profile": {
+      "url": "https://www.amity.edu/noida/",
+      "documentSha256": "5e52bfa28aebb33a5e004fac76dedd465bbba81ae823e92fbd3def2d46e7ca0d",
+      "documentFormat": "html",
+      "title": "Amity University Uttar Pradesh — Noida",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution identity and Noida campus; programme structure uses the separate official prospectus."
+    },
+    "amity-programmes": {
+      "url": "https://www.amity.edu/noida/accf/pdf/admission_prospectus_2025.pdf",
+      "documentSha256": "7ef4a89d6cf097b404c302ee567b8bc15df85d381147b690950ac51d1eab010e",
+      "documentFormat": "pdf",
+      "title": "Amity Noida admission prospectus 2025",
+      "status": "verified",
+      "reportingYear": 2025,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF p. 21 / printed p. 18, programme code 10052: four-year B.Tech Computer Science and Engineering. The 2025 first-semester fees are not presented as current 2026 tuition."
+    },
+    "srm-btech": {
+      "url": "https://applications.srmist.edu.in/btech",
+      "documentSha256": "0e719e0f434fa6dfc15e290e7859546d61e2cca4439dc9a57c18dddd1ca2b7a6",
+      "documentFormat": "html",
+      "title": "SRMIST B.Tech campus programme directory",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "SRMIST main campus at Kattankulathur: core CSE and CSE with AI/ML are listed separately. Other SRM institutions and campuses are excluded."
+    },
+    "srm-nirf-alt": {
+      "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
+      "documentSha256": "7c5ed5f56f0eb8e2f90eacaed4c5302bcb7ff0a39be33a99d79812594b518791",
+      "documentFormat": "html",
+      "title": "SRMIST NIRF Engineering submission 2026, p. 1",
+      "status": "verified",
+      "reportingYear": 2025,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution-reported 2024–25 outcomes for UG four-year engineering programmes across departments and SRMIST campuses; not a Kattankulathur CSE-only report."
+    },
+    "symbiosis-profile": {
+      "url": "https://www.siu.edu.in/",
+      "documentSha256": "7111dfe90dc28809afe36306e2c0c5a0e199c38d6df7a04b442d3de89b8a89be",
+      "documentFormat": "html",
+      "title": "Symbiosis International official website",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "University identity and constituent-institution structure. The listed MBA is taught at SIBM Pune, not every Symbiosis institute."
+    },
+    "sibm-mba-index": {
+      "url": "https://sibm.edu/mobile/mba",
+      "documentSha256": "dd74e2a88a52056af052b314c5633420a75a85fc4dd619a5fc695452160f8238",
+      "documentFormat": "html",
+      "title": "SIBM Pune MBA programme",
+      "status": "verified",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Two-year full-time residential MBA at SIBM Pune. Fee evidence applies to the 2026–28 batch."
+    },
+    "sibm-fees": {
+      "url": "https://sibm.edu/mobile/assets/mobile/pdf/mbafee2026-28.pdf",
+      "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443",
+      "documentFormat": "pdf",
+      "title": "SIBM Pune MBA fee structure 2026–28",
+      "status": "verified",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF p. 1: Indian MBA academic fee is paid in two instalments of ₹6,55,000 each per year (₹13,10,000 annualized). Deposits, hostel, mess and government taxes are separate."
+    },
+    "pune-profile": {
+      "url": "https://www.unipune.ac.in/university_files/about_university.htm",
+      "documentSha256": "0d708542fd7d3d778d8701409b759a3789c1643371dc160ff22929fb3c485c47",
+      "documentFormat": "html",
+      "title": "Savitribai Phule Pune University institution profile",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "University identity, Pune location and establishment on 10 February 1949."
+    },
+    "pumba-mba": {
+      "url": "https://www.pumba.in/programs/mba-plus-course-structure.htm",
+      "documentSha256": "f0fbf4e95f4ff8fc7142f20bd577bdbdf7b42bbdecce4cbc2419269c0af1d256",
+      "documentFormat": "html",
+      "title": "PUMBA MBA course structure",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Official course structure states two years / six trimesters; teaching is at the university Department of Management Sciences."
+    },
+    "osmania-profile": {
+      "url": "https://www.osmania.ac.in/aboutus.php",
+      "documentSha256": "adf2507bb8cdc643dd85ea5ecb84e2016afbfd2e1b98d4e14d0cf36b5d1d3455",
+      "documentFormat": "html",
+      "title": "Osmania University institution history",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Institution history and Hyderabad campus; programme details use the separate University College of Engineering page."
+    },
+    "osmania-civil": {
+      "url": "https://uceou.edu/dept-civil.php",
+      "documentSha256": "b925431b35c234c4b5a981a23bb0e094c2ffb1b33ef7da3e169d347a8ac56344",
+      "documentFormat": "html",
+      "title": "University College of Engineering, Osmania — Civil",
+      "status": "verified",
+      "reportingYear": null,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "Department table: regular B.E. Civil Engineering lasts four years. The three-year working-professional programme is distinct and is excluded."
+    },
+    "madras-nirf": {
+      "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
+      "documentSha256": "2ff699c6b1491a8b8e3fa31786e1105000bd8406c146c00bdd9b51ab81e93e1c",
+      "documentFormat": "pdf",
+      "title": "IIT Madras NIRF Engineering submission 2026",
+      "status": "verified",
+      "reportingYear": 2025,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
+    },
+    "trichy-nirf": {
+      "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
+      "documentSha256": "9793df9f330f6092c9860203594cddad3d91e70e8bf6277e443b6ce869a8f270",
+      "documentFormat": "pdf",
+      "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
+      "status": "verified",
+      "reportingYear": 2025,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
+    },
+    "iisc-nirf": {
+      "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
+      "documentSha256": "6f6c03214c684d6ca0d02c74339710d1f20d119e4390d16e7d40f3a9b42b7359",
+      "documentFormat": "pdf",
+      "title": "IISc NIRF Overall submission 2026",
+      "status": "verified",
+      "reportingYear": 2025,
+      "verifiedAt": "2026-10-07T19:57:04Z",
+      "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
+    }
+  },
+  "colleges": [
+    {
+      "slug": "iit-bombay",
+      "name": "Indian Institute of Technology Bombay",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "type": "Institute",
+      "established": null,
+      "description": "IIT Bombay is an engineering and research institute in Mumbai. Its undergraduate academic office lists Computer Science and Engineering and Electrical Engineering among its programmes.",
+      "sourceKey": "bombay-profile",
+      "courses": [
+        {
+          "id": "a2b49c90-68b0-58bd-8130-03374db0a2bf",
+          "name": "B.Tech Computer Science and Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "bombay-bachelors",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 100000,
+              "rawUnit": "INR/semester",
+              "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+              "source": {
+                "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+                "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T16:46:06Z",
+                "reviewer": "College Finder source review",
+                "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+              "source": {
+                "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+                "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T16:46:06Z",
+                "reviewer": "College Finder source review",
+                "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+              }
+            }
+          ]
+        },
+        {
+          "id": "70206e4a-6a7c-55bf-ab22-6dc185ee72c6",
+          "name": "B.Tech Electrical Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "bombay-bachelors",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 100000,
+              "rawUnit": "INR/semester",
+              "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
+              "source": {
+                "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+                "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration.",
+              "source": {
+                "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
+                "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "iit-delhi",
+      "name": "Indian Institute of Technology Delhi",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "Institute",
+      "established": 1961,
+      "description": "IIT Delhi is an autonomous research institution whose main campus is in Hauz Khas, New Delhi. It offers undergraduate, postgraduate and doctoral programmes in science and technology.",
+      "sourceKey": "delhi-profile",
+      "courses": [
+        {
+          "id": "db12c89b-4c25-5b31-ace7-1a69324054bf",
+          "name": "B.Tech Computer Science and Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "delhi-prospectus",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 100000,
+              "rawUnit": "INR/semester",
+              "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
+              "source": {
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+                "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
+                "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary.",
+              "source": {
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+                "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+                "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25"
+              }
+            }
+          ]
+        },
+        {
+          "id": "7478a43c-d800-595a-8ba2-d33fb37a30bf",
+          "name": "B.Tech Mechanical Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "delhi-prospectus",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 100000,
+              "rawUnit": "INR/semester",
+              "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
+              "source": {
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+                "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
+                "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary.",
+              "source": {
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:03:28.525849+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+                "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+                "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "iit-madras",
+      "name": "Indian Institute of Technology Madras",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "type": "Institute",
+      "established": 1959,
+      "description": "IIT Madras is an engineering and science research institute in Chennai. Its residential campus houses academic departments and research centres in engineering and the sciences.",
+      "sourceKey": "madras-profile",
+      "courses": [
+        {
+          "id": "1cf0c116-5fba-5ade-be7c-d2a830d51df3",
+          "name": "B.Tech Computer Science and Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "madras-profile",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 100000,
+              "rawUnit": "INR/semester",
+              "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras.",
+              "source": {
+                "title": "IIT Madras Jul–Nov 2026 fee circular, Annexure I (PDF page 5)",
+                "url": "https://fees.iitm.ac.in/assets/circular/Institute_fee_circular_for_jul_nov_2026.pdf#page=5",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "7b14be024226db07006d6e3b561959fa3c817dec2ada077308e5cbe9bf824570"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 8,
+              "rawUnit": "semesters",
+              "notes": "The 2015-onward ordinance specifies eight regular semesters, corroborated by the current institute undergraduate page listing a four-year B.Tech. Converted to 48 planning months using two semesters per year; this is standard programme length, not teaching weeks or a guarantee of individual completion time.",
+              "source": {
+                "title": "IIT Madras B.Tech ordinances from 2015 onward, O.3 (PDF page 5)",
+                "url": "https://www.iitm.ac.in/sites/default/files/Ordinances/b.tech-2015.pdf#page=5",
+                "reportingYear": 2015,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a1354f1519366f5a996573153c4ac6deaeb8e28c18cc5acd62f23d2ab18fe93e"
+              }
+            }
+          ]
+        },
+        {
+          "id": "468ccd2d-0f7f-56bf-adbf-db3b0643e905",
+          "name": "B.Tech Chemical Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "madras-profile",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 100000,
+              "rawUnit": "INR/semester",
+              "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras.",
+              "source": {
+                "title": "IIT Madras Jul–Nov 2026 fee circular, Annexure I (PDF page 5)",
+                "url": "https://fees.iitm.ac.in/assets/circular/Institute_fee_circular_for_jul_nov_2026.pdf#page=5",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "7b14be024226db07006d6e3b561959fa3c817dec2ada077308e5cbe9bf824570"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 8,
+              "rawUnit": "semesters",
+              "notes": "The 2015-onward ordinance specifies eight regular semesters, corroborated by the current institute undergraduate page listing a four-year B.Tech. Converted to 48 planning months using two semesters per year; this is standard programme length, not teaching weeks or a guarantee of individual completion time.",
+              "source": {
+                "title": "IIT Madras B.Tech ordinances from 2015 onward, O.3 (PDF page 5)",
+                "url": "https://www.iitm.ac.in/sites/default/files/Ordinances/b.tech-2015.pdf#page=5",
+                "reportingYear": 2015,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a1354f1519366f5a996573153c4ac6deaeb8e28c18cc5acd62f23d2ab18fe93e"
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "median": 1778000,
+        "graduates": 781,
+        "placed": 631,
+        "higherStudies": 147,
+        "scope": "UG four-year programmes (institution-wide)",
+        "sourceKey": "madras-nirf"
+      }
+    },
+    {
+      "slug": "bits-pilani",
+      "name": "Birla Institute of Technology and Science, Pilani",
+      "city": "Pilani",
+      "state": "Rajasthan",
+      "type": "University",
+      "established": null,
+      "description": "The Pilani campus of Birla Institute of Technology and Science offers integrated first-degree programmes, including Computer Science and Mathematics. M.Sc. here is an integrated first degree; a dual degree changes the study duration.",
+      "sourceKey": "bits-profile",
+      "courses": [
+        {
+          "id": "a7506ac6-67b7-512a-babb-806695d1a6c1",
+          "name": "B.E. Computer Science",
+          "degree": "B.E.",
+          "durationMonths": 48,
+          "sourceKey": "bits-cse",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "Four-year single integrated first degree; campus Pilani. Dual-degree study is not represented.",
+              "source": {
+                "title": "BITS B.E. Computer Science programme",
+                "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/b-e-computer-science/",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "82bcbfa802e4f8ee536cde691981e4734732a93846349b4c65131e6aa1c37b81",
+                "documentFormat": "html"
+              }
+            },
+            {
+              "kind": "tuition",
+              "rawValue": 291500,
+              "rawUnit": "INR/semester",
+              "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional.",
+              "source": {
+                "title": "BITS first-degree fee schedule 2026–27",
+                "url": "https://admissions.bits-pilani.ac.in/FD/FD_fee.html?22042026",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        },
+        {
+          "id": "20e8f4d4-cdd3-5540-a846-747b31b06823",
+          "name": "M.Sc. Mathematics (integrated first degree)",
+          "degree": "M.Sc.",
+          "durationMonths": 48,
+          "sourceKey": "bits-math",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "Four-year single integrated first degree; campus Pilani. Dual-degree study is not represented.",
+              "source": {
+                "title": "BITS M.Sc. Mathematics (integrated first degree) programme",
+                "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/m-sc-mathematics/",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "75858fd8de6c15b47bba7cb677010eb51f9940cf3aa4ebd23e69dc1f7ef797cf",
+                "documentFormat": "html"
+              }
+            },
+            {
+              "kind": "tuition",
+              "rawValue": 291500,
+              "rawUnit": "INR/semester",
+              "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional.",
+              "source": {
+                "title": "BITS first-degree fee schedule 2026–27",
+                "url": "https://admissions.bits-pilani.ac.in/FD/FD_fee.html?22042026",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nit-trichy",
+      "name": "National Institute of Technology Tiruchirappalli",
+      "city": "Tiruchirappalli",
+      "state": "Tamil Nadu",
+      "type": "Institute",
+      "established": null,
+      "description": "National Institute of Technology Tiruchirappalli offers undergraduate, postgraduate and doctoral study in engineering and related disciplines. The courses shown here are its four-year B.Tech programmes.",
+      "sourceKey": "trichy-profile",
+      "courses": [
+        {
+          "id": "81e7a464-7301-5a0a-9c8c-f861c38980a8",
+          "name": "B.Tech Civil Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "trichy-profile",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 62500,
+              "rawUnit": "INR/semester",
+              "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy.",
+              "source": {
+                "title": "NIT Trichy B.Tech fee structure, 2026 admission batch (PDF page 1)",
+                "url": "https://www.nitt.edu/home/academics/fees_section/ug_courses_fee_structure/B.Tech%202026.pdf#page=1",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "e69d5f107fa8518f1ea28f430a28f9278d2113ca2610092ea159caf408c741f1"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 8,
+              "rawUnit": "semesters",
+              "notes": "The regulations applicable from the 2024 batch define a normal eight-semester B.Tech. Converted to 48 planning months using two regular semesters per year. This describes standard programme length; permitted extensions, breaks and individual completion time are separate.",
+              "source": {
+                "title": "NIT Trichy B.Tech Regulations 2024, B.19.0 (PDF page 23)",
+                "url": "https://www.nitt.edu/home/academics/rules/Regulations_B.Tech._2024.pdf#page=23",
+                "reportingYear": 2024,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a621afa7e7f6bded15029b79c4a887882304d89ff9ea46f160820341fef5c267"
+              }
+            }
+          ]
+        },
+        {
+          "id": "4d8c2bb3-fce0-50cd-aca0-0a1f0ca49479",
+          "name": "B.Tech Computer Science and Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "trichy-profile",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 62500,
+              "rawUnit": "INR/semester",
+              "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy.",
+              "source": {
+                "title": "NIT Trichy B.Tech fee structure, 2026 admission batch (PDF page 1)",
+                "url": "https://www.nitt.edu/home/academics/fees_section/ug_courses_fee_structure/B.Tech%202026.pdf#page=1",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "e69d5f107fa8518f1ea28f430a28f9278d2113ca2610092ea159caf408c741f1"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 8,
+              "rawUnit": "semesters",
+              "notes": "The regulations applicable from the 2024 batch define a normal eight-semester B.Tech. Converted to 48 planning months using two regular semesters per year. This describes standard programme length; permitted extensions, breaks and individual completion time are separate.",
+              "source": {
+                "title": "NIT Trichy B.Tech Regulations 2024, B.19.0 (PDF page 23)",
+                "url": "https://www.nitt.edu/home/academics/rules/Regulations_B.Tech._2024.pdf#page=23",
+                "reportingYear": 2024,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "a621afa7e7f6bded15029b79c4a887882304d89ff9ea46f160820341fef5c267"
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "median": 1401000,
+        "graduates": 981,
+        "placed": 738,
+        "higherStudies": 159,
+        "scope": "UG four-year programmes (institution-wide)",
+        "sourceKey": "trichy-nirf"
+      }
+    },
+    {
+      "slug": "vit-vellore",
+      "name": "Vellore Institute of Technology — Vellore",
+      "city": "Vellore",
+      "state": "Tamil Nadu",
+      "type": "University",
+      "established": 1984,
+      "description": "Vellore Institute of Technology began as Vellore Engineering College in 1984. This entry covers its Vellore campus; fee categories and programmes differ across campuses.",
+      "sourceKey": "vit-profile",
+      "courses": [
+        {
+          "id": "25192268-3147-5d9d-bf25-55d37b1092a9",
+          "name": "B.Tech Computer Science and Engineering (Vellore)",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "vit-cse",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "Undated official directory: B.Tech programmes last four years; core CSE includes Vellore, identified as campus (1). Confirmed against the current Vellore programme page.",
+              "source": {
+                "title": "VIT undergraduate programme directory",
+                "url": "https://vit.ac.in/sites/default/files/programmes-offered-ug.pdf",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "5d0d5606d42d33d3a2a3454f1dc3574ea1091159b9f401dd3ced84aa084e49ff",
+                "documentFormat": "pdf"
+              }
+            },
+            {
+              "kind": "tuition",
+              "rawValue": 490000,
+              "rawUnit": "INR/year",
+              "notes": "Group B, no-scholarship fee category 5: ₹4,90,000 tuition per year. Lower scholarship categories and counselling allocation change tuition. ₹5,000 caution deposit is separate.",
+              "source": {
+                "title": "VIT undergraduate fee structure",
+                "url": "https://vit.ac.in/admission/ug/fee-structure",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "5959b75d4cc05e1f1c91f14b02a1825962b8b085304faaed0895e763fc298c50",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "iim-ahmedabad",
+      "name": "Indian Institute of Management Ahmedabad",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "type": "Institute",
+      "established": null,
+      "description": "Indian Institute of Management Ahmedabad offers management education and research. Its full-time Post Graduate Programme in Management spans two years.",
+      "sourceKey": "iima-profile",
+      "courses": [
+        {
+          "id": "f132b5da-2d50-5ea9-bcda-9803f015b731",
+          "name": "PGP (MBA)",
+          "degree": "MBA",
+          "durationMonths": 24,
+          "sourceKey": "iima-pgp",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 2,
+              "rawUnit": "years",
+              "notes": "Two-year full-time Post Graduate Programme in Management; no fee figure taken from this page.",
+              "source": {
+                "title": "IIM Ahmedabad PGP programme",
+                "url": "https://iima.ac.in/academics/mba/about-program",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "cb2d0d6297093511328d839193473ba8780359054df79128caa53c702dd6605f",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "iim-bangalore",
+      "name": "Indian Institute of Management Bangalore",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "type": "Institute",
+      "established": null,
+      "description": "Indian Institute of Management Bangalore offers the two-year full-time PGP leading to an MBA. Its PGPEM is a separate two-year weekend MBA for working professionals.",
+      "sourceKey": "iimb-pgp-index",
+      "courses": [
+        {
+          "id": "27976a30-73a5-54d6-af5e-4eb90a510cfb",
+          "name": "PGP (MBA)",
+          "degree": "MBA",
+          "durationMonths": 24,
+          "sourceKey": "iimb-pgp-index",
+          "facts": []
+        },
+        {
+          "id": "448e558d-bea5-56c9-9093-47fe2cac7cb9",
+          "name": "PGPEM (Weekend MBA)",
+          "degree": "MBA",
+          "durationMonths": 24,
+          "sourceKey": "iimb-pgpem-index",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "slug": "aiims-delhi",
+      "name": "All India Institute of Medical Sciences, New Delhi",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "Institute",
+      "established": 1956,
+      "description": "All India Institute of Medical Sciences, New Delhi was established under an Act of Parliament in 1956. It provides medical education and awards the MBBS degree, with compulsory internship included in its normal duration.",
+      "sourceKey": "aiims-mbbs",
+      "courses": [
+        {
+          "id": "7e47b7c1-4151-5764-8569-47b17d73c066",
+          "name": "MBBS",
+          "degree": "MBBS",
+          "durationMonths": 66,
+          "sourceKey": "aiims-mbbs",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 5.5,
+              "rawUnit": "years",
+              "notes": "PDF pp. 2–3: institution established under the 1956 Act; MBBS minimum five-and-a-half years including one-year compulsory internship. This older document is used for structure, not 2026 eligibility or seats.",
+              "source": {
+                "title": "AIIMS New Delhi MBBS prospectus 2023",
+                "url": "https://docs.aiimsexams.ac.in/sites/Prospectus_1.pdf",
+                "reportingYear": 2023,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "a7c5c1829266b41edc937e773676b70b94665e307c918fa56cf3e475210632e2",
+                "documentFormat": "pdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "manipal-university",
+      "name": "Manipal Academy of Higher Education",
+      "city": "Manipal",
+      "state": "Karnataka",
+      "type": "University",
+      "established": null,
+      "description": "Manipal Academy of Higher Education includes Manipal Institute of Technology. The Computer Science and Engineering programme shown here is taught at MIT Manipal, rather than the Bengaluru or overseas campuses.",
+      "sourceKey": "manipal-profile",
+      "courses": [
+        {
+          "id": "13b472e1-407d-57f8-923b-47e1d65c9238",
+          "name": "B.Tech Computer Science and Engineering (MIT Manipal)",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "manipal-cse",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "B.Tech CSE at MIT Manipal: four years / eight semesters; campus-specific programme page.",
+              "source": {
+                "title": "MIT Manipal Computer Science and Engineering",
+                "url": "https://www.manipal.edu/mit/program-list/btech/btech-computer-science-engineering.html",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "b6206776fe01088584362339d832b1fe17deea5a56ff26801c092ef278f64e80",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "delhi-university",
+      "name": "University of Delhi",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "type": "University",
+      "established": 1922,
+      "description": "University of Delhi, established in 1922, offers undergraduate programmes through its colleges. Economics and Computer Science options have multiple teaching-college choices, each with its own fees and campus context.",
+      "sourceKey": "du-bulletin",
+      "courses": [
+        {
+          "id": "7bcc38f9-bee4-5d1b-9454-d3dfd4e67f9f",
+          "name": "B.A. (Hons.) Economics",
+          "degree": "B.A.",
+          "durationMonths": 48,
+          "sourceKey": "du-bulletin",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "Four-year undergraduate framework implemented under UGCF 2022; multiple exit options. Planning duration uses the full four-year pathway, not an earlier exit.",
+              "source": {
+                "title": "University of Delhi academic affairs — UGCF",
+                "url": "https://academicaffairs.du.ac.in/",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "2025dff70c0d90b0585742643711e8ad9bcd3d8a5109fff3664fcb8d5f396d7a",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        },
+        {
+          "id": "03c05d81-6870-5f02-8ee7-266a8e8231e4",
+          "name": "B.Sc. (Hons.) Computer Science",
+          "degree": "B.Sc.",
+          "durationMonths": 48,
+          "sourceKey": "du-bulletin",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "Four-year undergraduate framework implemented under UGCF 2022; multiple exit options. Planning duration uses the full four-year pathway, not an earlier exit.",
+              "source": {
+                "title": "University of Delhi academic affairs — UGCF",
+                "url": "https://academicaffairs.du.ac.in/",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "2025dff70c0d90b0585742643711e8ad9bcd3d8a5109fff3664fcb8d5f396d7a",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "iisc-bangalore",
+      "name": "Indian Institute of Science",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "type": "Institute",
+      "established": null,
+      "description": "Indian Institute of Science in Bengaluru offers undergraduate science study alongside postgraduate and research programmes. Its Bachelor of Science (Research) is a four-year programme; tuition depends on the entry cohort and applicable exemptions.",
+      "sourceKey": "iisc-profile",
+      "courses": [
+        {
+          "id": "3a68467c-203d-5d07-97b3-81e9ef84945b",
+          "name": "Bachelor of Science (Research)",
+          "degree": "B.S.",
+          "durationMonths": 48,
+          "sourceKey": "iisc-profile",
+          "facts": [
+            {
+              "kind": "tuition",
+              "rawValue": 80000,
+              "rawUnit": "INR/year",
+              "notes": "Bachelor of Science (Research), students joining from AY 2026–27 onward: General/EWS/OBC annual tuition before applicable financial support. This is an annual rate, not a semester fee; earlier entrants have a different rate. SC/ST/PwD tuition is waived. Other academic fees, hostel, mess and deposits are excluded; confirm applicable support and future rates with IISc.",
+              "source": {
+                "title": "IISc fee circular, AY 2026–27, new entrants section 1A (PDF page 1)",
+                "url": "https://bs-ug.iisc.ac.in/assets/Fee-Structure-Circular-AY-2026-27.pdf#page=1",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "f2167ea7e472beba5ff648b971b54bf64a6e5768a8a7b796e5a2ff9b1455d914"
+              }
+            },
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "The handbook defines the four-year Bachelor of Science (Research), organised into eight semesters. The current 2026 admissions page also describes a four-year programme. This is standard programme duration; optional further study and individual extensions are separate.",
+              "source": {
+                "title": "IISc UG Handbook 2025–26, section 1.1 (PDF page 4)",
+                "url": "https://bs-ug.iisc.ac.in/assets/UG-HandBook-25-26.pdf#page=4",
+                "reportingYear": 2025,
+                "verifiedAt": "2026-10-07T17:54:31.467294+00:00",
+                "reviewer": "College Finder source review",
+                "documentSha256": "58fdcb4b1f8e0b9595268324a7f7789973095d5bd78882a45145e7a79ea04c73"
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "median": 2250000,
+        "graduates": 97,
+        "placed": 3,
+        "higherStudies": 93,
+        "scope": "UG four-year programmes (institution-wide)",
+        "sourceKey": "iisc-nirf"
+      }
+    },
+    {
+      "slug": "jadavpur-university",
+      "name": "Jadavpur University",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "type": "University",
+      "established": 1955,
+      "description": "Jadavpur University is a state university in Kolkata founded in 1955. Its engineering and technology faculty lists four-year undergraduate programmes in Computer Science and Engineering and Electronics and Telecommunication Engineering.",
+      "sourceKey": "jadavpur-profile",
+      "courses": [
+        {
+          "id": "73e74daa-2102-5d76-98dd-6decaa5c3e47",
+          "name": "B.E. Computer Science and Engineering",
+          "degree": "B.E.",
+          "durationMonths": 48,
+          "sourceKey": "jadavpur-courses",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "University programme table: B.E. Computer Science and Engineering and B.E. Electronics and Telecommunication Engineering are four-year programmes. Admissions route on this page concerns foreign students; no eligibility or fee assumptions are reused.",
+              "source": {
+                "title": "Jadavpur University programme and duration directory",
+                "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "982a50c98ae67f7cb52e7064debf14cdb83b7bf8c532de1902a301470f961ea4",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d1ee8f2f-2fd5-5b1a-944e-21b12dff6f24",
+          "name": "B.E. Electronics and Telecommunication Engineering",
+          "degree": "B.E.",
+          "durationMonths": 48,
+          "sourceKey": "jadavpur-courses",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "University programme table: B.E. Computer Science and Engineering and B.E. Electronics and Telecommunication Engineering are four-year programmes. Admissions route on this page concerns foreign students; no eligibility or fee assumptions are reused.",
+              "source": {
+                "title": "Jadavpur University programme and duration directory",
+                "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "982a50c98ae67f7cb52e7064debf14cdb83b7bf8c532de1902a301470f961ea4",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "christ-university",
+      "name": "CHRIST (Deemed to be University)",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "type": "University",
+      "established": 1969,
+      "description": "CHRIST began as Christ College in Bengaluru in 1969. The MBA shown here belongs to the Bangalore Central Campus; other campuses and international collaborations have distinct programme contexts.",
+      "sourceKey": "christ-profile",
+      "courses": [
+        {
+          "id": "d1e8a574-b976-5466-a8f5-bd08f17263af",
+          "name": "MBA (Bangalore Central Campus)",
+          "degree": "MBA",
+          "durationMonths": 24,
+          "sourceKey": "christ-mba",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 2,
+              "rawUnit": "years",
+              "notes": "Standard full-time MBA: two years / six trimesters. Published page currently concerns 2027 admission; dual-degree fees and eligibility are not reused.",
+              "source": {
+                "title": "CHRIST Bangalore Central Campus MBA",
+                "url": "https://christuniversity.in/courses/MzM0",
+                "reportingYear": 2027,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "4b78a02dd1dd14ce0f9ec17e18a8dddec6fa20ef6e7be638024dc5e586114a10",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "amity-university-noida",
+      "name": "Amity University Uttar Pradesh — Noida",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "type": "University",
+      "established": null,
+      "description": "Amity University Uttar Pradesh offers engineering and other programmes at its Noida campus. The listed Computer Science and Engineering degree is a four-year B.Tech; fee categories need separate confirmation.",
+      "sourceKey": "amity-profile",
+      "courses": [
+        {
+          "id": "8a61a06a-9b47-5121-b424-1e38914e0b31",
+          "name": "B.Tech Computer Science and Engineering",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "amity-programmes",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "PDF p. 21 / printed p. 18, programme code 10052: four-year B.Tech Computer Science and Engineering. The 2025 first-semester fees are not presented as current 2026 tuition.",
+              "source": {
+                "title": "Amity Noida admission prospectus 2025",
+                "url": "https://www.amity.edu/noida/accf/pdf/admission_prospectus_2025.pdf",
+                "reportingYear": 2025,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "7ef4a89d6cf097b404c302ee567b8bc15df85d381147b690950ac51d1eab010e",
+                "documentFormat": "pdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "srm-university",
+      "name": "SRM Institute of Science and Technology",
+      "city": "Kattankulathur",
+      "state": "Tamil Nadu",
+      "type": "University",
+      "established": null,
+      "description": "SRM Institute of Science and Technology offers B.Tech programmes at its main Kattankulathur campus. The listed core CSE and AI/ML specialization are distinct programmes; other SRM campuses have separate admissions contexts.",
+      "sourceKey": "srm-btech",
+      "courses": [
+        {
+          "id": "74363da7-44e6-58eb-9b4f-2c37fbf0fb29",
+          "name": "B.Tech Computer Science and Engineering (Kattankulathur)",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "srm-btech",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "NIRF engineering submission identifies the standard UG programme group as four years. Programme and main-campus identity are confirmed separately by SRMIST admissions; integrated and lateral-entry pathways are excluded.",
+              "source": {
+                "title": "SRMIST NIRF Engineering submission 2026, p. 1",
+                "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "7c5ed5f56f0eb8e2f90eacaed4c5302bcb7ff0a39be33a99d79812594b518791",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        },
+        {
+          "id": "9ff45084-663d-5682-bced-bd54725e7960",
+          "name": "B.Tech Computer Science and Engineering — AI and ML (Kattankulathur)",
+          "degree": "B.Tech",
+          "durationMonths": 48,
+          "sourceKey": "srm-btech",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "NIRF engineering submission identifies the standard UG programme group as four years. Programme and main-campus identity are confirmed separately by SRMIST admissions; integrated and lateral-entry pathways are excluded.",
+              "source": {
+                "title": "SRMIST NIRF Engineering submission 2026, p. 1",
+                "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "7c5ed5f56f0eb8e2f90eacaed4c5302bcb7ff0a39be33a99d79812594b518791",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ],
+      "outcomes": {
+        "median": 632000,
+        "graduates": 4408,
+        "placed": 4144,
+        "higherStudies": 142,
+        "scope": "UG four-year programmes (institution-wide)",
+        "sourceKey": "srm-nirf-alt"
+      }
+    },
+    {
+      "slug": "symbiosis-pune",
+      "name": "Symbiosis International (Deemed University)",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "type": "University",
+      "established": null,
+      "description": "Symbiosis International includes constituent institutes with separate programmes and admissions. The MBA listed here is the two-year residential programme at Symbiosis Institute of Business Management, Pune.",
+      "sourceKey": "symbiosis-profile",
+      "courses": [
+        {
+          "id": "34a59f0f-6240-556a-8fc9-77b590becd2a",
+          "name": "MBA (SIBM Pune)",
+          "degree": "MBA",
+          "durationMonths": 24,
+          "sourceKey": "sibm-mba-index",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 2,
+              "rawUnit": "years",
+              "notes": "Two-year full-time residential MBA at SIBM Pune. Fee evidence applies to the 2026–28 batch.",
+              "source": {
+                "title": "SIBM Pune MBA programme",
+                "url": "https://sibm.edu/mobile/mba",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "dd74e2a88a52056af052b314c5633420a75a85fc4dd619a5fc695452160f8238",
+                "documentFormat": "html"
+              }
+            },
+            {
+              "kind": "tuition",
+              "rawValue": 655000,
+              "rawUnit": "INR/installment",
+              "notes": "PDF p. 1: Indian MBA academic fee is paid in two instalments of ₹6,55,000 each per year (₹13,10,000 annualized). Deposits, hostel, mess and government taxes are separate.",
+              "source": {
+                "title": "SIBM Pune MBA fee structure 2026–28",
+                "url": "https://sibm.edu/mobile/assets/mobile/pdf/mbafee2026-28.pdf",
+                "reportingYear": 2026,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443",
+                "documentFormat": "pdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pune-university",
+      "name": "Savitribai Phule Pune University",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "type": "University",
+      "established": 1949,
+      "description": "Savitribai Phule Pune University was established in Pune in 1949. Its Department of Management Sciences, PUMBA, offers a full-time MBA organized over six trimesters.",
+      "sourceKey": "pune-profile",
+      "courses": [
+        {
+          "id": "0ebc5c93-71e9-509c-8123-1f2fc8c73fd2",
+          "name": "MBA (PUMBA)",
+          "degree": "MBA",
+          "durationMonths": 24,
+          "sourceKey": "pumba-mba",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 2,
+              "rawUnit": "years",
+              "notes": "Official course structure states two years / six trimesters; teaching is at the university Department of Management Sciences.",
+              "source": {
+                "title": "PUMBA MBA course structure",
+                "url": "https://www.pumba.in/programs/mba-plus-course-structure.htm",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "f0fbf4e95f4ff8fc7142f20bd577bdbdf7b42bbdecce4cbc2419269c0af1d256",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "osmania-university",
+      "name": "Osmania University",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "type": "University",
+      "established": null,
+      "description": "Osmania University in Hyderabad offers study through its departments and constituent colleges. The Civil Engineering degree listed here belongs to University College of Engineering, Osmania University.",
+      "sourceKey": "osmania-profile",
+      "courses": [
+        {
+          "id": "34fe1a3c-5bbc-5f30-b446-2519ce35533f",
+          "name": "B.E. Civil Engineering (UCE Osmania)",
+          "degree": "B.E.",
+          "durationMonths": 48,
+          "sourceKey": "osmania-civil",
+          "facts": [
+            {
+              "kind": "duration",
+              "rawValue": 4,
+              "rawUnit": "years",
+              "notes": "Department table: regular B.E. Civil Engineering lasts four years. The three-year working-professional programme is distinct and is excluded.",
+              "source": {
+                "title": "University College of Engineering, Osmania — Civil",
+                "url": "https://uceou.edu/dept-civil.php",
+                "reportingYear": null,
+                "verifiedAt": "2026-10-07T19:57:04Z",
+                "reviewer": "College Finder official-source review",
+                "documentSha256": "b925431b35c234c4b5a981a23bb0e094c2ffb1b33ef7da3e169d347a8ac56344",
+                "documentFormat": "html"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import json
 from sqlalchemy import select
 
 from app.models import College, Course, CourseFact, DataSource
-from app.schemas.review import ReviewManifest
+from app.schemas.review import ReviewedFact, ReviewManifest
 from seed.seed import stable_id, upsert
 
 
@@ -32,7 +32,13 @@ async def import_review(db, manifest: ReviewManifest, *, apply: bool = False):
             payload = fact.model_dump(mode="json", by_alias=True)
             if existing and (
                 existing.reviewed_at > fact.source.verified_at
-                or (existing.reviewed_at == fact.source.verified_at and existing.payload != payload)
+                or (
+                    existing.reviewed_at == fact.source.verified_at
+                    and ReviewedFact.model_validate(existing.payload).model_dump(
+                        mode="json", by_alias=True
+                    )
+                    != payload
+                )
             ):
                 raise ValueError("An equal or newer review already exists with different evidence")
             targets.append((course, fact, payload))
@@ -61,6 +67,9 @@ async def import_review(db, manifest: ReviewManifest, *, apply: bool = False):
                 "url": str(source.url),
                 "reporting_year": source.reporting_year,
                 "verified_at": source.verified_at,
+                "document_sha256": source.document_sha256,
+                "document_format": source.document_format,
+                "notes": fact.notes,
             },
         )
         await upsert(

@@ -2,7 +2,15 @@ from datetime import UTC, datetime
 from typing import Literal
 from uuid import UUID
 
-from pydantic import AwareDatetime, Field, HttpUrl, field_validator, model_validator
+from pydantic import (
+    AwareDatetime,
+    Field,
+    HttpUrl,
+    StrictFloat,
+    StrictInt,
+    field_validator,
+    model_validator,
+)
 
 from app.schemas.base import APIModel
 
@@ -10,10 +18,11 @@ from app.schemas.base import APIModel
 class ReviewedSource(APIModel):
     title: str = Field(min_length=1, max_length=300)
     url: HttpUrl
-    reporting_year: int = Field(ge=2000, le=2100)
+    reporting_year: int | None = Field(default=None, ge=2000, le=2100)
     verified_at: AwareDatetime
     reviewer: str = Field(min_length=1, max_length=200)
     document_sha256: str = Field(pattern=r"^[a-f0-9]{64}$")
+    document_format: Literal["pdf", "html"] = "pdf"
 
     @model_validator(mode="after")
     def evidence(self):
@@ -28,8 +37,8 @@ class ReviewedSource(APIModel):
 
 class ReviewedFact(APIModel):
     kind: Literal["tuition", "duration"]
-    raw_value: int = Field(ge=0, le=500_000_000, strict=True)
-    raw_unit: Literal["INR/semester", "INR/year", "months", "years", "semesters"]
+    raw_value: StrictInt | StrictFloat = Field(ge=0, le=500_000_000)
+    raw_unit: Literal["INR/semester", "INR/year", "INR/installment", "months", "years", "semesters"]
     notes: str = Field(min_length=1, max_length=2000)
     source: ReviewedSource
 
@@ -45,15 +54,21 @@ class ReviewedFact(APIModel):
                 raise ValueError("Duration must be 1–144 months")
         elif self.raw_unit in ("months", "years", "semesters"):
             raise ValueError("Tuition requires an INR fee period")
+        if round(self.raw_value, 2) != self.raw_value:
+            raise ValueError("Original values support at most two decimal places")
+        if self.raw_value * self.factor != int(self.raw_value * self.factor):
+            raise ValueError("Claims must normalize to whole INR or months")
         return self
 
     @property
     def factor(self):
-        return {"INR/semester": 2, "years": 12, "semesters": 6}.get(self.raw_unit, 1)
+        return {"INR/semester": 2, "INR/installment": 2, "years": 12, "semesters": 6}.get(
+            self.raw_unit, 1
+        )
 
     @property
     def normalized_value(self):
-        return self.raw_value * self.factor
+        return int(self.raw_value * self.factor)
 
 
 class ReviewedCourse(APIModel):
