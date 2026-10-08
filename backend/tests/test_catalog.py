@@ -1,10 +1,13 @@
 from copy import deepcopy
+from pathlib import Path
 
 import pytest
 from pydantic import ValidationError
 from sqlalchemy import func, select
 
 from app.models import CatalogRelease, College, CollegeMetric, Course, CourseFact, User
+from app.schemas.review import ReviewManifest
+from app.services.review import import_review
 from seed import catalog
 from seed.seed import seed_data
 from tests.conftest import register
@@ -51,6 +54,12 @@ async def test_upgrade_preserves_private_notes_archives_options_and_cannot_be_re
     }
     entry = await client.post("/api/workspace", headers=auth, json=payload)
     assert entry.status_code == 201
+    # Reproduce an existing hosted catalog that already contains the nine-course pilot.
+    pilot = ReviewManifest.model_validate_json(
+        (Path(__file__).parents[1] / "seed/data/reviewed_directory_2026.json").read_text()
+    )
+    async with factory() as db, db.begin():
+        await import_review(db, pilot, apply=True)
     manifest, digest = catalog.load_catalog()
     async with factory() as db, db.begin():
         assert await catalog.apply_catalog(db, manifest, digest)
@@ -62,6 +71,12 @@ async def test_upgrade_preserves_private_notes_archives_options_and_cannot_be_re
         assert p["placements"]["highestPackage"] is None
         assert p["placements"]["placementRate"] is None
         assert all(c["seats"] is None and c["feeBasis"] != "demo-assumption" for c in p["courses"])
+    expected = {str(c.id): c for p in manifest.colleges for c in p.courses}
+    for p in upgraded:
+        for c in p["courses"]:
+            assert c["durationMonths"] == expected[c["id"]].duration_months
+    bangalore = next(p for p in upgraded if p["slug"] == "iim-bangalore")
+    assert next(c for c in bangalore["courses"] if "PGPEM" in c["name"])["durationMonths"] == 24
     bombay = next(p for p in upgraded if p["slug"] == "iit-bombay")
     assert bombay["id"] == previous["id"]
     assert bombay["courses"][0]["id"] == previous["courses"][0]["id"]

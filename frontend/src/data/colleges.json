@@ -23,7 +23,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "32406973-872a-5097-80a2-5ea429623141",
+          "id": "b6640f5d-7a68-5525-a293-82b04d692de7",
           "title": "AIIMS New Delhi MBBS prospectus 2023",
           "status": "verified",
           "url": "https://docs.aiimsexams.ac.in/sites/Prospectus_1.pdf",
@@ -72,7 +72,7 @@
       "source": null
     },
     "source": {
-      "id": "32406973-872a-5097-80a2-5ea429623141",
+      "id": "b6640f5d-7a68-5525-a293-82b04d692de7",
       "title": "AIIMS New Delhi MBBS prospectus 2023",
       "status": "verified",
       "url": "https://docs.aiimsexams.ac.in/sites/Prospectus_1.pdf",
@@ -108,7 +108,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "b9948a80-01a1-5fe1-bfda-4923be528aca",
+          "id": "b6c610c1-4f81-5094-ab6c-432ec4a5712e",
           "title": "Amity Noida admission prospectus 2025",
           "status": "verified",
           "url": "https://www.amity.edu/noida/accf/pdf/admission_prospectus_2025.pdf",
@@ -157,7 +157,7 @@
       "source": null
     },
     "source": {
-      "id": "a10df7a5-d16c-5e52-bcec-41c4b94e6297",
+      "id": "30956b7b-269e-5076-b803-45ff2eeb92e6",
       "title": "Amity University Uttar Pradesh — Noida",
       "status": "verified",
       "url": "https://www.amity.edu/noida/",
@@ -193,7 +193,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "7af1d96c-addc-5dbb-ab0c-09adf663e5c2",
+          "id": "5fe604a4-9b94-5471-931e-fd56e3b1ec83",
           "title": "BITS B.E. Computer Science programme",
           "status": "verified",
           "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/b-e-computer-science/",
@@ -256,7 +256,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "b780fe4b-5f0e-50ab-b079-74568657c723",
+          "id": "d7fa3ade-11a3-539f-a725-0e1e1b2706e4",
           "title": "BITS M.Sc. Mathematics (integrated first degree) programme",
           "status": "verified",
           "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/m-sc-mathematics/",
@@ -325,7 +325,7 @@
       "source": null
     },
     "source": {
-      "id": "438bed43-adc9-5ecd-a88c-2d70f956d1ab",
+      "id": "17a948f5-6555-5837-a540-d6fbd5e97d23",
       "title": "BITS Pilani — Pilani campus",
       "status": "verified",
       "url": "https://www.bits-pilani.ac.in/pilani/",
@@ -361,7 +361,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "395e2260-b06d-524b-a26d-b69001913141",
+          "id": "0ef6a8a4-7d17-5933-9652-30cb89e6b15a",
           "title": "CHRIST Bangalore Central Campus MBA",
           "status": "verified",
           "url": "https://christuniversity.in/courses/MzM0",
@@ -410,7 +410,7 @@
       "source": null
     },
     "source": {
-      "id": "766c299c-e212-5fe6-a420-386987547508",
+      "id": "579f8456-4c47-5ec3-aa51-936dd4aa20c0",
       "title": "CHRIST institution history",
       "status": "verified",
       "url": "https://christuniversity.in/history",
@@ -446,7 +446,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "94af9948-de5d-5cb7-94a8-27bac04bc0db",
+          "id": "4c2594f0-031d-52bc-b976-ef40625070f1",
           "title": "IIM Ahmedabad PGP programme",
           "status": "verified",
           "url": "https://iima.ac.in/academics/mba/about-program",
@@ -495,7 +495,7 @@
       "source": null
     },
     "source": {
-      "id": "16d4b425-2ae2-53e0-9a78-9ea1f9151800",
+      "id": "81b71484-5b16-50b5-a16d-957ec92ae336",
       "title": "IIM Ahmedabad official institution page",
       "status": "verified",
       "url": "https://www.iima.ac.in/the-institute/about-iima",
@@ -531,7 +531,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "aa07bb7f-08f9-5a2b-a03e-908d4fbd79a9",
+          "id": "1d9ff823-addc-5872-9956-1bd8a00f66f2",
           "title": "IIM Bangalore PGP official programme page",
           "status": "unverified",
           "url": "https://www.iimb.ac.in/index.php/programmes/pgp",
@@ -549,12 +549,12 @@
         "id": "448e558d-bea5-56c9-9093-47fe2cac7cb9",
         "name": "PGPEM (Weekend MBA)",
         "degree": "MBA",
-        "durationMonths": 36,
+        "durationMonths": 24,
         "annualTuition": null,
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "4da17456-02fb-5b2a-9747-dc15e86aa0f8",
+          "id": "4cb81e11-5219-5c38-99f9-7da23261f707",
           "title": "IIM Bangalore PGPEM admissions",
           "status": "unverified",
           "url": "https://www.iimb.ac.in/admissions/pgpem-admissions/admission-process",
@@ -583,7 +583,7 @@
       "source": null
     },
     "source": {
-      "id": "aa07bb7f-08f9-5a2b-a03e-908d4fbd79a9",
+      "id": "1d9ff823-addc-5872-9956-1bd8a00f66f2",
       "title": "IIM Bangalore PGP official programme page",
       "status": "unverified",
       "url": "https://www.iimb.ac.in/index.php/programmes/pgp",
@@ -619,7 +619,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "b457b6fe-d05b-5698-b355-5bdd5ea6e460",
+          "id": "7c677015-d75e-5a40-849e-58d8f6d05401",
           "title": "IISc general information",
           "status": "verified",
           "url": "https://www.iisc.ac.in/about/general-information/",
@@ -686,7 +686,7 @@
       "placed": 3,
       "higherStudies": 93,
       "source": {
-        "id": "bd61285a-08c9-59e2-a186-4825e22cf9be",
+        "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
         "title": "IISc NIRF Overall submission 2026",
         "status": "verified",
         "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -698,7 +698,7 @@
       }
     },
     "source": {
-      "id": "b457b6fe-d05b-5698-b355-5bdd5ea6e460",
+      "id": "7c677015-d75e-5a40-849e-58d8f6d05401",
       "title": "IISc general information",
       "status": "verified",
       "url": "https://www.iisc.ac.in/about/general-information/",
@@ -715,7 +715,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "bd61285a-08c9-59e2-a186-4825e22cf9be",
+          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -732,7 +732,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "bd61285a-08c9-59e2-a186-4825e22cf9be",
+          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -749,7 +749,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "bd61285a-08c9-59e2-a186-4825e22cf9be",
+          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -766,7 +766,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "bd61285a-08c9-59e2-a186-4825e22cf9be",
+          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -803,7 +803,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "848cc9ed-18ca-52be-8864-f5ec804d31d9",
+          "id": "e38f18d6-f962-5abf-ac3d-6dac9a1b3f59",
           "title": "IIT Bombay bachelor admissions",
           "status": "verified",
           "url": "https://acad.iitb.ac.in/admissions/bachelors",
@@ -866,7 +866,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "848cc9ed-18ca-52be-8864-f5ec804d31d9",
+          "id": "e38f18d6-f962-5abf-ac3d-6dac9a1b3f59",
           "title": "IIT Bombay bachelor admissions",
           "status": "verified",
           "url": "https://acad.iitb.ac.in/admissions/bachelors",
@@ -935,7 +935,7 @@
       "source": null
     },
     "source": {
-      "id": "8080125a-8f51-5c3e-951f-ead4f3e46ecf",
+      "id": "12217c7d-fb65-5c17-959a-d0825821402d",
       "title": "IIT Bombay official website",
       "status": "verified",
       "url": "https://www.iitb.ac.in/",
@@ -971,7 +971,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "1d63a4ce-89bc-53b3-8b40-042e3bc8cc5a",
+          "id": "da38415f-3625-525d-bdf5-2433059838a1",
           "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
           "status": "verified",
           "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
@@ -1034,7 +1034,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "1d63a4ce-89bc-53b3-8b40-042e3bc8cc5a",
+          "id": "da38415f-3625-525d-bdf5-2433059838a1",
           "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
           "status": "verified",
           "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
@@ -1103,7 +1103,7 @@
       "source": null
     },
     "source": {
-      "id": "68a725c2-75ac-5483-a7bb-7740390adb80",
+      "id": "2cb57ba3-2472-5f67-abd9-5a93c0ba1b72",
       "title": "IIT Delhi institution profile",
       "status": "verified",
       "url": "https://home.iitd.ac.in/for-faculty-thinking-what-iitd.php",
@@ -1139,7 +1139,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "c881edf1-f861-5161-a836-d1fc4b17b19b",
+          "id": "7923b732-40fe-5882-9dd6-2d8d8887892c",
           "title": "IIT Madras institution profile",
           "status": "verified",
           "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
@@ -1202,7 +1202,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "c881edf1-f861-5161-a836-d1fc4b17b19b",
+          "id": "7923b732-40fe-5882-9dd6-2d8d8887892c",
           "title": "IIT Madras institution profile",
           "status": "verified",
           "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
@@ -1269,7 +1269,7 @@
       "placed": 631,
       "higherStudies": 147,
       "source": {
-        "id": "2fa6ceb9-55c9-5fa9-b7b1-fb282a10b44f",
+        "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
         "title": "IIT Madras NIRF Engineering submission 2026",
         "status": "verified",
         "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1281,7 +1281,7 @@
       }
     },
     "source": {
-      "id": "c881edf1-f861-5161-a836-d1fc4b17b19b",
+      "id": "7923b732-40fe-5882-9dd6-2d8d8887892c",
       "title": "IIT Madras institution profile",
       "status": "verified",
       "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
@@ -1293,46 +1293,12 @@
     },
     "metrics": [
       {
-        "kind": "medianPackage",
-        "amount": 1778000.0,
-        "unit": "INR/year",
-        "scope": "UG four-year programmes (institution-wide)",
-        "source": {
-          "id": "2fa6ceb9-55c9-5fa9-b7b1-fb282a10b44f",
-          "title": "IIT Madras NIRF Engineering submission 2026",
-          "status": "verified",
-          "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
-          "reportingYear": 2025,
-          "verifiedAt": "2026-10-07T19:57:04Z",
-          "documentSha256": "2ff699c6b1491a8b8e3fa31786e1105000bd8406c146c00bdd9b51ab81e93e1c",
-          "documentFormat": "pdf",
-          "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
-        }
-      },
-      {
-        "kind": "graduates",
-        "amount": 781.0,
-        "unit": "students",
-        "scope": "UG four-year programmes (institution-wide)",
-        "source": {
-          "id": "2fa6ceb9-55c9-5fa9-b7b1-fb282a10b44f",
-          "title": "IIT Madras NIRF Engineering submission 2026",
-          "status": "verified",
-          "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
-          "reportingYear": 2025,
-          "verifiedAt": "2026-10-07T19:57:04Z",
-          "documentSha256": "2ff699c6b1491a8b8e3fa31786e1105000bd8406c146c00bdd9b51ab81e93e1c",
-          "documentFormat": "pdf",
-          "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
-        }
-      },
-      {
         "kind": "placed",
         "amount": 631.0,
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "2fa6ceb9-55c9-5fa9-b7b1-fb282a10b44f",
+          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
           "title": "IIT Madras NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1349,7 +1315,41 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "2fa6ceb9-55c9-5fa9-b7b1-fb282a10b44f",
+          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+          "title": "IIT Madras NIRF Engineering submission 2026",
+          "status": "verified",
+          "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-07T19:57:04Z",
+          "documentSha256": "2ff699c6b1491a8b8e3fa31786e1105000bd8406c146c00bdd9b51ab81e93e1c",
+          "documentFormat": "pdf",
+          "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
+        }
+      },
+      {
+        "kind": "medianPackage",
+        "amount": 1778000.0,
+        "unit": "INR/year",
+        "scope": "UG four-year programmes (institution-wide)",
+        "source": {
+          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+          "title": "IIT Madras NIRF Engineering submission 2026",
+          "status": "verified",
+          "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-07T19:57:04Z",
+          "documentSha256": "2ff699c6b1491a8b8e3fa31786e1105000bd8406c146c00bdd9b51ab81e93e1c",
+          "documentFormat": "pdf",
+          "notes": "PDF p. 1: institution-reported outcomes for the 2024–25 graduating UG four-year cohort across departments; median is for placed graduates only."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 781.0,
+        "unit": "students",
+        "scope": "UG four-year programmes (institution-wide)",
+        "source": {
+          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
           "title": "IIT Madras NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1386,7 +1386,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "d0046df0-a61f-5c93-9923-ebc910d15348",
+          "id": "b10afde3-1644-52fa-bcdf-add88fdf84a3",
           "title": "Jadavpur University programme and duration directory",
           "status": "verified",
           "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
@@ -1429,7 +1429,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "d0046df0-a61f-5c93-9923-ebc910d15348",
+          "id": "b10afde3-1644-52fa-bcdf-add88fdf84a3",
           "title": "Jadavpur University programme and duration directory",
           "status": "verified",
           "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
@@ -1477,7 +1477,7 @@
       "source": null
     },
     "source": {
-      "id": "11dc1384-3fb2-57db-8b28-3fd4c546ca73",
+      "id": "d8dbdaff-0884-5c14-ba95-5e64df0fde48",
       "title": "Jadavpur University institution profile",
       "status": "verified",
       "url": "https://jadavpuruniversity.in/about/",
@@ -1513,7 +1513,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "3629e4d4-0461-51f5-890f-9441b5b91669",
+          "id": "7dc62730-ebd6-5468-85c7-fcc2516c9555",
           "title": "MIT Manipal Computer Science and Engineering",
           "status": "verified",
           "url": "https://www.manipal.edu/mit/program-list/btech/btech-computer-science-engineering.html",
@@ -1562,7 +1562,7 @@
       "source": null
     },
     "source": {
-      "id": "a5f6beae-db9b-5a71-a940-71791ed17d2c",
+      "id": "1400453e-5bdb-55b5-960b-58b3113e795f",
       "title": "Manipal Academy of Higher Education official website",
       "status": "verified",
       "url": "https://www.manipal.edu/mu/about-us.html",
@@ -1598,7 +1598,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "3ff760c9-f051-575f-857d-265152dd598f",
+          "id": "bca943f3-4d3b-525b-b4b5-b16b9ac34038",
           "title": "NIT Tiruchirappalli institution profile",
           "status": "verified",
           "url": "https://www.nitt.edu/home/about/",
@@ -1661,7 +1661,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "3ff760c9-f051-575f-857d-265152dd598f",
+          "id": "bca943f3-4d3b-525b-b4b5-b16b9ac34038",
           "title": "NIT Tiruchirappalli institution profile",
           "status": "verified",
           "url": "https://www.nitt.edu/home/about/",
@@ -1728,7 +1728,7 @@
       "placed": 738,
       "higherStudies": 159,
       "source": {
-        "id": "cb1df54f-4892-52b5-9bf6-70b01fa4c3cc",
+        "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
         "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
         "status": "verified",
         "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1740,7 +1740,7 @@
       }
     },
     "source": {
-      "id": "3ff760c9-f051-575f-857d-265152dd598f",
+      "id": "bca943f3-4d3b-525b-b4b5-b16b9ac34038",
       "title": "NIT Tiruchirappalli institution profile",
       "status": "verified",
       "url": "https://www.nitt.edu/home/about/",
@@ -1757,7 +1757,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "cb1df54f-4892-52b5-9bf6-70b01fa4c3cc",
+          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1774,7 +1774,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "cb1df54f-4892-52b5-9bf6-70b01fa4c3cc",
+          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1791,7 +1791,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "cb1df54f-4892-52b5-9bf6-70b01fa4c3cc",
+          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1808,7 +1808,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "cb1df54f-4892-52b5-9bf6-70b01fa4c3cc",
+          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1845,7 +1845,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "ef08f6f8-cab2-53e2-9467-c702f28447d5",
+          "id": "69a441be-51d7-59ce-9692-289363e186c1",
           "title": "University College of Engineering, Osmania — Civil",
           "status": "verified",
           "url": "https://uceou.edu/dept-civil.php",
@@ -1894,7 +1894,7 @@
       "source": null
     },
     "source": {
-      "id": "c5ddae61-3a21-5fe3-aec0-218b4ea5ce10",
+      "id": "74145302-538d-509f-a717-112609a8725f",
       "title": "Osmania University institution history",
       "status": "verified",
       "url": "https://www.osmania.ac.in/aboutus.php",
@@ -1930,7 +1930,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "65c34b39-9f4f-5f68-b8cb-aac702f90740",
+          "id": "258fdf39-dc84-5d89-aa7e-ba9f82331892",
           "title": "PUMBA MBA course structure",
           "status": "verified",
           "url": "https://www.pumba.in/programs/mba-plus-course-structure.htm",
@@ -1979,7 +1979,7 @@
       "source": null
     },
     "source": {
-      "id": "d2de725e-8b51-589a-b76b-c0cf526abc29",
+      "id": "51e8f983-be7c-5ad7-80a4-b89eb3749bf6",
       "title": "Savitribai Phule Pune University institution profile",
       "status": "verified",
       "url": "https://www.unipune.ac.in/university_files/about_university.htm",
@@ -2015,7 +2015,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "c8ab83e1-4cd6-5254-b1ed-8dc53946f808",
+          "id": "accdea9f-386d-5c26-9f39-7be28488c400",
           "title": "SRMIST B.Tech campus programme directory",
           "status": "verified",
           "url": "https://applications.srmist.edu.in/btech",
@@ -2058,7 +2058,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "c8ab83e1-4cd6-5254-b1ed-8dc53946f808",
+          "id": "accdea9f-386d-5c26-9f39-7be28488c400",
           "title": "SRMIST B.Tech campus programme directory",
           "status": "verified",
           "url": "https://applications.srmist.edu.in/btech",
@@ -2105,7 +2105,7 @@
       "placed": 4144,
       "higherStudies": 142,
       "source": {
-        "id": "93e8d466-5641-5493-92fc-d2dc31b9b649",
+        "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
         "title": "SRMIST NIRF Engineering submission 2026, p. 1",
         "status": "verified",
         "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2117,7 +2117,7 @@
       }
     },
     "source": {
-      "id": "c8ab83e1-4cd6-5254-b1ed-8dc53946f808",
+      "id": "accdea9f-386d-5c26-9f39-7be28488c400",
       "title": "SRMIST B.Tech campus programme directory",
       "status": "verified",
       "url": "https://applications.srmist.edu.in/btech",
@@ -2134,7 +2134,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "93e8d466-5641-5493-92fc-d2dc31b9b649",
+          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2151,7 +2151,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "93e8d466-5641-5493-92fc-d2dc31b9b649",
+          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2168,7 +2168,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "93e8d466-5641-5493-92fc-d2dc31b9b649",
+          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2185,7 +2185,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "93e8d466-5641-5493-92fc-d2dc31b9b649",
+          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2222,7 +2222,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "5857dbb9-0a89-5919-ae32-0efa03fc498d",
+          "id": "cf30641b-cb02-542b-9dbb-f06dcfb479b6",
           "title": "SIBM Pune MBA programme",
           "status": "verified",
           "url": "https://sibm.edu/mobile/mba",
@@ -2290,7 +2290,7 @@
       "source": null
     },
     "source": {
-      "id": "71e45ca4-619f-51d6-98d5-43479d2574da",
+      "id": "4833fae8-df4f-57bf-a480-a275fa17ac7f",
       "title": "Symbiosis International official website",
       "status": "verified",
       "url": "https://www.siu.edu.in/",
@@ -2326,7 +2326,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "e227b4d7-0b7f-5c0e-91c8-e54d1189bfd6",
+          "id": "2e71f439-b064-58fd-b7ae-ce6aae798362",
           "title": "University of Delhi undergraduate bulletin 2026–27",
           "status": "verified",
           "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
@@ -2369,7 +2369,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "e227b4d7-0b7f-5c0e-91c8-e54d1189bfd6",
+          "id": "2e71f439-b064-58fd-b7ae-ce6aae798362",
           "title": "University of Delhi undergraduate bulletin 2026–27",
           "status": "verified",
           "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
@@ -2418,7 +2418,7 @@
       "source": null
     },
     "source": {
-      "id": "e227b4d7-0b7f-5c0e-91c8-e54d1189bfd6",
+      "id": "2e71f439-b064-58fd-b7ae-ce6aae798362",
       "title": "University of Delhi undergraduate bulletin 2026–27",
       "status": "verified",
       "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
@@ -2454,7 +2454,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "9eaae616-9abb-50a5-8c51-d2b964d94cd8",
+          "id": "6ac8d05d-c768-5341-864f-241b86714f22",
           "title": "VIT Vellore School of Computer Science programmes",
           "status": "verified",
           "url": "https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses",
@@ -2523,7 +2523,7 @@
       "source": null
     },
     "source": {
-      "id": "1ff3daf2-978c-525c-a6cb-10b2ec3877a9",
+      "id": "40c930ab-75d8-56b7-97b1-d28aa5cf163a",
       "title": "VIT institution profile",
       "status": "verified",
       "url": "https://vit.ac.in/about-vit",

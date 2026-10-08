@@ -33,7 +33,7 @@ async def upsert(db: AsyncSession, model, values: dict):
         ):
             if key in updates:
                 reviewed = exists().where(
-                    CourseFact.course_id == Course.id, CourseFact.kind == kind
+                    CourseFact.course_id == values["id"], CourseFact.kind == kind
                 )
                 updates[key] = case((reviewed, getattr(Course, key)), else_=updates[key])
     await db.execute(statement.on_conflict_do_update(index_elements=["id"], set_=updates))

@@ -134,3 +134,5 @@ during a mixed-version rollout instead of presenting it as official information.
 
 The new rollout and visual results are recorded in `REAL_DATA_PLAN.md`; the earlier Safari
 walkthrough above is historical evidence, not a check of the new Sources layout.
+
+The final catalog revision is `official-2026-10-08-r4`. Deploy the latest commit once more to correct PGPEM's old sample duration to 24 months; the upgrade detects its version and applies automatically without modifying private workspace records. The earlier backend and frontend rollout is already live.

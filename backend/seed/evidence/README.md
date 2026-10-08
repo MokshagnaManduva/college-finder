@@ -21,7 +21,7 @@ The IIT Delhi entry-fee circular is retained as supporting context, giving nine 
 total. Hashes establish which bytes were reviewed; they do not establish that an institution's
 future policy will remain the same.
 
-## Official catalog release: official-2026-10-08-r2
+## Official catalog release: official-2026-10-08-r4
 
 Snapshots collected on 8 October 2026. HTML is retained as received; PDF bytes are unchanged.
 Hashes identify the retained document, not an institution-wide certification.

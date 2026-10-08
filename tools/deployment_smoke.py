@@ -112,7 +112,8 @@ def run(frontend, api, *, account_check=False):
     assert len(catalog) == len(manifest["colleges"]) and set(courses) == set(expected)
     for course_id, reviewed in expected.items():
         course = courses[course_id]
-        assert course["name"] == reviewed["name"] and course["durationMonths"] == reviewed["durationMonths"]
+        assert course["name"] == reviewed["name"], f"Programme name differs: {course_id}"
+        assert course["durationMonths"] == reviewed["durationMonths"], f"Duration differs: {course['name']}"
         assert course["seats"] is None and course["feeBasis"] != "demo-assumption"
         for fact in reviewed["facts"]:
             evidence = course[fact["kind"] + "Evidence"]

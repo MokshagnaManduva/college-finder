@@ -87,3 +87,7 @@ The local demo account retains a clearly labelled test note for IIT Bombay. Two 
 were added to this browser's comparison during the walkthrough. Safari is back in its normal
 view at actual size. The source pilot walkthrough added IIT Bombay as a third comparison option
 and left its source section open. See [SOURCE_REVIEW.md](SOURCE_REVIEW.md) for the pilot's scope.
+
+## Final duration correction
+
+The initial rollout succeeded on Render and frontend commit `f7e48c3` succeeded on Vercel. Public catalog comparison detected one retained sample duration: PGPEM was 36 months, while its indexed official programme specifies two years. A seed-protection query treated evidence for any programme as evidence for all programmes. The correction checks evidence against the target programme ID, adds a regression that first imports the nine-course pilot, and uses release `official-2026-10-08-r4` to correct already-upgraded databases. Local upgrade and the standalone snapshot now show 24 months. The user requested manual deployment of this final correction. Full hosted verification remains incomplete until r4 is deployed; no full live smoke pass is claimed. Another HTTP run encountered an intermittent TLS handshake timeout retrieving a frontend asset.

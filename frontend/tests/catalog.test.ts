@@ -9,6 +9,7 @@ test('published snapshot contains official references and clears sample amounts'
   assert.equal(demoColleges.length, 19);
   const courses = demoColleges.flatMap(college => college.courses);
   assert.equal(courses.length, 28);
+  assert.equal(courses.find(course => course.name === "PGPEM (Weekend MBA)")?.durationMonths, 24);
   assert.ok(demoColleges.every(college => college.image === '' && college.facilities.length === 0
     && college.source?.url?.startsWith('https://') && college.dataStatus !== 'demo'));
   assert.ok(courses.every(course => course.feeBasis !== 'demo-assumption' && course.seats === null));
