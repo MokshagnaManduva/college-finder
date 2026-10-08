@@ -2,7 +2,7 @@
 
 A redesigned college decision workspace built with React, TypeScript, FastAPI and PostgreSQL 16.
 The connected application supports discovery, registration/login, account preferences and
-persistent workspace entries. The original `../CollegeFind-main` project remains the reference.
+persistent workspace entries.
 
 ## Run locally
 
@@ -60,7 +60,7 @@ The directory contains **19 institutions and 28 published programmes** with offi
 
 Run `make review-catalog` to validate every retained source checksum, then `make apply-catalog` to apply the versioned release. The upgrade preserves accounts, notes and original option IDs; it archives unconfirmed sample programmes instead of deleting them. Demo reseeding cannot overwrite an official catalog. The standalone HTML uses the same public snapshot and retains aliases for archived guest options.
 
-Open `/sources`, linked in the footer, for institution references, claim coverage, original fee periods, graduating cohorts and document checksums. IIM Bangalore's two programme references rely on indexed official pages and have no archived original document; those claims remain unverified. See [OFFICIAL_DATA.md](OFFICIAL_DATA.md) for scope, category and year details. [SOURCE_REVIEW.md](SOURCE_REVIEW.md) records the earlier nine-course pilot, which remains available for regression/operator reference.
+Open `/sources`, linked in the footer, for institution references, claim coverage, original fee periods, graduating cohorts and document checksums. IIM Bangalore's two programme references rely on indexed official pages and have no archived original document; those claims remain unverified. See the [source evidence registry](backend/seed/evidence/README.md) for retained documents and provenance.
 
 ## Guest notes and account sync
 
@@ -79,7 +79,7 @@ into guest storage.
 
 ## Standalone preview
 
-Open [preview/college-finder.html](preview/college-finder.html) directly in a browser for the
+After running `make preview`, open `preview/college-finder.html` directly in a browser for the
 official-catalog guest experience. No backend is needed, and account sync requires the connected app.
 Fonts use external URLs with local visual fallbacks; institution artwork uses a neutral icon.
 
@@ -104,15 +104,8 @@ a database name ending in `_test`, reject the application database and use a sep
 schema per test. For a different server, supply `TEST_DATABASE_URL`; provision that test database
 separately. The backend development dependency snapshot is in `backend/requirements-dev.lock`.
 
-Current verification: **43 backend and 29 frontend tests pass**, Ruff/ESLint pass, and the production
-and standalone build checks are recorded in the release log. The Python 3.13 API container builds and serves PostgreSQL-backed
-catalog and authenticated reads; Alembic reports no schema drift. Local Python 3.14 also passes
-the integration suite. Earlier standalone walkthroughs checked responsive discovery, comparison,
-costs and guest note persistence. The connected Safari walkthrough now verifies guest note editing,
-sign-in/import, account editing, persistence after reload, sign-out clearing the private view, and
-restoration after signing back in. A labelled test note remains in the local demo account.
-Release review also checked 360/768/1024/1440 px layouts, 200% zoom, dialog focus and mobile
-comparison keyboard scrolling. See [RELEASE_CHECKS.md](RELEASE_CHECKS.md) for evidence and scope.
+The tests cover catalog upgrades, authentication, account isolation, workspace persistence,
+guest import, matching, costs and frontend adapters.
 
 ## API and deployment notes
 
@@ -125,11 +118,9 @@ For deployment, build `backend/Dockerfile`, provide `DATABASE_URL`, `JWT_SECRET`
 and use its default command, which runs Alembic migrations before serving traffic. Build the frontend with `VITE_API_URL` pointing
 to the public backend `/api` URL, and configure SPA rewrites to `index.html`. Match `FRONTEND_URL`
 to the deployed frontend origin. Keep `ALLOW_DEMO_SEED=false` outside explicit demo environments.
-The existing site is [college-finder-peach.vercel.app](https://college-finder-peach.vercel.app). The official-catalog rollout is tracked in [REAL_DATA_PLAN.md](REAL_DATA_PLAN.md); earlier deployed checks do not certify this update.
+The existing site is [college-finder-peach.vercel.app](https://college-finder-peach.vercel.app).
 A fully reviewed admissions catalog, password recovery, email verification and historical
-cutoff exploration remain future work. Dashboard configuration and a clean-database deployment
-rehearsal are prepared in [DEPLOYMENT.md](DEPLOYMENT.md). The selected free Render demo has
-an opt-in versioned catalog upgrade and never creates the shared demo login. The current directory catalog loads all records for UI
+cutoff exploration remain future work. Set `BOOTSTRAP_DEMO_CATALOG=true` to apply the versioned
+official catalog at backend startup; this does not create the shared demo login.
+The current directory catalog loads all records for UI
 lookups; revisit that approach before a large production dataset.
-
-See [PLAN.md](PLAN.md) for product decisions, milestone status and release gates.

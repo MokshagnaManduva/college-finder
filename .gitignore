@@ -14,3 +14,11 @@ preview/
 *.tsbuildinfo
 coverage/
 .coverage
+
+# Local planning and internal project notes
+/PLAN.md
+/REAL_DATA_PLAN.md
+/DEPLOYMENT.md
+/RELEASE_CHECKS.md
+/SOURCE_REVIEW.md
+/OFFICIAL_DATA.md
