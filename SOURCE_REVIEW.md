@@ -1,3 +1,5 @@
+> Historical nine-course pilot. The current official catalog conversion, scope and checks are documented in [OFFICIAL_DATA.md](OFFICIAL_DATA.md) and [REAL_DATA_PLAN.md](REAL_DATA_PLAN.md). Counts and UI descriptions below refer to the earlier pilot.
+
 # Reviewed course data
 
 Updated 8 October 2026. The connected local database contains eighteen reviewed claims across nine

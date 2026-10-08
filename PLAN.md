@@ -341,8 +341,9 @@ See `DEPLOYMENT.md`.
 Store claim-level raw values, conversion assumptions, reviewer/date/document hash and source links.
 Import reviewed tuition/duration onto existing course IDs without changing private records. Protect
 those claims from demo reseeding. Render mixed data statuses honestly and suppress incompatible
-tuition highlights. The current local pilot covers nine courses' tuition and duration; expand reviewed
-coverage before calling the admissions directory verified. See `SOURCE_REVIEW.md`.
+tuition highlights. The official-catalog release now covers 19 institutions and 28 programmes, with 13 tuition claims,
+26 duration claims and four sourced outcome cohorts. IIM Bangalore references remain unverified;
+missing figures remain unavailable. See `REAL_DATA_PLAN.md` and `OFFICIAL_DATA.md`.
 Retained document checksums are required on apply, and the public Sources page distinguishes
 claim-level coverage from college-wide verification. Its deployed Safari walkthrough, coverage
 calculations and API checks pass.
@@ -382,3 +383,13 @@ make preview   # portable guest/demo HTML
 Structure code around `colleges`, `matching`, `profile`, `workspace`, `compare`, `auth`, and later
 `cutoffs`. Rebuild frontend pages/components around these journeys. Removed feature code stays
 out of the active dependency graph.
+
+## Official catalog conversion — 8 October 2026
+
+The user's banner-removal and real-data request supersedes the earlier sample-directory UI.
+Execution order is in [REAL_DATA_PLAN.md](REAL_DATA_PLAN.md). Both global banners are removed.
+The release replaces sample profiles and figures, publishes 28 confirmed programmes across all
+19 institutions, and archives 31 original sample options while preserving private data and all
+legacy aliases. No paid-hosting change is authorized. Current validation: 43 backend tests,
+29 frontend tests, lint and production build pass. Browser automation currently returns
+`cgWindowNotFound`; new visual QA and hosted rollout are tracked separately in the execution log.

@@ -3,9 +3,6 @@ import { Link, NavLink, useLocation, useNavigationType } from 'react-router-dom'
 import { Compass, Scale, Bookmark, SlidersHorizontal, ArrowUpRight, X } from 'lucide-react';
 import { useGuest } from '../state/GuestProvider';
 import { useAuth } from '../state/AuthProvider';
-import { DEMO_MODE } from '../api/client';
-import { useCatalog } from '../state/CatalogProvider';
-import { hasReviewedFacts } from '../domain/provenance';
 
 const scrollPositions = new Map<string, number>();
 
@@ -32,8 +29,6 @@ function ScrollManager() {
 
 export function Shell({ children }: { children: ReactNode }) {
   const { state, notice, storageError, notify } = useGuest();
-  const { colleges } = useCatalog();
-  const reviewed = hasReviewedFacts(colleges);
   const location = useLocation();
   const { user, logout, error } = useAuth();
   useEffect(() => {
@@ -66,13 +61,11 @@ export function Shell({ children }: { children: ReactNode }) {
           <div className="account-popover"><strong>{user.name}</strong><span>{user.email}</span><Link to="/workspace">My workspace</Link><button onClick={logout}>Sign out</button></div>
         </details> : <Link to="/login" state={{ from: location.pathname + location.search }} className="button secondary signin-link">Sign in</Link>}</div>
     </div></header>
-    <div className="demo-strip"><span className="demo-dot" /><Link className="source-banner-link" to="/sources">{DEMO_MODE ? 'Demo preview' : reviewed ? 'Source review in progress' : 'Demo college data'}</Link><span className="demo-copy">{reviewed ? 'Includes demo data. Check the source for each figure.' : 'College facts and costs are illustrative.'} {user ? 'Your workspace syncs to your account.' : 'Save here, or sign in to sync across devices.'}</span></div>
-    {import.meta.env.VITE_TEMPORARY_DEMO === 'true' && <div className="storage-warning">Temporary demo. Export a workspace backup before this demo ends to keep your notes. <Link to="/workspace">Open workspace</Link></div>}
     {error && <div className="storage-warning" role="alert">{error}</div>}
     {storageError && <div className="storage-warning" role="alert">{storageError}</div>}
     <main id="main" tabIndex={-1} className="main-container">{children}</main>
     <footer className="site-footer"><Link className="footer-brand" to="/">collegefinder<span>Make room for your next chapter.</span></Link>
-      <span>Made for thoughtful decisions.</span><Link to="/preferences">Set your preferences <ArrowUpRight size={14} /></Link></footer>
+      <Link to="/sources">Data sources</Link><Link to="/preferences">Set your preferences <ArrowUpRight size={14} /></Link></footer>
     <nav className="mobile-nav" aria-label="Mobile navigation">{links.map(({ to, label, icon: Icon, count }) =>
       <NavLink key={to} to={to}><Icon size={21} /><span>{label}</span>{count > 0 && <b>{count}</b>}</NavLink>)}</nav>
     <div className="toast-region" aria-live="polite" aria-atomic="true">{notice && <div className="toast">{notice}

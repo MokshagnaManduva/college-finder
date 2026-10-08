@@ -8,19 +8,19 @@ The private source repository is [MokshagnaManduva/college-finder](https://githu
 
 ## What has been verified locally
 
-40 backend tests and 27 frontend tests pass. Frontend tests and the production build were also
+43 backend tests and 29 frontend tests pass. Frontend tests and the production build were also
 checked with Node 24. The full Python 3.13 Dockerfile built successfully. On a fresh isolated
-PostgreSQL 16 database, its default command applied both Alembic migrations, atomically loaded
-19 labelled demo colleges/57 courses and 18 reviewed claims, and started FastAPI.
+PostgreSQL 16 database, its default command applied all Alembic migrations, atomically loaded
+19 institution profiles, 28 public programmes and 39 reviewed claims (13 tuition / 26 duration), and started FastAPI.
 
 The HTTP rehearsal checked production frontend routes/assets, readiness, CORS, discovery,
 comparison, registration, login and workspace create/edit/read/delete. Restarting the API preserved
-the catalog and skipped bootstrap. These are local rehearsal results, not a deployed-site pass.
+the catalog and skipped the already-applied release. These are local rehearsal results, not a deployed-site pass.
 HTTP/API checks do not replace the visual browser walkthrough.
 
-## Live deployment status
+## Earlier deployed baseline
 
-On 8 October 2026, Vercel successfully deployed commit `01a3a55`. The frontend is
+Before the official-catalog conversion, Vercel successfully deployed commit `01a3a55`. The frontend is
 [college-finder-peach.vercel.app](https://college-finder-peach.vercel.app), with the API at
 [college-finder-demo-api.onrender.com](https://college-finder-demo-api.onrender.com/api/health/ready).
 The compiled frontend targets that API's `/api` URL. The configured frontend origin now passes
@@ -46,11 +46,11 @@ resource. Do not copy the local `.env` or create the shared `demo@college.in` lo
 At the `FRONTEND_URL` prompt, enter the actual Vercel production origin if it is already known.
 Otherwise use `https://example.invalid` temporarily; replace it in step 3 before using accounts.
 
-The Docker start command runs migrations, then opt-in demo bootstrap, then the web server.
-`BOOTSTRAP_DEMO_CATALOG=true` initializes only an empty catalog; it never creates users and never
-resets an existing catalog. Initialization and reviewed claims share a transaction. Ordinary demo
-seeding stays disabled through `ALLOW_DEMO_SEED=false`. Subsequent reviewed-data updates are
-an explicit operator task, rather than an automatic reseed on deployment.
+The Docker start command runs migrations, then the opt-in versioned official-catalog upgrade,
+then the web server. The existing `BOOTSTRAP_DEMO_CATALOG=true` key now initializes or upgrades
+the catalog atomically. It never creates users or deletes accounts/workspace entries. Unconfirmed
+programme rows are archived, not deleted; source checksums and an immutable release marker
+protect updates. `ALLOW_DEMO_SEED=false` remains set. An already-applied release is a no-op.
 
 Wait for the service to become live, then copy its actual HTTPS URL. Visiting
 `<backend-origin>/api/health/ready` must return `{"status":"ok","database":"ok"}`.
@@ -71,7 +71,6 @@ Open [Vercel](https://vercel.com/new), import the same private repository, and u
 | Output Directory | `dist` |
 | `VITE_DATA_MODE` | `api` |
 | `VITE_API_URL` | Actual Render API service HTTPS origin; `/api` is appended automatically |
-| `VITE_TEMPORARY_DEMO` | `true` |
 
 Set these environment variables for **Production** before building. The deployment build rejects
 the development `/api` default, HTTP/database/dashboard URLs and fixture-only mode. A bare HTTPS
@@ -87,7 +86,7 @@ replace `FRONTEND_URL` with that origin and apply the environment change/redeplo
 preview deployment's changing URL. CORS permits the configured origin; until it matches, the
 browser's account requests will fail even if the backend health check succeeds.
 
-The public UI displays a temporary-demo notice and links to workspace backup. Render documents
+The two global status/demo banners have been removed at the user's request. Workspace JSON backup guidance remains. This UI change does not extend the database lifetime. Render documents
 that free PostgreSQL expires after **30 days**, followed by a grace period before deletion, and
 that free API services spin down when idle. This setup is a temporary demonstration, not durable
 storage for real applications. See [Render's free limits](https://render.com/docs/free).
@@ -109,8 +108,8 @@ account. Its disposable workspace entry is removed; the test account remains. It
 existing accounts or print credentials. Omitting `--account-check` leaves it read-only.
 
 In Safari, visit the **production** frontend and check Explore → selected course → Compare →
-Workspace, then sign in, edit a test note and reload. Open `/sources`: expect 9 of 57 tuition claims,
-9 of 57 duration claims, 9 reviewed courses and 8 cited document hashes. Open Review details and
+Workspace, then sign in, edit a test note and reload. Open `/sources`: expect 13 of 28 tuition claims,
+26 of 28 duration claims, 26 reviewed courses and 47 cited document hashes. Open Review details and
 follow an electrical/chemical/mechanical course link to confirm that course is selected. Check
 the Sources layout at desktop and 360 px. Record the actual result in `RELEASE_CHECKS.md`.
 
@@ -122,3 +121,16 @@ Broader physical-device/accessibility checks remain separate.
 - [Render Blueprint specification](https://render.com/docs/blueprint-spec)
 - [Vercel project configuration](https://vercel.com/docs/project-configuration/vercel-json)
 - [Vercel Node.js versions](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions)
+
+## Deploy the official-catalog conversion
+
+Deploy the backend before publishing the updated frontend. On the existing
+[Render API service](https://dashboard.render.com/web/srv-db3973gm7kps73dg2gqg),
+choose **Manual Deploy → Deploy latest commit**. Its default Docker command performs the
+migration and idempotent catalog upgrade; no database reset or extra secret is required.
+Keep the free tier and existing URLs. `/api/colleges/catalog` must return 19 institutions and
+28 programmes before completing the frontend rollout. The frontend refuses sample API data
+during a mixed-version rollout instead of presenting it as official information.
+
+The new rollout and visual results are recorded in `REAL_DATA_PLAN.md`; the earlier Safari
+walkthrough above is historical evidence, not a check of the new Sources layout.

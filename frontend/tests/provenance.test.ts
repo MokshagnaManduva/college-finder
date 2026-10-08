@@ -4,7 +4,8 @@ import { tuitionLabel, hasReviewedFacts, lowestComparableTuition, sourceCoverage
 import { demoColleges } from '../src/api/index.ts';
 import type { Course, CourseEvidence } from '../src/types/index.ts';
 
-const demo = demoColleges[0].courses[0];
+const demo: Course = {...demoColleges[0].courses[0], feeBasis: "demo-assumption", annualTuition: 220000, durationMonths: 48, source: undefined,
+  tuitionEvidence: null, durationEvidence: null};
 const evidence: CourseEvidence = {
   rawValue: 100000, rawUnit: 'INR/semester', factor: 2, normalizedValue: 200000,
   notes: 'Indian new entrants, standard tuition before exemptions; two semesters per year.',
@@ -22,8 +23,8 @@ test('tuition labels distinguish demo, reviewed annualization, unverified and un
 });
 
 test('one reviewed course claim does not relabel an entire catalog as verified', () => {
-  assert.equal(hasReviewedFacts(demoColleges), false);
-  const college = {...demoColleges[0], courses: [reviewed]};
+  assert.equal(hasReviewedFacts([{...demoColleges[0], courses: [demo]}]), false);
+  const college = {...demoColleges[0], dataStatus: "demo" as const, source: undefined, placements: {...demoColleges[0].placements, source: undefined}, courses: [reviewed]};
   assert.equal(hasReviewedFacts([college]), true);
   assert.equal(college.dataStatus, 'demo');
 });
@@ -43,7 +44,7 @@ test('source coverage counts claims and deduplicates retained documents without 
   const checked = {...reviewed, tuitionEvidence: {...evidence, documentSha256: 'hash'},
     durationEvidence: {...evidence, rawValue: 4, rawUnit: 'years' as const, factor: 12,
       normalizedValue: 48, documentSha256: 'hash'}};
-  const college = {...demoColleges[0], courses: [checked, {...checked, id: 'second'}]};
+  const college = {...demoColleges[0], dataStatus: "demo" as const, source: undefined, placements: {...demoColleges[0].placements, source: undefined}, courses: [checked, {...checked, id: 'second'}]};
   const coverage = sourceCoverage([college]);
   assert.equal(coverage.courseCount, 2);
   assert.equal(coverage.tuitionCount, 2);

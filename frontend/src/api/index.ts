@@ -19,7 +19,7 @@ export function matchingCourses(college: College, query: ExploreQuery, preferenc
     && (!preferences || courseMatch(college, course, preferences) !== null));
 }
 
-// UI depends on this typed adapter. Phase 2 replaces fixtures with HTTP responses.
+// The standalone snapshot and connected API implement the same discovery contract.
 export interface CollegeAdapter {
   list(query: ExploreQuery, preferences: Preferences | null): Promise<{
     data: College[]; total: number; totalPages: number; page: number;
@@ -39,7 +39,7 @@ export const demoApi: CollegeAdapter = {
         const diff = (minimumTuition(eligibleCourses(a)) ?? Infinity) - (minimumTuition(eligibleCourses(b)) ?? Infinity);
         if (diff) return diff;
       }
-      if (query.sort === 'established' && a.established !== b.established) return a.established - b.established;
+      if (query.sort === 'established' && a.established !== b.established) return (a.established ?? Infinity) - (b.established ?? Infinity);
       return a.name.localeCompare(b.name);
     });
     const total = data.length;
@@ -68,8 +68,17 @@ export const collegesApi: CollegeAdapter = DEMO_MODE ? demoApi : {
   },
 };
 
+export function requireOfficialCatalog(catalog: College[]): College[] {
+  if (catalog.some(college => college.dataStatus === 'demo'
+    || college.courses.some(course => course.feeBasis === 'demo-assumption'))) {
+    throw new Error('College information is being updated. Please try again shortly.');
+  }
+  return catalog;
+}
+
 export async function getCatalog(): Promise<College[]> {
-  return DEMO_MODE ? demoColleges : request('/colleges/catalog', { token: null });
+  const catalog = DEMO_MODE ? demoColleges : await request<College[]>('/colleges/catalog', { token: null });
+  return requireOfficialCatalog(catalog);
 }
 export const authApi = {
   register: (data: {name: string; email: string; password: string}) =>

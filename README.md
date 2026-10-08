@@ -20,12 +20,12 @@ Set `JWT_SECRET` in `backend/.env` to a unique value of at least 32 characters. 
 python3 -c 'import secrets; print(secrets.token_urlsafe(48))'
 ```
 
-For the local demo dataset, also set `ALLOW_DEMO_SEED=true`. Then:
+To load the official catalog locally:
 
 ```bash
 make db
 make migrate
-make seed
+make apply-catalog
 make api
 ```
 
@@ -54,25 +54,13 @@ removing users or workspace entries. The schema uses PostgreSQL 16 features.
 - Retry-safe guest import, explicit browser/account conflicts and revision checks for newer edits.
 - JSON backup/import and a downloadable browser recovery copy.
 
-The directory starts with 19 colleges and 57 courses from **demo data**. An optional reviewed pilot
-adds source-linked tuition and duration for nine courses at IIT Bombay, IIT Delhi, IIT Madras,
-NIT Trichy and IISc; the expanded batch is applied in the current local database.
-Other claims remain demo data. Sources and missing data remain visible; personal
-dates are student targets. Photos are illustrative. Reviews, forums,
-popularity badges and rank predictions have been removed from the active product.
+The directory contains **19 institutions and 28 published programmes** with official source links. It has **13 sourced tuition claims, 26 sourced duration claims and four NIRF outcome cohorts**. Sample figures, accreditation claims, facilities and stock campus photographs have been removed. Missing information stays unavailable; personal dates remain student targets. Reviews, forums, popularity badges and rank predictions remain outside the active product.
 
-## Reviewed course data
+## Official catalog data
 
-After migrations, run `make review-pilot` to preview the included official-source review and
-`make apply-pilot` to apply it. The import preserves course IDs and student notes, protects reviewed
-values from demo reseeding, and displays fee scope/annualization in the connected app. The standalone
-preview retains its demo fixtures. See [SOURCE_REVIEW.md](SOURCE_REVIEW.md) for evidence, format,
-commands and the remaining data work.
-Use `make review-directory` / `make apply-directory` for the current nine-course batch.
-The earlier four-course batch remains available through `make review-batch` / `make apply-batch`.
-Applying reviews requires
-retained source PDFs that match the manifest hashes. Open `/sources` (also linked from the data
-banner) to see claim coverage, cited documents and course-specific review details.
+Run `make review-catalog` to validate every retained source checksum, then `make apply-catalog` to apply the versioned release. The upgrade preserves accounts, notes and original option IDs; it archives unconfirmed sample programmes instead of deleting them. Demo reseeding cannot overwrite an official catalog. The standalone HTML uses the same public snapshot and retains aliases for archived guest options.
+
+Open `/sources`, linked in the footer, for institution references, claim coverage, original fee periods, graduating cohorts and document checksums. IIM Bangalore's two programme references rely on indexed official pages and have no archived original document; those claims remain unverified. See [OFFICIAL_DATA.md](OFFICIAL_DATA.md) for scope, category and year details. [SOURCE_REVIEW.md](SOURCE_REVIEW.md) records the earlier nine-course pilot, which remains available for regression/operator reference.
 
 ## Guest notes and account sync
 
@@ -92,14 +80,14 @@ into guest storage.
 ## Standalone preview
 
 Open [preview/college-finder.html](preview/college-finder.html) directly in a browser for the
-fixture-based guest experience. No backend is needed, and account sync requires the connected app.
-Fonts/photos use external URLs with local visual fallbacks.
+official-catalog guest experience. No backend is needed, and account sync requires the connected app.
+Fonts use external URLs with local visual fallbacks; institution artwork uses a neutral icon.
 
 ```bash
 make preview  # rebuilds the production bundle and standalone HTML
 ```
 
-For a fixture-only Vite session, set `VITE_DATA_MODE=demo` in `frontend/.env.local`. Otherwise,
+For a standalone-catalog Vite session, set `VITE_DATA_MODE=demo` in `frontend/.env.local`. Otherwise,
 use `frontend/.env.example` for API configuration. Vite environment changes require a restart.
 
 ## Checks
@@ -116,8 +104,8 @@ a database name ending in `_test`, reject the application database and use a sep
 schema per test. For a different server, supply `TEST_DATABASE_URL`; provision that test database
 separately. The backend development dependency snapshot is in `backend/requirements-dev.lock`.
 
-Current verification: **40 backend and 27 frontend tests pass**, Ruff/ESLint pass, and the production
-and standalone builds pass. The Python 3.13 API container builds and serves PostgreSQL-backed
+Current verification: **43 backend and 29 frontend tests pass**, Ruff/ESLint pass, and the production
+and standalone build checks are recorded in the release log. The Python 3.13 API container builds and serves PostgreSQL-backed
 catalog and authenticated reads; Alembic reports no schema drift. Local Python 3.14 also passes
 the integration suite. Earlier standalone walkthroughs checked responsive discovery, comparison,
 costs and guest note persistence. The connected Safari walkthrough now verifies guest note editing,
@@ -137,11 +125,11 @@ For deployment, build `backend/Dockerfile`, provide `DATABASE_URL`, `JWT_SECRET`
 and use its default command, which runs Alembic migrations before serving traffic. Build the frontend with `VITE_API_URL` pointing
 to the public backend `/api` URL, and configure SPA rewrites to `index.html`. Match `FRONTEND_URL`
 to the deployed frontend origin. Keep `ALLOW_DEMO_SEED=false` outside explicit demo environments.
-The [free demo is deployed](https://college-finder-peach.vercel.app), and its HTTP/API checks pass.
+The existing site is [college-finder-peach.vercel.app](https://college-finder-peach.vercel.app). The official-catalog rollout is tracked in [REAL_DATA_PLAN.md](REAL_DATA_PLAN.md); earlier deployed checks do not certify this update.
 A fully reviewed admissions catalog, password recovery, email verification and historical
 cutoff exploration remain future work. Dashboard configuration and a clean-database deployment
 rehearsal are prepared in [DEPLOYMENT.md](DEPLOYMENT.md). The selected free Render demo has
-an explicit empty-catalog bootstrap and never creates the shared demo login. The current directory catalog loads all records for UI
+an opt-in versioned catalog upgrade and never creates the shared demo login. The current directory catalog loads all records for UI
 lookups; revisit that approach before a large production dataset.
 
 See [PLAN.md](PLAN.md) for product decisions, milestone status and release gates.

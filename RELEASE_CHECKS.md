@@ -1,3 +1,15 @@
+## Official catalog conversion — 8 October 2026
+
+Current automated checks pass: 43 backend tests, 29 frontend tests, Ruff/ESLint, Node 24 production and standalone builds, retained source checksum validation, and Alembic schema-drift check. The existing local database upgraded without deleting private records. An isolated Python 3.13/PostgreSQL 16 startup and HTTP/CORS/discovery/compare/registration/login/workspace rehearsal passed; replay on restart was a no-op.
+
+The catalog now exposes 19 institutions / 28 programmes, 13 tuition claims, 26 duration claims, four outcome cohorts and 47 retained referenced documents. Sample figures/images and both global banners are removed in the prepared frontend. Legacy aliases retain archived guest notes. Details and comparisons use median salary, graduating year, programme group and cohort counts.
+
+**New local visual QA passed after Safari access recovered.** Desktop and 360 × 900 px Sources layouts show both banners removed, correct claim/document counts, 5.5-year MBBS structure, readable source notes and wrapping checksums. Space collapses the focused review disclosure. IISc outcome labels/counts were checked in the accessibility tree. This is desktop emulation, not physical-device or complete screen-reader certification. Earlier broader journey checks below remain historical evidence.
+
+**Hosted rollout is in progress.** Backend commit `84b2934` is pushed and Render deployment `dep-db3fo5aj9qps73fev5j0` was started on the existing free service. The live API now returns 19 institutions / 28 programmes with no sample profiles. Frontend publication follows. See `REAL_DATA_PLAN.md` for current execution status.
+
+---
+
 # Demo release checks
 
 Checked on 8 October 2026. Local checks and deployed HTTP/API checks pass as recorded below.

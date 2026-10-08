@@ -1,4 +1,5 @@
 import { demoColleges } from '../api/index.ts';
+import legacyOptions from '../data/legacy-options.json' with { type: 'json' };
 import { optionKey } from '../domain/college.ts';
 import { STAGES, type GuestState, type Option, type Preferences, type WorkspaceEntry } from '../types/index.ts';
 
@@ -17,7 +18,8 @@ export function canonicalOption(value: Option): Option | null {
   if (typeof collegeId !== 'string' || !uuid.test(collegeId)) return null;
   if (value.courseId === null) return { collegeId, courseId: null };
   const course = college?.courses.find(item => item.id === value.courseId || item.legacyId === value.courseId);
-  const courseId = course?.id ?? value.courseId;
+  const alias = legacyOptions.find(item => item.collegeId === collegeId && item.legacyId === value.courseId);
+  const courseId = course?.id ?? alias?.courseId ?? value.courseId;
   return typeof courseId === 'string' && uuid.test(courseId) ? { collegeId, courseId } : null;
 }
 

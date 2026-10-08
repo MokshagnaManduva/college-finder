@@ -20,7 +20,7 @@ function EntryCard({ entry, edit, board = false }: { entry: WorkspaceEntry; edit
   const cost = entry.scenario && course ? estimateCost(entry.scenario, course.durationMonths) : null;
   return <article className={`workspace-card ${board ? 'board-card' : ''}`} draggable={board}
     onDragStart={event => { event.dataTransfer.setData('text/plain', entry.id); event.dataTransfer.effectAllowed = 'move'; }}>
-    <div className="entry-title"><span className="entry-mark"><Bookmark size={18} /></span><div><Link to={`/colleges/${college.slug}`}><h3>{college.name}</h3></Link><p>{course?.name ?? 'College research · select a course in details'}</p><small>{college.city}, {college.state}</small></div><button className="icon-button" aria-label={`Edit ${college.name}`} onClick={event => { event.currentTarget.focus(); edit(entry); }}><Pencil size={16} /></button></div>
+    <div className="entry-title"><span className="entry-mark"><Bookmark size={18} /></span><div><Link to={`/colleges/${college.slug}`}><h3>{college.name}</h3></Link><p>{course?.name ?? (entry.courseId ? 'Programme archived · your notes are kept' : 'College research · select a course in details')}</p><small>{college.city}, {college.state}</small></div><button className="icon-button" aria-label={`Edit ${college.name}`} onClick={event => { event.currentTarget.focus(); edit(entry); }}><Pencil size={16} /></button></div>
     {entry.nextAction && <p className="entry-next"><ArrowRight size={14} /><span>{entry.nextAction}</span></p>}
     {entry.notes && <p className="entry-notes">{entry.notes}</p>}
     <div className="entry-footer"><label><span className="sr-only">Stage for {college.name}</span><select value={entry.stage} onChange={event => updateEntry(entry.id, { stage: event.target.value as Stage })}>{STAGES.map(stage => <option key={stage}>{stage}</option>)}</select></label>
@@ -81,7 +81,7 @@ export function WorkspacePage() {
       const url = URL.createObjectURL(new Blob([JSON.stringify(recovery, null, 2)], {type: 'application/json'}));
       const anchor = document.createElement('a'); anchor.href = url; anchor.download = 'college-finder-browser-recovery.json'; anchor.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
-    }}>Export browser recovery</button>}<span>Move notes between the standalone preview and the connected app.</span></div>
+    }}>Export browser recovery</button>}<span>Keep a JSON backup of your notes and plans. Backups can be restored in another browser. Review saved tuition estimates against current programme sources.</span></div>
     {syncError && <div className="sync-panel" role="alert"><h3>Some browser options still need to sync.</h3>
       <p>{syncError} Your browser notes remain saved and can be exported.</p>
       <button className="button primary" onClick={() => void retrySync()}>Retry sync</button></div>}

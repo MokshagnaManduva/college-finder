@@ -2,7 +2,7 @@ PYTHON ?= python3
 BACKEND_PYTHON := .venv/bin/python
 TEST_DATABASE_URL ?= postgresql+asyncpg://college:college@localhost:$(or $(POSTGRES_PORT),5432)/college_finder_test
 
-.PHONY: setup db migrate seed seed-demo review-pilot apply-pilot review-batch apply-batch review-directory apply-directory api web test test-db web-test preview lint build
+.PHONY: setup db migrate seed seed-demo review-pilot apply-pilot review-batch apply-batch review-directory apply-directory review-catalog apply-catalog api web test test-db web-test preview lint build
 
 setup:
 	$(PYTHON) -m venv backend/.venv
@@ -39,6 +39,12 @@ review-directory:
 
 apply-directory:
 	cd backend && $(BACKEND_PYTHON) -m seed.review seed/data/reviewed_directory_2026.json --evidence-dir seed/evidence --apply
+
+review-catalog:
+	cd backend && $(BACKEND_PYTHON) -m seed.catalog
+
+apply-catalog:
+	cd backend && $(BACKEND_PYTHON) -m seed.catalog --apply
 
 api:
 	cd backend && $(BACKEND_PYTHON) -m uvicorn app.main:app --reload --port 8000

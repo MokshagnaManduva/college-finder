@@ -20,7 +20,7 @@ export interface College {
   city: string;
   state: string;
   type: string;
-  established: number;
+  established: number | null;
   description: string;
   image: string;
   accreditation: string;
@@ -36,6 +36,11 @@ export interface College {
     topRecruiters: string[];
     reportingYear: number | null;
     scope: string | null;
+    medianPackage?: number | null;
+    graduates?: number | null;
+    placed?: number | null;
+    higherStudies?: number | null;
+    source?: SourceInfo | null;
   };
 }
 
@@ -97,10 +102,11 @@ export interface GuestState {
 export interface SourceInfo {
   id: string; title: string; status: 'demo' | 'unverified' | 'verified'; url: string | null;
   reportingYear: number | null; verifiedAt: string | null;
+  documentSha256?: string | null; documentFormat?: string | null; notes?: string | null;
 }
 export interface CourseEvidence {
   documentSha256?: string | null;
-  rawValue: number; rawUnit: 'INR/semester' | 'INR/year' | 'months' | 'years' | 'semesters'; factor: number;
+  rawValue: number; rawUnit: 'INR/semester' | 'INR/year' | 'INR/installment' | 'months' | 'years' | 'semesters'; factor: number;
   normalizedValue: number; notes: string; reviewer: string; reviewedAt: string; source: SourceInfo;
 }
 export interface User { id: string; name: string; email: string }

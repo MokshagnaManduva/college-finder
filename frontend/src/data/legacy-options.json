@@ -1,0 +1,287 @@
+[
+  {
+    "collegeId": "d7c1fd7e-6fee-5565-a627-ac54ea352704",
+    "courseId": "a2b49c90-68b0-58bd-8130-03374db0a2bf",
+    "legacyId": "iit-bombay-1"
+  },
+  {
+    "collegeId": "d7c1fd7e-6fee-5565-a627-ac54ea352704",
+    "courseId": "70206e4a-6a7c-55bf-ab22-6dc185ee72c6",
+    "legacyId": "iit-bombay-2"
+  },
+  {
+    "collegeId": "d7c1fd7e-6fee-5565-a627-ac54ea352704",
+    "courseId": "c650c983-cd67-58d0-b3f0-b2768ed545df",
+    "legacyId": "iit-bombay-3"
+  },
+  {
+    "collegeId": "d7c1fd7e-6fee-5565-a627-ac54ea352704",
+    "courseId": "dfc9b1f7-bb74-5f7f-9125-703f2a02634c",
+    "legacyId": "iit-bombay-4"
+  },
+  {
+    "collegeId": "f598bfc6-932d-510e-9a81-55df745e78e2",
+    "courseId": "db12c89b-4c25-5b31-ace7-1a69324054bf",
+    "legacyId": "iit-delhi-1"
+  },
+  {
+    "collegeId": "f598bfc6-932d-510e-9a81-55df745e78e2",
+    "courseId": "7478a43c-d800-595a-8ba2-d33fb37a30bf",
+    "legacyId": "iit-delhi-2"
+  },
+  {
+    "collegeId": "f598bfc6-932d-510e-9a81-55df745e78e2",
+    "courseId": "00c1a1d9-b9c6-5c1f-a3fa-d7962e7eb45e",
+    "legacyId": "iit-delhi-3"
+  },
+  {
+    "collegeId": "58592c02-5ab4-556b-8c01-02e74fc48f8f",
+    "courseId": "1cf0c116-5fba-5ade-be7c-d2a830d51df3",
+    "legacyId": "iit-madras-1"
+  },
+  {
+    "collegeId": "58592c02-5ab4-556b-8c01-02e74fc48f8f",
+    "courseId": "468ccd2d-0f7f-56bf-adbf-db3b0643e905",
+    "legacyId": "iit-madras-2"
+  },
+  {
+    "collegeId": "58592c02-5ab4-556b-8c01-02e74fc48f8f",
+    "courseId": "eb276a10-a240-5fe4-b0f5-d4351957e556",
+    "legacyId": "iit-madras-3"
+  },
+  {
+    "collegeId": "f632a15a-11c7-5e47-9ff0-38ef79865cac",
+    "courseId": "a7506ac6-67b7-512a-babb-806695d1a6c1",
+    "legacyId": "bits-pilani-1"
+  },
+  {
+    "collegeId": "f632a15a-11c7-5e47-9ff0-38ef79865cac",
+    "courseId": "71c06828-fbe5-5563-907c-86c3c01e6909",
+    "legacyId": "bits-pilani-2"
+  },
+  {
+    "collegeId": "f632a15a-11c7-5e47-9ff0-38ef79865cac",
+    "courseId": "20e8f4d4-cdd3-5540-a846-747b31b06823",
+    "legacyId": "bits-pilani-3"
+  },
+  {
+    "collegeId": "78161a05-0496-56c0-ab42-45472a0a2de7",
+    "courseId": "81e7a464-7301-5a0a-9c8c-f861c38980a8",
+    "legacyId": "nit-trichy-1"
+  },
+  {
+    "collegeId": "78161a05-0496-56c0-ab42-45472a0a2de7",
+    "courseId": "4d8c2bb3-fce0-50cd-aca0-0a1f0ca49479",
+    "legacyId": "nit-trichy-2"
+  },
+  {
+    "collegeId": "78161a05-0496-56c0-ab42-45472a0a2de7",
+    "courseId": "e06446c1-3200-5a1b-9a9f-789107aaff1c",
+    "legacyId": "nit-trichy-3"
+  },
+  {
+    "collegeId": "40fc8312-fc5d-5bd4-bdc6-890b4af7b793",
+    "courseId": "25192268-3147-5d9d-bf25-55d37b1092a9",
+    "legacyId": "vit-vellore-1"
+  },
+  {
+    "collegeId": "40fc8312-fc5d-5bd4-bdc6-890b4af7b793",
+    "courseId": "b89e1402-5fd9-5706-a3bc-6dec1b71c016",
+    "legacyId": "vit-vellore-2"
+  },
+  {
+    "collegeId": "40fc8312-fc5d-5bd4-bdc6-890b4af7b793",
+    "courseId": "780637cf-8834-5e73-baae-53dadf187605",
+    "legacyId": "vit-vellore-3"
+  },
+  {
+    "collegeId": "f6c3f132-ea59-5cce-a0a8-5a27ec6206d5",
+    "courseId": "f132b5da-2d50-5ea9-bcda-9803f015b731",
+    "legacyId": "iim-ahmedabad-1"
+  },
+  {
+    "collegeId": "f6c3f132-ea59-5cce-a0a8-5a27ec6206d5",
+    "courseId": "cf7aa311-06b1-5091-b0c2-ea09f276ce3a",
+    "legacyId": "iim-ahmedabad-2"
+  },
+  {
+    "collegeId": "f6c3f132-ea59-5cce-a0a8-5a27ec6206d5",
+    "courseId": "5bbadc8f-a7f8-545f-9d8f-c85bf76ee8ff",
+    "legacyId": "iim-ahmedabad-3"
+  },
+  {
+    "collegeId": "000b0193-3cce-532e-97b9-6c196d28f6b3",
+    "courseId": "27976a30-73a5-54d6-af5e-4eb90a510cfb",
+    "legacyId": "iim-bangalore-1"
+  },
+  {
+    "collegeId": "000b0193-3cce-532e-97b9-6c196d28f6b3",
+    "courseId": "448e558d-bea5-56c9-9093-47fe2cac7cb9",
+    "legacyId": "iim-bangalore-2"
+  },
+  {
+    "collegeId": "92ed979f-9b98-5534-8520-46dc17fa05e6",
+    "courseId": "7e47b7c1-4151-5764-8569-47b17d73c066",
+    "legacyId": "aiims-delhi-1"
+  },
+  {
+    "collegeId": "92ed979f-9b98-5534-8520-46dc17fa05e6",
+    "courseId": "4449d3a2-0c60-5bdc-b3d9-490eeeb39e7d",
+    "legacyId": "aiims-delhi-2"
+  },
+  {
+    "collegeId": "92ed979f-9b98-5534-8520-46dc17fa05e6",
+    "courseId": "ac8451b3-a6d0-5ea6-93c0-75be5304d20d",
+    "legacyId": "aiims-delhi-3"
+  },
+  {
+    "collegeId": "ac36e41c-ad91-5fe9-ae71-7e42bb61613a",
+    "courseId": "018d50c2-f348-5df8-936b-eba6082bea24",
+    "legacyId": "manipal-university-1"
+  },
+  {
+    "collegeId": "ac36e41c-ad91-5fe9-ae71-7e42bb61613a",
+    "courseId": "13b472e1-407d-57f8-923b-47e1d65c9238",
+    "legacyId": "manipal-university-2"
+  },
+  {
+    "collegeId": "ac36e41c-ad91-5fe9-ae71-7e42bb61613a",
+    "courseId": "d721e607-2153-5203-accb-4d1c685b6d33",
+    "legacyId": "manipal-university-3"
+  },
+  {
+    "collegeId": "c0dc1cc4-ac73-53f4-b2d7-2dfcdc0f0ba3",
+    "courseId": "7bcc38f9-bee4-5d1b-9454-d3dfd4e67f9f",
+    "legacyId": "delhi-university-1"
+  },
+  {
+    "collegeId": "c0dc1cc4-ac73-53f4-b2d7-2dfcdc0f0ba3",
+    "courseId": "03c05d81-6870-5f02-8ee7-266a8e8231e4",
+    "legacyId": "delhi-university-2"
+  },
+  {
+    "collegeId": "c0dc1cc4-ac73-53f4-b2d7-2dfcdc0f0ba3",
+    "courseId": "3d2dd992-4dbe-5b16-8ca6-5e1da5e3508d",
+    "legacyId": "delhi-university-3"
+  },
+  {
+    "collegeId": "94961299-2e01-54f7-9545-497cf5e92af0",
+    "courseId": "3a68467c-203d-5d07-97b3-81e9ef84945b",
+    "legacyId": "iisc-bangalore-1"
+  },
+  {
+    "collegeId": "94961299-2e01-54f7-9545-497cf5e92af0",
+    "courseId": "e6ebbb1b-8529-58a8-b1e4-de7ddceb2c9e",
+    "legacyId": "iisc-bangalore-2"
+  },
+  {
+    "collegeId": "94961299-2e01-54f7-9545-497cf5e92af0",
+    "courseId": "5f11e74f-2943-5ded-b484-d75f9fe85aea",
+    "legacyId": "iisc-bangalore-3"
+  },
+  {
+    "collegeId": "6904b9fb-263d-5100-a20b-72429512b732",
+    "courseId": "73e74daa-2102-5d76-98dd-6decaa5c3e47",
+    "legacyId": "jadavpur-university-1"
+  },
+  {
+    "collegeId": "6904b9fb-263d-5100-a20b-72429512b732",
+    "courseId": "e28eb0b5-d227-5699-aa02-e06537d6716d",
+    "legacyId": "jadavpur-university-2"
+  },
+  {
+    "collegeId": "6904b9fb-263d-5100-a20b-72429512b732",
+    "courseId": "a77ff6a9-c351-52b3-a230-2ffdcf434c2c",
+    "legacyId": "jadavpur-university-3"
+  },
+  {
+    "collegeId": "8397a441-0eb8-5bcc-bb0f-bebd3298edc9",
+    "courseId": "be1a2cd5-3958-5f3f-a8c4-2cec608a7b20",
+    "legacyId": "christ-university-1"
+  },
+  {
+    "collegeId": "8397a441-0eb8-5bcc-bb0f-bebd3298edc9",
+    "courseId": "eb578b7f-e6b3-54d6-9665-1648da944ca3",
+    "legacyId": "christ-university-2"
+  },
+  {
+    "collegeId": "8397a441-0eb8-5bcc-bb0f-bebd3298edc9",
+    "courseId": "d1e8a574-b976-5466-a8f5-bd08f17263af",
+    "legacyId": "christ-university-3"
+  },
+  {
+    "collegeId": "02fb3115-35ab-5dcd-9c45-a787f115c7ad",
+    "courseId": "8a61a06a-9b47-5121-b424-1e38914e0b31",
+    "legacyId": "amity-university-noida-1"
+  },
+  {
+    "collegeId": "02fb3115-35ab-5dcd-9c45-a787f115c7ad",
+    "courseId": "f47c6a2d-ac7f-54c5-ba23-bd0aa9a6bef9",
+    "legacyId": "amity-university-noida-2"
+  },
+  {
+    "collegeId": "02fb3115-35ab-5dcd-9c45-a787f115c7ad",
+    "courseId": "df392dfd-9c1b-5ac3-bb1c-a93df38567ba",
+    "legacyId": "amity-university-noida-3"
+  },
+  {
+    "collegeId": "6ea6c83c-cdc6-5a52-85e5-f47245233cbd",
+    "courseId": "74363da7-44e6-58eb-9b4f-2c37fbf0fb29",
+    "legacyId": "srm-university-1"
+  },
+  {
+    "collegeId": "6ea6c83c-cdc6-5a52-85e5-f47245233cbd",
+    "courseId": "9ff45084-663d-5682-bced-bd54725e7960",
+    "legacyId": "srm-university-2"
+  },
+  {
+    "collegeId": "6ea6c83c-cdc6-5a52-85e5-f47245233cbd",
+    "courseId": "6e47870c-9795-5d4c-ae48-e613cf28eacf",
+    "legacyId": "srm-university-3"
+  },
+  {
+    "collegeId": "8de1be8a-f0d5-51bd-9057-5528cedd85d0",
+    "courseId": "c1a3714a-426f-5563-ad7b-db927a7d5412",
+    "legacyId": "symbiosis-pune-1"
+  },
+  {
+    "collegeId": "8de1be8a-f0d5-51bd-9057-5528cedd85d0",
+    "courseId": "8204b8f0-df09-5401-a82f-16c80733ce0d",
+    "legacyId": "symbiosis-pune-2"
+  },
+  {
+    "collegeId": "8de1be8a-f0d5-51bd-9057-5528cedd85d0",
+    "courseId": "c7f61bef-17a4-5ac7-b7ea-7dd09b314306",
+    "legacyId": "symbiosis-pune-3"
+  },
+  {
+    "collegeId": "98f420ed-8554-565f-b6d4-052d74bad96f",
+    "courseId": "0246fd0a-29e0-5b9a-afe2-20c50bba258b",
+    "legacyId": "pune-university-1"
+  },
+  {
+    "collegeId": "98f420ed-8554-565f-b6d4-052d74bad96f",
+    "courseId": "ba90eb73-43dc-5424-8129-e6228f5b1385",
+    "legacyId": "pune-university-2"
+  },
+  {
+    "collegeId": "98f420ed-8554-565f-b6d4-052d74bad96f",
+    "courseId": "0ebc5c93-71e9-509c-8123-1f2fc8c73fd2",
+    "legacyId": "pune-university-3"
+  },
+  {
+    "collegeId": "17d21449-c044-59b5-bcc5-71f3b4dd714d",
+    "courseId": "34fe1a3c-5bbc-5f30-b446-2519ce35533f",
+    "legacyId": "osmania-university-1"
+  },
+  {
+    "collegeId": "17d21449-c044-59b5-bcc5-71f3b4dd714d",
+    "courseId": "bc6618b4-ecc2-53d9-b1ea-95012129ef79",
+    "legacyId": "osmania-university-2"
+  },
+  {
+    "collegeId": "17d21449-c044-59b5-bcc5-71f3b4dd714d",
+    "courseId": "129b2a37-e8cb-5af1-8809-8de69dfb2cc1",
+    "legacyId": "osmania-university-3"
+  }
+]

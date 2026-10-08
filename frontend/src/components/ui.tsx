@@ -39,8 +39,8 @@ export function Modal({ title, children, onClose }: { title: string; children: R
 export function CampusImage({ src, name, className = '' }: { src: string; name: string; className?: string }) {
   return <div className={`campus-image ${className}`}>
     <span aria-hidden="true"><GraduationCap size={36} /></span>
-    <img src={src} alt={`Illustrative campus photograph for ${name}`} loading="lazy"
-      onError={event => { event.currentTarget.style.display = 'none'; }} />
+    {src && <img src={src} alt={`Campus of ${name}`} loading="lazy"
+      onError={event => { event.currentTarget.style.display = 'none'; }} />}
   </div>;
 }
 

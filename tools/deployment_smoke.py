@@ -106,31 +106,45 @@ def run(frontend, api, *, account_check=False):
         course["id"]: course for college in catalog for course in college["courses"]
     }
     manifest = json.loads(
-        (
-            Path(__file__).parents[1] / "backend/seed/data/reviewed_directory_2026.json"
-        ).read_text()
+        (Path(__file__).parents[1] / "backend/seed/data/official_catalog_2026.json").read_text()
     )
-    assert len(catalog) == 19 and len(courses) == 57
-    for reviewed in manifest["courses"]:
-        course = courses[reviewed["courseId"]]
+    expected = {course["id"]: course for profile in manifest["colleges"] for course in profile["courses"]}
+    assert len(catalog) == len(manifest["colleges"]) and set(courses) == set(expected)
+    for course_id, reviewed in expected.items():
+        course = courses[course_id]
+        assert course["name"] == reviewed["name"] and course["durationMonths"] == reviewed["durationMonths"]
+        assert course["seats"] is None and course["feeBasis"] != "demo-assumption"
         for fact in reviewed["facts"]:
             evidence = course[fact["kind"] + "Evidence"]
-            assert (
-                evidence["rawValue"] == fact["rawValue"]
-                and evidence["rawUnit"] == fact["rawUnit"]
-            )
+            assert evidence["rawValue"] == fact["rawValue"] and evidence["rawUnit"] == fact["rawUnit"]
             assert evidence["documentSha256"] == fact["source"]["documentSha256"]
             assert evidence["source"]["status"] == "verified"
-    assert all(college["dataStatus"] == "demo" for college in catalog)
+        if not any(fact["kind"] == "tuition" for fact in reviewed["facts"]):
+            assert course["annualTuition"] is None
+    by_slug = {profile["slug"]: profile for profile in catalog}
+    for expected_profile in manifest["colleges"]:
+        profile = by_slug[expected_profile["slug"]]
+        assert profile["image"] == "" and profile["facilities"] == []
+        assert profile["dataStatus"] != "demo" and profile["source"]["url"].startswith("https://")
+        assert profile["placements"]["avgPackage"] is None
+        assert profile["placements"]["highestPackage"] is None
+        assert profile["placements"]["placementRate"] is None
+        if outcome := expected_profile.get("outcomes"):
+            assert profile["placements"]["medianPackage"] == outcome["median"]
+            assert profile["placements"]["placed"] == outcome["placed"]
+            assert profile["placements"]["graduates"] == outcome["graduates"]
+            assert profile["placements"]["higherStudies"] == outcome["higherStudies"]
+            assert profile["placements"]["reportingYear"] == 2025
+    assert api_request("/colleges?degree=B.Tech&budget=100000")["total"] == 0
     filtered = api_request("/colleges?degree=B.A.&limit=50")
-    assert filtered["total"] == 3
+    assert filtered["total"] == sum(any(c["degree"] == "B.A." for c in p["courses"]) for p in catalog)
     first, second = catalog[:2]
     options = [
         {"collegeId": college["id"], "courseId": college["courses"][0]["id"]}
         for college in (first, second)
     ]
     assert api_request("/compare", {"options": options})
-    checks.append("Demo catalog, reviewed evidence, discovery and comparison")
+    checks.append("Official catalog, absence of sample figures, reviewed evidence, discovery and comparison")
 
     if account_check:
         account = {
@@ -179,7 +193,7 @@ def run(frontend, api, *, account_check=False):
         "checks": checks,
         "colleges": len(catalog),
         "courses": len(courses),
-        "reviewedCourses": len(manifest["courses"]),
+        "reviewedCourses": sum(bool(c["facts"]) for p in manifest["colleges"] for c in p["courses"]),
         "visualBrowserCheck": "separate",
     }
 

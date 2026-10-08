@@ -41,8 +41,8 @@ test('course search tuition is based on the searched course, not an unrelated ch
   const search = { ...query, search: 'computer science' };
   const matches = matchingCourses(college, search, null);
   assert.equal(matches.length, 1);
-  assert.equal(matches[0].name, 'B.Tech Computer Science');
-  assert.equal(minimumTuition(matches), 220000);
+  assert.equal(matches[0].name, 'B.Tech Computer Science and Engineering');
+  assert.equal(minimumTuition(matches), 200000);
   const result = await collegesApi.list({ ...search, budget: 100000 }, null);
   assert.equal(result.data.some(item => item.id === college.id), false);
 });

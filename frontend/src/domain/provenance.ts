@@ -12,10 +12,17 @@ export function sourceCoverage(colleges: College[]) {
     college, course, tuition: reviewedEvidence(course, 'tuition'), duration: reviewedEvidence(course, 'duration'),
   })));
   const reviewed = rows.filter(row => row.tuition || row.duration);
-  const hashes = new Set(reviewed.flatMap(row => [row.tuition, row.duration]
-    .flatMap(evidence => evidence?.documentSha256 ? [evidence.documentSha256] : [])));
+  const hashes = new Set([
+    ...reviewed.flatMap(row => [row.tuition, row.duration]
+      .flatMap(evidence => evidence?.documentSha256 ? [evidence.documentSha256] : [])),
+    ...colleges.flatMap(college => [college.source, college.placements.source,
+      ...college.courses.map(course => course.source)].flatMap(source =>
+      source?.documentSha256 ? [source.documentSha256] : [])),
+  ]);
   return {courseCount: rows.length, tuitionCount: rows.filter(row => row.tuition).length,
-    durationCount: rows.filter(row => row.duration).length, reviewed, documentCount: hashes.size};
+    durationCount: rows.filter(row => row.duration).length, reviewed, documentCount: hashes.size,
+    outcomeCount: colleges.filter(college => college.placements.medianPackage != null).length,
+    profileCount: colleges.filter(college => college.source?.status === "verified").length};
 }
 
 export function tuitionLabel(course: Course): string {
