@@ -3,7 +3,7 @@ import json
 from uuid import UUID
 
 from fastapi import HTTPException
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -11,6 +11,18 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.models import StudentProfile, User, WorkspaceEntry, WorkspaceImport
 from app.schemas.workspace import EntryCreate, EntryOut, EntryPatch, ImportRequest, Preferences
 from app.services.colleges import validate_option
+
+MAX_ENTRIES = 500  # Per account; keeps list responses and exports bounded.
+
+
+async def require_capacity(db: AsyncSession, user_id: UUID, adding: int = 1) -> None:
+    count = await db.scalar(
+        select(func.count()).select_from(WorkspaceEntry).where(WorkspaceEntry.user_id == user_id)
+    )
+    if (count or 0) + adding > MAX_ENTRIES:
+        raise HTTPException(
+            409, f"A workspace holds up to {MAX_ENTRIES} options. Remove some to add more."
+        )
 
 
 def serialize_entry(entry: WorkspaceEntry) -> EntryOut:
@@ -41,6 +53,7 @@ async def get_owned(db: AsyncSession, user_id: UUID, entry_id: UUID, *, lock: bo
 
 async def create_entry(db: AsyncSession, user_id: UUID, payload: EntryCreate) -> EntryOut:
     await validate_option(db, payload.college_id, payload.course_id)
+    await require_capacity(db, user_id)
     entry = WorkspaceEntry(user_id=user_id, **payload.model_dump())
     db.add(entry)
     try:
@@ -131,6 +144,19 @@ async def import_entries(db: AsyncSession, user_id: UUID, payload: ImportRequest
             raise HTTPException(422, "Import includes a duplicate college/course option")
         seen.add(pair)
         await validate_option(db, *pair)
+    existing = set(
+        (
+            await db.execute(
+                select(WorkspaceEntry.college_id, WorkspaceEntry.course_id).where(
+                    WorkspaceEntry.user_id == user_id
+                )
+            )
+        ).tuples()
+    )
+    if len(existing | seen) > MAX_ENTRIES:
+        raise HTTPException(
+            409, f"A workspace holds up to {MAX_ENTRIES} options. Remove some to add more."
+        )
     imported, conflicts = [], []
     for incoming in payload.entries:
         values = incoming.model_dump(exclude={"client_id"})

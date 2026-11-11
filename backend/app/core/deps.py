@@ -26,7 +26,7 @@ async def get_optional_user(db: Database, credentials: Credentials) -> User | No
     if credentials is None:
         return None
     try:
-        user_id = decode_access_token(credentials.credentials)
+        user_id, version = decode_access_token(credentials.credentials)
     except (jwt.InvalidTokenError, ValueError, TypeError) as exc:
         raise HTTPException(
             status_code=401,
@@ -36,6 +36,13 @@ async def get_optional_user(db: Database, credentials: Credentials) -> User | No
     user = await db.get(User, user_id)
     if user is None:
         raise HTTPException(status_code=401, detail="User no longer exists")
+    if user.token_version != version:
+        # Issued before a password change or sign-out everywhere.
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or expired token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
     return user
 
 

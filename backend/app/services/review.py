@@ -46,7 +46,11 @@ async def import_review(db, manifest: ReviewManifest, *, apply: bool = False):
         {
             "courseId": str(course.id),
             "claim": fact.kind,
-            "before": course.annual_tuition if fact.kind == "tuition" else course.duration_months,
+            "before": {
+                "tuition": course.annual_tuition,
+                "duration": course.duration_months,
+                "seats": course.seats,
+            }.get(fact.kind),
             "after": fact.normalized_value,
         }
         for course, fact, _ in targets
@@ -93,7 +97,9 @@ async def import_review(db, manifest: ReviewManifest, *, apply: bool = False):
         if fact.kind == "tuition":
             course.annual_tuition = fact.normalized_value
             course.fee_basis = "reported"
-        else:
+        elif fact.kind == "duration":
             course.duration_months = fact.normalized_value
+        elif fact.kind == "seats":
+            course.seats = fact.normalized_value
     await db.flush()
     return summary

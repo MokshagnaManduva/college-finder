@@ -18,7 +18,7 @@ function SearchField({ value, onChange }: { value: string; onChange(value: strin
     if (timer.current) clearTimeout(timer.current);
   }, [value]);
   useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
-  return <div className="search-field"><Search size={18} /><input ref={ref} type="search" defaultValue={value}
+  return <div className="search-field"><Search size={18} /><input ref={ref} type="search" maxLength={200} defaultValue={value}
     aria-label="Search colleges, courses or places" placeholder="Search a college, course, or place"
     onChange={event => {
       const next = event.target.value;
@@ -45,13 +45,13 @@ export function ExplorePage() {
   const hasPreferences = Boolean(state.preferences.degree || state.preferences.states.length || state.preferences.budget !== null);
   const [personal, setPersonal] = useState(hasPreferences);
   const budgetValue = params.get('budget');
-  const budget = budgetValue && Number.isSafeInteger(Number(budgetValue)) && Number(budgetValue) >= 0 ? Number(budgetValue) : null;
+  const budget = budgetValue && Number.isSafeInteger(Number(budgetValue)) && Number(budgetValue) >= 0 ? Math.min(Number(budgetValue), 1000000000) : null;
   const sortValue = params.get('sort');
   const query: ExploreQuery = {
-    search: params.get('search') ?? '', state: states.includes(params.get('state') ?? '') ? params.get('state')! : '',
+    search: (params.get('search') ?? '').slice(0, 200), state: states.includes(params.get('state') ?? '') ? params.get('state')! : '',
     degree: degrees.includes(params.get('degree') ?? '') ? params.get('degree')! : '', budget,
     sort: sortValue === 'tuition' || sortValue === 'established' ? sortValue : 'name',
-    page: Math.max(1, Math.floor(Number(params.get('page')) || 1)),
+    page: Math.min(1000000, Math.max(1, Math.floor(Number(params.get('page')) || 1))),
   };
   // Explicit filters override the corresponding preference defaults.
   const preferences = personal && hasPreferences ? {

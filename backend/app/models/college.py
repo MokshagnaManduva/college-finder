@@ -41,6 +41,7 @@ class College(UUIDPrimaryKey, Timestamps, Base):
     image: Mapped[str] = mapped_column(default="", server_default="")
     accreditation: Mapped[str] = mapped_column(default="", server_default="")
     facilities: Mapped[list[str]] = mapped_column(ARRAY(Text))
+    facility_evidence: Mapped[list[dict]] = mapped_column(JSONB, default=list, server_default="[]")
     source_id: Mapped[UUID] = mapped_column(ForeignKey("data_sources.id"))
     catalog_release: Mapped[str | None]
     source: Mapped[DataSource] = relationship(lazy="raise")
@@ -90,7 +91,7 @@ class CourseFact(UUIDPrimaryKey, Timestamps, Base):
     __tablename__ = "course_facts"
     __table_args__ = (
         UniqueConstraint("course_id", "kind", name="uq_course_fact_kind"),
-        CheckConstraint("kind IN ('tuition', 'duration')", name="kind"),
+        CheckConstraint("kind IN ('tuition', 'duration', 'academicFee', 'seats')", name="kind"),
         CheckConstraint("raw_value >= 0 AND normalized_value >= 0", name="values"),
         CheckConstraint("factor > 0", name="factor"),
     )

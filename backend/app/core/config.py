@@ -31,6 +31,16 @@ class Settings(BaseSettings):
             query["ssl"] = query.pop("sslmode")
         return url.set(query=query).render_as_string(hide_password=False)
 
+    @property
+    def frontend_origins(self) -> list[str]:
+        """FRONTEND_URL may list several comma-separated origins; paths are not origins."""
+        origins = []
+        for value in self.frontend_url.split(","):
+            value = value.strip().rstrip("/")
+            if value and value != "*":
+                origins.append(value)
+        return origins
+
     @field_validator("jwt_secret")
     @classmethod
     def require_nonblank_secret(cls, value: str) -> str:

@@ -55,6 +55,7 @@ def serialize_college(college: College) -> CollegeOut:
         image=college.image,
         accreditation=college.accreditation,
         facilities=college.facilities,
+        facility_evidence=college.facility_evidence,
         data_status=college.source.status,
         source=college.source,
         courses=[
@@ -78,6 +79,10 @@ def serialize_college(college: College) -> CollegeOut:
                 duration_evidence=next(
                     (fact for fact in course.facts if fact.kind == "duration"), None
                 ),
+                academic_fee_evidence=next(
+                    (fact for fact in course.facts if fact.kind == "academicFee"), None
+                ),
+                seats_evidence=next((fact for fact in course.facts if fact.kind == "seats"), None),
             )
             for course in college.courses
             if course.published

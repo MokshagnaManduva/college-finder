@@ -9,12 +9,20 @@ from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 
 from app.core.config import get_settings
+from app.core.ratelimit import AttemptLimiter
 from app.db.session import get_engine, get_session_factory
 from app.routers.auth import router as auth_router
 from app.routers.colleges import router as colleges_router
 from app.routers.workspace import router as workspace_router
 
 logger = logging.getLogger(__name__)
+MAX_BODY_BYTES = 2_000_000  # A 200-entry workspace import is well under 1 MB.
+SECURITY_HEADERS = {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "no-referrer",
+    "Cross-Origin-Resource-Policy": "cross-origin",
+}
 
 
 @asynccontextmanager
@@ -36,10 +44,25 @@ def create_app() -> FastAPI:
         redoc_url="/api/redoc",
         openapi_url="/api/openapi.json",
     )
+    app.state.auth_limiter = AttemptLimiter()
+
+    @app.middleware("http")
+    async def guard(request: Request, call_next):
+        declared = request.headers.get("content-length", "0")
+        if not declared.isdigit() or int(declared) > MAX_BODY_BYTES:
+            return JSONResponse(status_code=413, content={"detail": "Request is too large"})
+        response = await call_next(request)
+        for name, value in SECURITY_HEADERS.items():
+            response.headers.setdefault(name, value)
+        if request.url.path.startswith(("/api/auth", "/api/workspace", "/api/profile")):
+            response.headers.setdefault("Cache-Control", "no-store")
+        return response
+
+    # Added last so CORS headers also cover guard and error responses.
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[settings.frontend_url],
-        allow_credentials=True,
+        allow_origins=settings.frontend_origins,
+        allow_credentials=False,
         allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH"],
         allow_headers=["Authorization", "Content-Type"],
     )

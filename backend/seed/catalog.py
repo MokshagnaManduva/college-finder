@@ -13,7 +13,7 @@ from pydantic import AwareDatetime, Field, HttpUrl, model_validator
 from sqlalchemy import delete, select, text, update
 
 from app.db.session import get_engine, get_session_factory
-from app.models import CatalogRelease, College, CollegeMetric, Course, DataSource
+from app.models import CatalogRelease, College, CollegeMetric, Course, CourseFact, DataSource
 from app.schemas.base import APIModel
 from app.schemas.review import ReviewedCourse, ReviewedFact, ReviewManifest
 from app.services.review import import_review
@@ -55,7 +55,7 @@ class CatalogCourse(APIModel):
     degree: str = Field(min_length=1, max_length=100)
     duration_months: int = Field(ge=1, le=144)
     source_key: str
-    facts: list[ReviewedFact] = Field(default_factory=list, max_length=2)
+    facts: list[ReviewedFact] = Field(default_factory=list, max_length=4)
 
     @model_validator(mode="after")
     def duration_matches(self):
@@ -82,6 +82,12 @@ class Outcomes(APIModel):
         return self
 
 
+class CatalogFacility(APIModel):
+    name: str = Field(min_length=1, max_length=100)
+    scope: str = Field(min_length=1, max_length=1000)
+    source_key: str
+
+
 class CatalogProfile(APIModel):
     slug: str = Field(pattern=r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
     name: str = Field(min_length=1, max_length=300)
@@ -93,12 +99,22 @@ class CatalogProfile(APIModel):
     source_key: str
     courses: list[CatalogCourse] = Field(min_length=1, max_length=100)
     outcomes: Outcomes | None = None
+    facilities: list[CatalogFacility] = Field(default_factory=list, max_length=30)
+
+
+class CatalogWithdrawal(APIModel):
+    course_id: UUID
+    kind: Literal["tuition", "duration"]
+    source_key: str
+    expected_value: int = Field(ge=0, le=500_000_000)
+    reason: str = Field(min_length=1, max_length=2000)
 
 
 class OfficialCatalog(APIModel):
     version: str = Field(pattern=r"^official-[a-z0-9-]+$")
     sources: dict[str, CatalogSource]
     colleges: list[CatalogProfile] = Field(min_length=1, max_length=1000)
+    withdrawals: list[CatalogWithdrawal] = Field(default_factory=list, max_length=1000)
 
     @model_validator(mode="after")
     def references(self):
@@ -107,12 +123,32 @@ class OfficialCatalog(APIModel):
         ids = [course.id for college in self.colleges for course in college.courses]
         if len(set(ids)) != len(ids):
             raise ValueError("Duplicate programme ID")
+        withdrawn = [(item.course_id, item.kind) for item in self.withdrawals]
+        if len(set(withdrawn)) != len(withdrawn):
+            raise ValueError("Duplicate claim withdrawal")
+        claims = {
+            (course.id, fact.kind)
+            for college in self.colleges
+            for course in college.courses
+            for fact in course.facts
+        }
+        for item in self.withdrawals:
+            source = self.sources.get(item.source_key)
+            if item.course_id not in ids or not source or source.status != "verified":
+                raise ValueError("A withdrawal requires a known programme and retained source")
+            if (item.course_id, item.kind) in claims:
+                raise ValueError("Cannot publish and withdraw the same claim")
         for college in self.colleges:
             keys = [college.source_key, *(course.source_key for course in college.courses)]
             if college.outcomes:
                 keys.append(college.outcomes.source_key)
+            keys.extend(facility.source_key for facility in college.facilities)
             if any(key not in self.sources for key in keys):
                 raise ValueError("Unknown source key")
+            if len({f.name for f in college.facilities}) != len(college.facilities):
+                raise ValueError("Duplicate facility")
+            if any(self.sources[f.source_key].status != "verified" for f in college.facilities):
+                raise ValueError("Facilities require a checked source")
             if college.outcomes:
                 source = self.sources[college.outcomes.source_key]
                 if source.status != "verified" or source.reporting_year is None:
@@ -158,6 +194,21 @@ async def apply_catalog(db, catalog: OfficialCatalog, digest: str) -> bool:
             raise ValueError("An applied catalog version cannot be changed; create a new release")
         return False
     await seed_data(db, commit=False)
+    for item in catalog.withdrawals:
+        existing = await db.scalar(
+            select(CourseFact)
+            .where(CourseFact.course_id == item.course_id, CourseFact.kind == item.kind)
+            .with_for_update()
+        )
+        if existing:
+            source = await db.get(DataSource, existing.source_id)
+            if (
+                source.document_sha256 != catalog.sources[item.source_key].document_sha256
+                or existing.normalized_value != item.expected_value
+            ):
+                raise ValueError("Cannot withdraw a different reviewed claim")
+            await db.delete(existing)
+    await db.flush()
     source_ids = {}
     for key, source in catalog.sources.items():
         source_id = stable_id("official-source", catalog.version + "/" + key)
@@ -182,7 +233,18 @@ async def apply_catalog(db, catalog: OfficialCatalog, digest: str) -> bool:
                 "description": profile.description,
                 "image": "",
                 "accreditation": "",
-                "facilities": [],
+                "facilities": [f.name for f in profile.facilities],
+                "facility_evidence": [
+                    {
+                        "name": f.name,
+                        "scope": f.scope,
+                        "source": {
+                            "id": str(source_ids[f.source_key]),
+                            **catalog.sources[f.source_key].model_dump(mode="json", by_alias=True),
+                        },
+                    }
+                    for f in profile.facilities
+                ],
                 "source_id": source_ids[profile.source_key],
                 "catalog_release": catalog.version,
             },

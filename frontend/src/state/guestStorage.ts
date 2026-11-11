@@ -10,6 +10,16 @@ export const EMPTY_PREFERENCES: Preferences = {
 export const emptyGuest = (): GuestState => ({
   version: 1, entries: [], compare: [], preferences: { ...EMPTY_PREFERENCES, states: [] },
 });
+export const NOTES_LIMIT = 4000;
+export const NEXT_ACTION_LIMIT = 300;
+// Matches the account API so a stored browser entry can always be imported later.
+export function validDate(value: string): boolean {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+  if (!match) return false;
+  const [year, month, day] = match.slice(1).map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return year >= 1 && date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day;
+}
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 export function canonicalOption(value: Option): Option | null {
@@ -36,7 +46,9 @@ export function validateGuest(value: unknown): GuestState | null {
       || typeof entry.targetDate !== 'string' || typeof entry.createdAt !== 'string') continue;
     if (seen.has(optionKey(option))) continue;
     seen.add(optionKey(option));
-    const cleaned = { ...entry, ...option };
+    const cleaned = { ...entry, ...option, notes: entry.notes.slice(0, NOTES_LIMIT),
+      nextAction: entry.nextAction.slice(0, NEXT_ACTION_LIMIT),
+      targetDate: validDate(entry.targetDate) ? entry.targetDate : '' };
     const scenario = cleaned.scenario;
     if (scenario && !['tuition', 'living', 'other', 'oneTime'].every(key => {
       const amount = scenario[key as keyof typeof scenario];
@@ -53,8 +65,9 @@ export function validateGuest(value: unknown): GuestState | null {
   }).slice(0, 3);
   const p = candidate.preferences;
   const validPreferences = p && typeof p.degree === 'string' && Array.isArray(p.states)
-    && p.states.every(state => typeof state === 'string')
-    && (p.budget === null || (Number.isSafeInteger(p.budget) && p.budget >= 0))
+    && p.states.length <= 30 && p.states.every(state => typeof state === 'string' && state.length <= 100)
+    && p.degree.length <= 100
+    && (p.budget === null || (Number.isSafeInteger(p.budget) && p.budget >= 0 && p.budget <= 1000000000))
     && typeof p.strictBudget === 'boolean' && typeof p.strictLocation === 'boolean';
   return { version: 1, entries, compare, preferences: validPreferences ? p : EMPTY_PREFERENCES };
 }

@@ -110,18 +110,38 @@ export function GuestProvider({ children }: { children: ReactNode }) {
         if (stored && typeof stored.key === 'string' && Array.isArray(stored.entries)) pending = stored;
       } catch { /* Build a new request from the preserved guest data. */ }
       const importConflicts: ImportConflict[] = [];
+      // Options the account cannot accept stay in this browser instead of blocking the rest.
+      const held = new Set<string>();
+      let oneByOne = false;
+      let replayed = pending !== null;
       // Replay interrupted requests, then send additions/edits made after their snapshot.
       while (stillCurrent()) {
-        const conflicted = new Set(importConflicts.map(conflict => conflict.clientId));
-        const candidates = guestRef.current.entries.filter(entry => !conflicted.has(entry.id));
+        const skipped = new Set([...importConflicts.map(conflict => conflict.clientId), ...held]);
+        const candidates = guestRef.current.entries.filter(entry => !skipped.has(entry.id));
         if (!pending && !candidates.length) break;
         if (!pending) {
-          pending = importSnapshot(candidates, crypto.randomUUID());
+          pending = importSnapshot(oneByOne ? candidates.slice(0, 1) : candidates, crypto.randomUUID());
           try { localStorage.setItem(pendingKey, JSON.stringify(pending)); }
           catch { setStorageError('Could not persist the retry key. Browser notes remain recoverable.'); }
         }
-        const result = await workspaceApi.import(pending);
+        let result;
+        try { result = await workspaceApi.import(pending); }
+        catch (error) {
+          // The server rejects a whole request without recording its key, so it is safe to
+          // rebuild: isolate the option it refused rather than replaying the same failure forever.
+          if (!(error instanceof APIError) || ![404, 409, 422].includes(error.status)) throw error;
+          if (!stillCurrent()) return;
+          try { localStorage.removeItem(pendingKey); } catch { /* A rebuilt request uses a new key. */ }
+          // A stored request can also conflict with its own earlier key; rebuilding resolves that.
+          if (error.status === 409 && replayed) { /* rebuild below */ }
+          else if (pending.entries.length <= 1) pending.entries.forEach(entry => held.add(entry.clientId));
+          else oneByOne = true;
+          replayed = false;
+          pending = null;
+          continue;
+        }
         if (!stillCurrent()) return;
+        replayed = false;
         const reconciled = reconcileImport(guestRef.current.entries, pending, result);
         commitGuest({...guestRef.current, entries: reconciled.remaining});
         importConflicts.push(...reconciled.conflicts);
@@ -134,6 +154,8 @@ export function GuestProvider({ children }: { children: ReactNode }) {
       if (!stillCurrent()) return;
       setAccount(current => ({...current, entries: refreshed}));
       setLoaded(true); setSyncError('');
+      const kept = guestRef.current.entries.filter(entry => held.has(entry.id)).length;
+      if (kept) setNotice(`${kept} browser ${kept === 1 ? 'option' : 'options'} could not be added to your account and ${kept === 1 ? 'stays' : 'stay'} in this browser. Use Export browser recovery to keep a copy.`);
     } catch (error) {
       if (stillCurrent()) setSyncError(error instanceof Error ? error.message : 'Sync could not finish. Retry when connected.');
     } finally { busy.current = false; }

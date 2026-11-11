@@ -15,6 +15,7 @@ import { WorkspacePage } from './pages/WorkspacePage';
 import { PreferencesPage } from './pages/PreferencesPage';
 import { InfoPage } from './pages/InfoPage';
 import { SourcesPage } from './pages/SourcesPage';
+import { AccountPage } from './pages/AccountPage';
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { staleTime: Infinity, retry: 1, refetchOnWindowFocus: false } },
@@ -40,6 +41,7 @@ export default function App() {
       <Route path="/workspace" element={<WorkspacePage />} />
       <Route path="/colleges" element={<Navigate to="/explore" replace />} />
       <Route path="/saved" element={<Navigate to="/workspace" replace />} />
+      <Route path="/account" element={<AccountPage />} />
       <Route path="/login" element={<AuthPage />} />
       <Route path="/register" element={<AuthPage register />} />
       <Route path="/predictor" element={<InfoPage kind="retired" />} />

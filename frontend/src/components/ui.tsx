@@ -1,6 +1,7 @@
 import { Component, useEffect, useId, useRef, type ReactNode, type ErrorInfo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, GraduationCap, X } from 'lucide-react';
+import { campusPhoto } from '../domain/photos';
 
 export function EmptyState({ title, children, action = 'Explore colleges', to = '/explore' }: {
   title: string; children: ReactNode; action?: string; to?: string;
@@ -36,12 +37,24 @@ export function Modal({ title, children, onClose }: { title: string; children: R
   </dialog>;
 }
 
-export function CampusImage({ src, name, className = '' }: { src: string; name: string; className?: string }) {
+export function CampusImage({ src, name, slug = '', className = '', priority = false }: {
+  src: string; name: string; slug?: string; className?: string; priority?: boolean;
+}) {
+  const photo = campusPhoto(slug);
+  const image = photo?.src || src;
   return <div className={`campus-image ${className}`}>
     <span aria-hidden="true"><GraduationCap size={36} /></span>
-    {src && <img src={src} alt={`Campus of ${name}`} loading="lazy"
+    {image && <img key={image} src={image} alt={photo?.caption ?? `Campus of ${name}`}
+      loading={priority ? 'eager' : 'lazy'} decoding="async" fetchPriority={priority ? 'high' : 'auto'}
       onError={event => { event.currentTarget.style.display = 'none'; }} />}
   </div>;
+}
+
+export function PhotoCredit({ slug }: { slug: string }) {
+  const photo = campusPhoto(slug);
+  if (!photo) return null;
+  return <span className="photo-credit">Photo: <a href={photo.sourceUrl} target="_blank" rel="noopener noreferrer">{photo.author}</a>
+    {' · '}<a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer">{photo.license}</a></span>;
 }
 
 export class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {

@@ -39,3 +39,19 @@ class UserOut(APIModel):
 class AuthOut(APIModel):
     access_token: str = Field(alias="access_token")
     user: UserOut
+
+
+class PasswordChangeIn(APIModel):
+    current_password: str = Field(min_length=1, max_length=72)
+    new_password: str = Field(min_length=8, max_length=72)
+
+    @field_validator("current_password", "new_password")
+    @classmethod
+    def bcrypt_limit(cls, value: str) -> str:
+        if len(value.encode("utf-8")) > 72:
+            raise ValueError("Password must be at most 72 UTF-8 bytes")
+        return value
+
+
+class DeleteAccountIn(APIModel):
+    password: str = Field(min_length=1, max_length=72)

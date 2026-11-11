@@ -36,9 +36,18 @@ class ReviewedSource(APIModel):
 
 
 class ReviewedFact(APIModel):
-    kind: Literal["tuition", "duration"]
+    kind: Literal["tuition", "duration", "academicFee", "seats"]
     raw_value: StrictInt | StrictFloat = Field(ge=0, le=500_000_000)
-    raw_unit: Literal["INR/semester", "INR/year", "INR/installment", "months", "years", "semesters"]
+    raw_unit: Literal[
+        "INR/semester",
+        "INR/year",
+        "INR/installment",
+        "INR/admission",
+        "months",
+        "years",
+        "semesters",
+        "students",
+    ]
     notes: str = Field(min_length=1, max_length=2000)
     source: ReviewedSource
 
@@ -52,8 +61,15 @@ class ReviewedFact(APIModel):
                 or not 1 <= self.normalized_value <= 144
             ):
                 raise ValueError("Duration must be 1–144 months")
-        elif self.raw_unit in ("months", "years", "semesters"):
-            raise ValueError("Tuition requires an INR fee period")
+        elif self.kind == "seats":
+            if self.raw_unit != "students" or not 1 <= self.raw_value <= 50000:
+                raise ValueError("Intake requires 1–50000 students")
+        elif self.raw_unit not in ("INR/semester", "INR/year", "INR/installment") and not (
+            self.kind == "academicFee" and self.raw_unit == "INR/admission"
+        ):
+            raise ValueError(
+                "Tuition requires an INR fee period; admission payments are academic fees"
+            )
         if round(self.raw_value, 2) != self.raw_value:
             raise ValueError("Original values support at most two decimal places")
         if self.raw_value * self.factor != int(self.raw_value * self.factor):
@@ -74,7 +90,7 @@ class ReviewedFact(APIModel):
 class ReviewedCourse(APIModel):
     college_slug: str = Field(pattern=r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
     course_id: UUID
-    facts: list[ReviewedFact] = Field(min_length=1, max_length=2)
+    facts: list[ReviewedFact] = Field(min_length=1, max_length=4)
 
     @field_validator("facts")
     @classmethod

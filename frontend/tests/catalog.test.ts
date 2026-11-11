@@ -10,18 +10,29 @@ test('published snapshot contains official references and clears sample amounts'
   const courses = demoColleges.flatMap(college => college.courses);
   assert.equal(courses.length, 28);
   assert.equal(courses.find(course => course.name === "PGPEM (Weekend MBA)")?.durationMonths, 24);
-  assert.ok(demoColleges.every(college => college.image === '' && college.facilities.length === 0
+  assert.ok(demoColleges.every(college => college.image === '' && college.facilities.length === (college.facilityEvidence ?? []).length
     && college.source?.url?.startsWith('https://') && college.dataStatus !== 'demo'));
-  assert.ok(courses.every(course => course.feeBasis !== 'demo-assumption' && course.seats === null));
+  assert.ok(courses.every(course => course.feeBasis !== 'demo-assumption' && (course.seats === null || course.seatsEvidence?.source.status === 'verified')));
   assert.ok(demoColleges.every(college => college.placements.avgPackage === null
     && college.placements.highestPackage === null && college.placements.placementRate === null));
   const coverage = sourceCoverage(demoColleges);
   assert.equal(coverage.tuitionCount, 13);
-  assert.equal(coverage.durationCount, 26);
-  assert.equal(coverage.profileCount, 18);
-  assert.equal(coverage.outcomeCount, 4);
+  assert.equal(coverage.durationCount, 27);
+  assert.equal(coverage.profileCount, 19);
+  assert.equal(coverage.outcomeCount, 12);
   assert.ok(coverage.documentCount > 30);
   assert.equal(requireOfficialCatalog(demoColleges), demoColleges);
+  const manipal = demoColleges.find(college => college.slug === 'manipal-university')!.courses[0];
+  assert.equal(manipal.annualTuition, 376000);
+  assert.equal(manipal.tuitionEvidence?.rawUnit, 'INR/year');
+  assert.match(manipal.tuitionEvidence!.notes, /other fees/);
+  const amity = demoColleges.find(college => college.slug === 'amity-university-noida')!.courses[0];
+  assert.equal(amity.durationEvidence?.source.reportingYear, 2026);
+  assert.equal(amity.annualTuition, null);
+  const sibm = demoColleges.find(college => college.slug === 'symbiosis-pune')!.courses[0];
+  assert.equal(sibm.annualTuition, null);
+  assert.equal(sibm.tuitionEvidence, null);
+  assert.match(sibm.source!.notes!, /academic fees total ₹13,10,000/);
   assert.throws(() => requireOfficialCatalog([{...demoColleges[0], dataStatus: 'demo'}]), /being updated/);
 });
 

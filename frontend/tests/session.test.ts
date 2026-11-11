@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { demoColleges, fromWire, patchToWire, toWire } from '../src/api/index.ts';
-import { validateGuest, canonicalOption } from '../src/state/guestStorage.ts';
+import { validateGuest, canonicalOption, validDate } from '../src/state/guestStorage.ts';
 import { safeReturnPath } from '../src/domain/session.ts';
 import { APIError, currentToken, request, SESSION_EVENT, storeToken } from '../src/api/client.ts';
 
@@ -29,6 +29,22 @@ test('invalid stored scenarios are removed while notes are preserved', () => {
   }] })!;
   assert.equal(parsed.entries[0].notes, 'Recover me');
   assert.equal(parsed.entries[0].scenario, undefined);
+});
+
+test('stored entries are kept within the limits the account API accepts', () => {
+  const college = demoColleges[0];
+  const parsed = validateGuest({ version: 1, entries: [{
+    id: 'bc3c69c9-8b90-4717-8c0e-d052d7919a48', collegeId: college.id, courseId: null,
+    notes: 'n'.repeat(5000), nextAction: 'a'.repeat(400), stage: 'Researching', targetDate: '2026-02-30',
+    createdAt: new Date().toISOString(),
+  }], preferences: {degree: '', states: [], budget: 2000000000, strictBudget: false, strictLocation: false} })!;
+  assert.equal(parsed.entries[0].notes.length, 4000);
+  assert.equal(parsed.entries[0].nextAction.length, 300);
+  assert.equal(parsed.entries[0].targetDate, '');
+  assert.equal(parsed.preferences.budget, null);
+  assert.equal(validDate('2028-02-29'), true);
+  for (const bad of ['2027-02-29', '2026-13-01', '26-01-01', 'tomorrow', '2026-1-1']) assert.equal(validDate(bad), false);
+  assert.equal(safeReturnPath('/account'), '/account');
 });
 
 test('auth return paths stay inside the application', () => {

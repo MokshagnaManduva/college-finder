@@ -30,6 +30,7 @@ async def upsert(db: AsyncSession, model, values: dict):
             ("annual_tuition", "tuition"),
             ("fee_basis", "tuition"),
             ("duration_months", "duration"),
+            ("seats", "seats"),
         ):
             if key in updates:
                 reviewed = exists().where(

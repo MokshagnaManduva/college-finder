@@ -32,8 +32,8 @@ export function Shell({ children }: { children: ReactNode }) {
   const location = useLocation();
   const { user, logout, error } = useAuth();
   useEffect(() => {
-    const names: Record<string, string> = { '/': 'Find your place', '/explore': 'Explore colleges', '/workspace': 'My workspace', '/compare': 'Compare options', '/preferences': 'Your preferences', '/sources': 'Sources and coverage', '/login': 'Sign in', '/register': 'Create account' };
-    document.title = `${names[location.pathname] ?? 'College details'} · College Finder`;
+    const names: Record<string, string> = { '/': 'Find your place', '/explore': 'Explore colleges', '/workspace': 'My workspace', '/compare': 'Compare options', '/preferences': 'Your preferences', '/sources': 'Sources and coverage', '/account': 'Your account', '/login': 'Sign in', '/register': 'Create account' };
+    document.title = `${names[location.pathname] ?? (location.pathname.startsWith('/colleges/') ? 'College details' : 'Page not found')} · College Finder`;
   }, [location.pathname]);
   useEffect(() => {
     if (!notice) return;
@@ -58,7 +58,7 @@ export function Shell({ children }: { children: ReactNode }) {
         <NavLink to={to} key={to}>{label}{count > 0 && <span className="nav-count">{count}</span>}</NavLink>)}</nav>
       <div className="header-tools"><Link to="/preferences" className="preferences-link"><SlidersHorizontal size={16} /><span>Your preferences</span></Link>
         {user ? <details className="account-menu"><summary className="guest-avatar" aria-label="Account menu">{user.name[0].toUpperCase()}</summary>
-          <div className="account-popover"><strong>{user.name}</strong><span>{user.email}</span><Link to="/workspace">My workspace</Link><button onClick={logout}>Sign out</button></div>
+          <div className="account-popover"><strong>{user.name}</strong><span>{user.email}</span><Link to="/workspace">My workspace</Link><Link to="/account">Account settings</Link><button onClick={logout}>Sign out</button></div>
         </details> : <Link to="/login" state={{ from: location.pathname + location.search }} className="button secondary signin-link">Sign in</Link>}</div>
     </div></header>
     {error && <div className="storage-warning" role="alert">{error}</div>}

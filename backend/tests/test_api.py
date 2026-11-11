@@ -314,3 +314,120 @@ async def test_seed_is_idempotent_and_preserves_users_and_notes(api):
         assert await db.scalar(select(func.count()).select_from(College)) == 19
         assert await db.scalar(select(func.count()).select_from(Course)) == 57
     assert (await client.get("/api/workspace", headers=headers)).json()[0]["notes"] == "Keep"
+
+
+async def test_password_change_revokes_old_tokens_and_requires_current_password(api):
+    client, _ = api
+    old = await register(client)
+    wrong = await client.post(
+        "/api/auth/password",
+        headers=old,
+        json={"currentPassword": "not-the-password", "newPassword": "replacement123"},
+    )
+    assert wrong.status_code == 403
+    same = await client.post(
+        "/api/auth/password",
+        headers=old,
+        json={"currentPassword": "student1234", "newPassword": "student1234"},
+    )
+    assert same.status_code == 422
+    changed = await client.post(
+        "/api/auth/password",
+        headers=old,
+        json={"currentPassword": "student1234", "newPassword": "replacement123"},
+    )
+    assert changed.status_code == 200, changed.text
+    new = {"Authorization": f"Bearer {changed.json()['access_token']}"}
+    assert (await client.get("/api/auth/me", headers=old)).status_code == 401
+    assert (await client.get("/api/auth/me", headers=new)).status_code == 200
+    credentials = {"email": "student@example.com"}
+    assert (
+        await client.post("/api/auth/login", json={**credentials, "password": "student1234"})
+    ).status_code == 401
+    assert (
+        await client.post("/api/auth/login", json={**credentials, "password": "replacement123"})
+    ).status_code == 200
+    everywhere = await client.post("/api/auth/logout-all", headers=new)
+    assert everywhere.status_code == 200
+    assert (await client.get("/api/auth/me", headers=new)).status_code == 401
+
+
+async def test_account_deletion_requires_password_and_removes_private_records(api):
+    client, factory = api
+    headers = await register(client)
+    other = await register(client, "other@example.com")
+    for owner in (headers, other):
+        created = await client.post("/api/workspace", headers=owner, json=await option(client))
+        assert created.status_code == 201
+    await client.put("/api/profile", headers=headers, json={"degree": "B.Tech"})
+    refused = await client.post(
+        "/api/auth/delete-account", headers=headers, json={"password": "incorrect"}
+    )
+    assert refused.status_code == 403
+    assert (await client.get("/api/auth/me", headers=headers)).status_code == 200
+    removed = await client.post(
+        "/api/auth/delete-account", headers=headers, json={"password": "student1234"}
+    )
+    assert removed.status_code == 204
+    assert (await client.get("/api/auth/me", headers=headers)).status_code == 401
+    assert len((await client.get("/api/workspace", headers=other)).json()) == 1
+    async with factory() as db:
+        assert await db.scalar(select(func.count()).select_from(User)) == 1
+    again = await register(client)
+    assert (await client.get("/api/workspace", headers=again)).json() == []
+
+
+async def test_repeated_login_failures_are_limited_per_account(api):
+    client, _ = api
+    await register(client)
+    credentials = {"email": "student@example.com", "password": "incorrect"}
+    for _ in range(8):
+        assert (await client.post("/api/auth/login", json=credentials)).status_code == 401
+    blocked = await client.post(
+        "/api/auth/login", json={"email": "Student@example.com", "password": "student1234"}
+    )
+    assert blocked.status_code == 429 and int(blocked.headers["retry-after"]) > 0
+    # Another account from the same address is unaffected.
+    other = await register(client, "other@example.com")
+    assert (await client.get("/api/auth/me", headers=other)).status_code == 200
+    assert (
+        await client.post(
+            "/api/auth/login", json={"email": "other@example.com", "password": "student1234"}
+        )
+    ).status_code == 200
+
+
+async def test_security_headers_origins_and_body_limit(api, monkeypatch):
+    client, _ = api
+    response = await client.get("/api/health")
+    assert response.headers["x-content-type-options"] == "nosniff"
+    assert response.headers["x-frame-options"] == "DENY"
+    private = await client.get("/api/workspace")
+    assert private.status_code == 401 and private.headers["cache-control"] == "no-store"
+    large = await client.post(
+        "/api/auth/login",
+        content=b"x" * 2_000_001,
+        headers={"Content-Type": "application/json"},
+    )
+    assert large.status_code == 413
+    settings = get_settings().model_copy(
+        update={"frontend_url": "https://one.example/, https://two.example , *"}
+    )
+    assert settings.frontend_origins == ["https://one.example", "https://two.example"]
+
+
+async def test_workspace_capacity_is_bounded(api, monkeypatch):
+    client, _ = api
+    monkeypatch.setattr("app.services.workspace.MAX_ENTRIES", 1)
+    headers = await register(client)
+    first, second = await option(client), await option(client, "iit-delhi")
+    assert (await client.post("/api/workspace", headers=headers, json=first)).status_code == 201
+    assert (await client.post("/api/workspace", headers=headers, json=second)).status_code == 409
+    payload = {"key": str(uuid4()), "entries": [{**second, "clientId": str(uuid4())}]}
+    assert (
+        await client.post("/api/workspace/import", headers=headers, json=payload)
+    ).status_code == 409
+    replay = {"key": str(uuid4()), "entries": [{**first, "clientId": str(uuid4())}]}
+    assert (
+        await client.post("/api/workspace/import", headers=headers, json=replay)
+    ).status_code == 200

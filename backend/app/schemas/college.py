@@ -42,6 +42,8 @@ class CourseOut(APIModel):
     source: SourceOut
     tuition_evidence: FactOut | None = None
     duration_evidence: FactOut | None = None
+    academic_fee_evidence: FactOut | None = None
+    seats_evidence: FactOut | None = None
 
 
 class PlacementsOut(APIModel):
@@ -66,6 +68,12 @@ class MetricOut(APIModel):
     source: SourceOut
 
 
+class FacilityOut(APIModel):
+    name: str
+    scope: str
+    source: SourceOut
+
+
 class CollegeOut(APIModel):
     id: UUID
     name: str
@@ -79,6 +87,7 @@ class CollegeOut(APIModel):
     image: str
     accreditation: str
     facilities: list[str]
+    facility_evidence: list[FacilityOut] = Field(default_factory=list)
     data_status: Literal["demo", "unverified", "verified"]
     courses: list[CourseOut]
     placements: PlacementsOut

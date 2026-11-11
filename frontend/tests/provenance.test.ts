@@ -56,3 +56,30 @@ test('source coverage counts claims and deduplicates retained documents without 
   assert.equal(tuitionLabel(inconsistent), 'Reported tuition · unverified');
   assert.equal(lowestComparableTuition([checked, inconsistent]), null);
 });
+
+test('academic fees and admission payments retain their period without becoming tuition', async () => {
+  const { annualAcademicFee, displayedFee, reviewedEvidence, intakeLabel } = await import('../src/domain/provenance.ts');
+  const { matchingCourses } = await import('../src/api/index.ts');
+  const sibm = demoColleges.find(college => college.slug === 'symbiosis-pune')!;
+  const course = sibm.courses[0];
+  assert.equal(annualAcademicFee(course), 1310000);
+  assert.equal(course.annualTuition, null);
+  assert.match(displayedFee(course).label, /academic fee/);
+  assert.equal(lowestComparableTuition([course, reviewed]), null);
+  assert.equal(matchingCourses(sibm, {search: '', state: '', degree: '', budget: 2000000,
+    sort: 'name', page: 1}, null).length, 0);
+  const pumba = demoColleges.find(college => college.slug === 'pune-university')!.courses[0];
+  assert.equal(annualAcademicFee(pumba), null);
+  assert.equal(displayedFee(pumba).value, 163983);
+  assert.equal(displayedFee(pumba).annual, false);
+  assert.match(displayedFee(pumba).label, /Admission payment/);
+  assert.equal(reviewedEvidence({...pumba, academicFeeEvidence: {...pumba.academicFeeEvidence!,
+    normalizedValue: 327966}}, 'academicFee'), null);
+  const bombay = demoColleges.find(college => college.slug === 'iit-bombay')!.courses[0];
+  assert.equal(intakeLabel(bombay), 'Reported intake: 199 · 2026');
+  assert.equal(reviewedEvidence({...bombay, seats: 170}, 'seats'), null);
+  const coverage = sourceCoverage(demoColleges);
+  assert.equal(coverage.academicFeeCount, 4);
+  assert.equal(coverage.intakeCount, 8);
+  assert.equal(coverage.facilityCount, 11);
+});

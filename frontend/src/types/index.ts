@@ -9,6 +9,8 @@ export interface Course {
   source?: SourceInfo;
   tuitionEvidence?: CourseEvidence | null;
   durationEvidence?: CourseEvidence | null;
+  academicFeeEvidence?: CourseEvidence | null;
+  seatsEvidence?: CourseEvidence | null;
   seats: number | null;
 }
 
@@ -25,6 +27,7 @@ export interface College {
   image: string;
   accreditation: string;
   facilities: string[];
+  facilityEvidence?: Array<{name: string; scope: string; source: SourceInfo}>;
   dataStatus: 'demo' | 'unverified' | 'verified';
   legacyId?: string;
   source?: SourceInfo;
@@ -106,7 +109,7 @@ export interface SourceInfo {
 }
 export interface CourseEvidence {
   documentSha256?: string | null;
-  rawValue: number; rawUnit: 'INR/semester' | 'INR/year' | 'INR/installment' | 'months' | 'years' | 'semesters'; factor: number;
+  rawValue: number; rawUnit: 'INR/semester' | 'INR/year' | 'INR/installment' | 'INR/admission' | 'students' | 'months' | 'years' | 'semesters'; factor: number;
   normalizedValue: number; notes: string; reviewer: string; reviewedAt: string; source: SourceInfo;
 }
 export interface User { id: string; name: string; email: string }

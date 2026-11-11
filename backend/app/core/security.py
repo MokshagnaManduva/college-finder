@@ -11,7 +11,7 @@ def hash_password(password: str) -> str:
     encoded = password.encode("utf-8")
     if len(encoded) > 72:
         raise ValueError("Password must be at most 72 UTF-8 bytes")
-    return bcrypt.hashpw(encoded, bcrypt.gensalt(rounds=10)).decode("ascii")
+    return bcrypt.hashpw(encoded, bcrypt.gensalt(rounds=12)).decode("ascii")
 
 
 def verify_password(password: str, hashed: str) -> bool:
@@ -23,7 +23,7 @@ def verify_password(password: str, hashed: str) -> bool:
         return False
 
 
-def create_access_token(user_id: UUID, email: str, name: str) -> str:
+def create_access_token(user_id: UUID, email: str, name: str, version: int = 0) -> str:
     settings = get_settings()
     now = datetime.now(UTC)
     return jwt.encode(
@@ -31,6 +31,7 @@ def create_access_token(user_id: UUID, email: str, name: str) -> str:
             "sub": str(user_id),
             "email": email,
             "name": name,
+            "ver": version,
             "iat": now,
             "exp": now + timedelta(days=settings.jwt_expiry_days),
         },
@@ -39,11 +40,12 @@ def create_access_token(user_id: UUID, email: str, name: str) -> str:
     )
 
 
-def decode_access_token(token: str) -> UUID:
+def decode_access_token(token: str) -> tuple[UUID, int]:
+    """Return the subject and the credential version the token was issued for."""
     payload = jwt.decode(
         token,
         get_settings().jwt_secret,
         algorithms=["HS256"],
         options={"require": ["sub", "iat", "exp"]},
     )
-    return UUID(payload["sub"])
+    return UUID(payload["sub"]), int(payload.get("ver", 0))

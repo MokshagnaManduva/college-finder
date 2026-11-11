@@ -86,6 +86,10 @@ export const authApi = {
   login: (data: {email: string; password: string}) =>
     request<{access_token: string; user: User}>('/auth/login', { method: 'POST', body: data, token: null }),
   me: () => request<User>('/auth/me'),
+  changePassword: (data: {currentPassword: string; newPassword: string}) =>
+    request<{access_token: string; user: User}>('/auth/password', { method: 'POST', body: data }),
+  logoutEverywhere: () => request<{access_token: string; user: User}>('/auth/logout-all', { method: 'POST' }),
+  deleteAccount: (password: string) => request<void>('/auth/delete-account', { method: 'POST', body: { password } }),
 };
 
 type WireEntry = Omit<WorkspaceEntry, 'targetDate' | 'scenario'> & {

@@ -30,7 +30,7 @@ async def test_hosted_demo_bootstrap_is_opt_in_atomic_and_never_creates_users(ap
         assert await bootstrap.bootstrap_catalog(db)
         assert await db.scalar(select(func.count()).select_from(College)) == 19
         assert await db.scalar(select(func.count()).select_from(Course)) == 59
-        assert await db.scalar(select(func.count()).select_from(CourseFact)) == 39
+        assert await db.scalar(select(func.count()).select_from(CourseFact)) == 52
         assert await db.scalar(select(func.count()).select_from(User)) == 0
     async with factory() as db:
         college = await db.scalar(select(College).limit(1))

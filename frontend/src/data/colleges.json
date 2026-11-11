@@ -12,6 +12,7 @@
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -23,7 +24,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "b6640f5d-7a68-5525-a293-82b04d692de7",
+          "id": "99cc5aa2-8a07-59a1-8913-e8450ef31c5d",
           "title": "AIIMS New Delhi MBBS prospectus 2023",
           "status": "verified",
           "url": "https://docs.aiimsexams.ac.in/sites/Prospectus_1.pdf",
@@ -55,6 +56,8 @@
           },
           "documentSha256": "a7c5c1829266b41edc937e773676b70b94665e307c918fa56cf3e475210632e2"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "aiims-delhi-1"
       }
     ],
@@ -72,7 +75,7 @@
       "source": null
     },
     "source": {
-      "id": "b6640f5d-7a68-5525-a293-82b04d692de7",
+      "id": "99cc5aa2-8a07-59a1-8913-e8450ef31c5d",
       "title": "AIIMS New Delhi MBBS prospectus 2023",
       "status": "verified",
       "url": "https://docs.aiimsexams.ac.in/sites/Prospectus_1.pdf",
@@ -92,11 +95,12 @@
     "city": "Noida",
     "state": "Uttar Pradesh",
     "type": "University",
-    "established": null,
+    "established": 2005,
     "description": "Amity University Uttar Pradesh offers engineering and other programmes at its Noida campus. The listed Computer Science and Engineering degree is a four-year B.Tech; fee categories need separate confirmation.",
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -108,15 +112,15 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "b6c610c1-4f81-5094-ab6c-432ec4a5712e",
-          "title": "Amity Noida admission prospectus 2025",
+          "id": "b40efd37-652a-5155-ae28-afcf16e7404b",
+          "title": "Amity University Uttar Pradesh, Noida admission prospectus 2026 (PDF page 20 / printed page 17)",
           "status": "verified",
-          "url": "https://www.amity.edu/noida/accf/pdf/admission_prospectus_2025.pdf",
-          "reportingYear": 2025,
-          "verifiedAt": "2026-10-07T19:57:04Z",
-          "documentSha256": "7ef4a89d6cf097b404c302ee567b8bc15df85d381147b690950ac51d1eab010e",
+          "url": "https://noida.amity.edu/assets/pdf/admission-prospectus-2026.pdf#page=20",
+          "reportingYear": 2026,
+          "verifiedAt": "2026-10-08T05:27:48.159322Z",
+          "documentSha256": "125bff8f3fbd5641dc87694262cae04cafe2cd921864e300fff20ae777171cd1",
           "documentFormat": "pdf",
-          "notes": "PDF p. 21 / printed p. 18, programme code 10052: four-year B.Tech Computer Science and Engineering. The 2025 first-semester fees are not presented as current 2026 tuition."
+          "notes": "Programme code 10052, standard B.Tech Computer Science and Engineering at AUUP Noida: four years. Sponsored, non-sponsored, international and three-continent pathways have distinct fees. The prospectus labels first-semester fees rather than a separate tuition component, so no tuition amount is inferred."
         },
         "tuitionEvidence": null,
         "durationEvidence": {
@@ -124,22 +128,44 @@
           "rawUnit": "years",
           "factor": 12,
           "normalizedValue": 48,
-          "notes": "PDF p. 21 / printed p. 18, programme code 10052: four-year B.Tech Computer Science and Engineering. The 2025 first-semester fees are not presented as current 2026 tuition.",
+          "notes": "Programme code 10052, standard B.Tech Computer Science and Engineering at AUUP Noida: four years. Sponsored, non-sponsored, international and three-continent pathways have distinct fees. The prospectus labels first-semester fees rather than a separate tuition component, so no tuition amount is inferred.",
           "reviewer": "College Finder official-source review",
-          "reviewedAt": "2026-10-07T19:57:04Z",
+          "reviewedAt": "2026-10-08T05:27:48.159322Z",
           "source": {
-            "id": "5aba0985-7561-5091-9c42-bbac74b19fd0",
-            "title": "Amity Noida admission prospectus 2025",
+            "id": "1ecb9915-2441-52a8-926b-f5d09e8757c8",
+            "title": "Amity University Uttar Pradesh, Noida admission prospectus 2026 (PDF page 20 / printed page 17)",
             "status": "verified",
-            "url": "https://www.amity.edu/noida/accf/pdf/admission_prospectus_2025.pdf",
-            "reportingYear": 2025,
-            "verifiedAt": "2026-10-07T19:57:04Z",
-            "documentSha256": "7ef4a89d6cf097b404c302ee567b8bc15df85d381147b690950ac51d1eab010e",
+            "url": "https://noida.amity.edu/assets/pdf/admission-prospectus-2026.pdf#page=20",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-08T05:27:48.159322Z",
+            "documentSha256": "125bff8f3fbd5641dc87694262cae04cafe2cd921864e300fff20ae777171cd1",
             "documentFormat": "pdf",
-            "notes": "PDF p. 21 / printed p. 18, programme code 10052: four-year B.Tech Computer Science and Engineering. The 2025 first-semester fees are not presented as current 2026 tuition."
+            "notes": "AUUP Noida regular B.Tech CSE, code 10052, 2026 non-sponsored category: first-semester programme fee ₹2,19,000, not separately identified tuition. Two semesters give a first-year-rate planning amount ₹4,38,000. The prospectus says fees rise approximately 5% every year and are subject to change; this is not a fixed four-year quote. Academic security deposit ₹20,000, hostel, hostel deposit and meals are separate. Sponsored first-semester fee ₹3,28,500; international/three-continent pathways differ."
           },
-          "documentSha256": "7ef4a89d6cf097b404c302ee567b8bc15df85d381147b690950ac51d1eab010e"
+          "documentSha256": "125bff8f3fbd5641dc87694262cae04cafe2cd921864e300fff20ae777171cd1"
         },
+        "academicFeeEvidence": {
+          "rawValue": 219000.0,
+          "rawUnit": "INR/semester",
+          "factor": 2,
+          "normalizedValue": 438000,
+          "notes": "AUUP Noida regular B.Tech CSE, code 10052, 2026 non-sponsored category: first-semester programme fee ₹2,19,000, not separately identified tuition. Two semesters give a first-year-rate planning amount ₹4,38,000. The prospectus says fees rise approximately 5% every year and are subject to change; this is not a fixed four-year quote. Academic security deposit ₹20,000, hostel, hostel deposit and meals are separate. Sponsored first-semester fee ₹3,28,500; international/three-continent pathways differ.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-08T05:27:48.159322Z",
+          "source": {
+            "id": "1ecb9915-2441-52a8-926b-f5d09e8757c8",
+            "title": "Amity University Uttar Pradesh, Noida admission prospectus 2026 (PDF page 20 / printed page 17)",
+            "status": "verified",
+            "url": "https://noida.amity.edu/assets/pdf/admission-prospectus-2026.pdf#page=20",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-08T05:27:48.159322Z",
+            "documentSha256": "125bff8f3fbd5641dc87694262cae04cafe2cd921864e300fff20ae777171cd1",
+            "documentFormat": "pdf",
+            "notes": "AUUP Noida regular B.Tech CSE, code 10052, 2026 non-sponsored category: first-semester programme fee ₹2,19,000, not separately identified tuition. Two semesters give a first-year-rate planning amount ₹4,38,000. The prospectus says fees rise approximately 5% every year and are subject to change; this is not a fixed four-year quote. Academic security deposit ₹20,000, hostel, hostel deposit and meals are separate. Sponsored first-semester fee ₹3,28,500; international/three-continent pathways differ."
+          },
+          "documentSha256": "125bff8f3fbd5641dc87694262cae04cafe2cd921864e300fff20ae777171cd1"
+        },
+        "seatsEvidence": null,
         "legacyId": "amity-university-noida-1"
       }
     ],
@@ -157,15 +183,15 @@
       "source": null
     },
     "source": {
-      "id": "30956b7b-269e-5076-b803-45ff2eeb92e6",
-      "title": "Amity University Uttar Pradesh — Noida",
+      "id": "7e1623d8-9daa-53fe-a5a9-0d31d0ed7eb6",
+      "title": "Amity University — recognitions (Lok Sabha reply excerpt)",
       "status": "verified",
-      "url": "https://www.amity.edu/noida/",
+      "url": "https://www.amity.edu/univinfo-lok-sabha.aspx",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "5e52bfa28aebb33a5e004fac76dedd465bbba81ae823e92fbd3def2d46e7ca0d",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "e1ee744de3203afa14526af2692cb95f7100492ed5e9b1d330c3d679c0f5d542",
       "documentFormat": "html",
-      "notes": "Institution identity and Noida campus; programme structure uses the separate official prospectus."
+      "notes": "University-hosted excerpt of a 2005 parliamentary reply: Amity University established through the Amity University Uttar Pradesh Act, 2005, notified 24 March 2005. Programme structure uses the separate official prospectus."
     },
     "metrics": []
   },
@@ -177,11 +203,30 @@
     "city": "Pilani",
     "state": "Rajasthan",
     "type": "University",
-    "established": null,
+    "established": 1964,
     "description": "The Pilani campus of Birla Institute of Technology and Science offers integrated first-degree programmes, including Computer Science and Mathematics. M.Sc. here is an integrated first degree; a dual degree changes the study duration.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Library",
+        "scope": "BITS Pilani library at the Pilani campus, described as a roughly 65,000 sq. ft building near the academic blocks; other campuses have their own libraries.",
+        "source": {
+          "id": "0c43d6cd-f111-5622-9087-c357c1ad7fdc",
+          "title": "BITS Pilani Library",
+          "status": "verified",
+          "url": "https://library.bits-pilani.ac.in/",
+          "reportingYear": null,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "8ce84c2d5abe9df94839d63938d624920e3615a8a5c3faec3c93a161147c436d",
+          "documentFormat": "html",
+          "notes": "BITS Pilani library at the Pilani campus, described as a roughly 65,000 sq. ft building near the academic blocks; other campuses have their own libraries."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -193,7 +238,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "5fe604a4-9b94-5471-931e-fd56e3b1ec83",
+          "id": "5a8e4c6f-707e-5aad-8c4e-25fd3daee9ce",
           "title": "BITS B.E. Computer Science programme",
           "status": "verified",
           "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/b-e-computer-science/",
@@ -208,19 +253,19 @@
           "rawUnit": "INR/semester",
           "factor": 2,
           "normalizedValue": 583000,
-          "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional.",
+          "notes": "Domestic 2026 entrants, Pilani campus, single integrated first degree: first-year tuition ₹2,91,500 per semester (₹5,83,000 for two semesters). Published semester tuition rises to ₹3,06,000 in 2027–28, ₹3,21,500 in 2028–29 and ₹3,37,500 in 2029–30: ₹25,13,000 for eight regular semesters before scholarships. A constant first-year-rate estimate understates that published total by ₹1,81,000. Summer/Practice School charges, admission, hostel, mess and advances are additional; dual degrees change duration and fees.",
           "reviewer": "College Finder official-source review",
-          "reviewedAt": "2026-10-07T19:57:04Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "1291b398-b24d-5fda-94d0-32a88b5b00c0",
+            "id": "fdf60053-f518-5266-b08b-4135533fd2cd",
             "title": "BITS first-degree fee schedule 2026–27",
             "status": "verified",
             "url": "https://admissions.bits-pilani.ac.in/FD/FD_fee.html?22042026",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T19:57:04Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e",
             "documentFormat": "html",
-            "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional."
+            "notes": "Domestic 2026 entrants, Pilani campus, single integrated first degree: first-year tuition ₹2,91,500 per semester (₹5,83,000 for two semesters). Published semester tuition rises to ₹3,06,000 in 2027–28, ₹3,21,500 in 2028–29 and ₹3,37,500 in 2029–30: ₹25,13,000 for eight regular semesters before scholarships. A constant first-year-rate estimate understates that published total by ₹1,81,000. Summer/Practice School charges, admission, hostel, mess and advances are additional; dual degrees change duration and fees."
           },
           "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e"
         },
@@ -245,6 +290,8 @@
           },
           "documentSha256": "82bcbfa802e4f8ee536cde691981e4734732a93846349b4c65131e6aa1c37b81"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "bits-pilani-1"
       },
       {
@@ -256,7 +303,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "d7fa3ade-11a3-539f-a725-0e1e1b2706e4",
+          "id": "6311e868-0744-5dd0-9a67-20abd9e20f96",
           "title": "BITS M.Sc. Mathematics (integrated first degree) programme",
           "status": "verified",
           "url": "https://www.bits-pilani.ac.in/academics/integrated-first-degree/m-sc-mathematics/",
@@ -271,19 +318,19 @@
           "rawUnit": "INR/semester",
           "factor": 2,
           "normalizedValue": 583000,
-          "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional.",
+          "notes": "Domestic 2026 entrants, Pilani campus, single integrated first degree: first-year tuition ₹2,91,500 per semester (₹5,83,000 for two semesters). Published semester tuition rises to ₹3,06,000 in 2027–28, ₹3,21,500 in 2028–29 and ₹3,37,500 in 2029–30: ₹25,13,000 for eight regular semesters before scholarships. A constant first-year-rate estimate understates that published total by ₹1,81,000. Summer/Practice School charges, admission, hostel, mess and advances are additional; dual degrees change duration and fees.",
           "reviewer": "College Finder official-source review",
-          "reviewedAt": "2026-10-07T19:57:04Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "1291b398-b24d-5fda-94d0-32a88b5b00c0",
+            "id": "fdf60053-f518-5266-b08b-4135533fd2cd",
             "title": "BITS first-degree fee schedule 2026–27",
             "status": "verified",
             "url": "https://admissions.bits-pilani.ac.in/FD/FD_fee.html?22042026",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T19:57:04Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e",
             "documentFormat": "html",
-            "notes": "Domestic 2026 entrants: tuition ₹2,91,500 per semester in the first academic year. Later years increase; summer/Practice School charges, admission fees, hostel and advances are additional."
+            "notes": "Domestic 2026 entrants, Pilani campus, single integrated first degree: first-year tuition ₹2,91,500 per semester (₹5,83,000 for two semesters). Published semester tuition rises to ₹3,06,000 in 2027–28, ₹3,21,500 in 2028–29 and ₹3,37,500 in 2029–30: ₹25,13,000 for eight regular semesters before scholarships. A constant first-year-rate estimate understates that published total by ₹1,81,000. Summer/Practice School charges, admission, hostel, mess and advances are additional; dual degrees change duration and fees."
           },
           "documentSha256": "009996fb571de67a6983535a1b1e74629fdcdbdcebe7b1f966fc1abd653dca8e"
         },
@@ -308,6 +355,8 @@
           },
           "documentSha256": "75858fd8de6c15b47bba7cb677010eb51f9940cf3aa4ebd23e69dc1f7ef797cf"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "bits-pilani-3"
       }
     ],
@@ -325,7 +374,7 @@
       "source": null
     },
     "source": {
-      "id": "17a948f5-6555-5837-a540-d6fbd5e97d23",
+      "id": "92029dc3-9458-5321-a177-99e5f2c221e5",
       "title": "BITS Pilani — Pilani campus",
       "status": "verified",
       "url": "https://www.bits-pilani.ac.in/pilani/",
@@ -333,7 +382,7 @@
       "verifiedAt": "2026-10-07T19:57:04Z",
       "documentSha256": "2c99e556beefaba5852939df31f05fac41f65ec9715b2953c0a123af04887481",
       "documentFormat": "html",
-      "notes": "Pilani campus identity and academic programmes. Other BITS campuses have distinct admissions and campus contexts."
+      "notes": "Pilani campus identity and academic programmes; the page states the institute “was deemed to be a university in 1964”, the year used here. Earlier colleges at Pilani predate that. Other BITS campuses have distinct admissions and campus contexts."
     },
     "metrics": []
   },
@@ -350,6 +399,7 @@
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -361,7 +411,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "0ef6a8a4-7d17-5933-9652-30cb89e6b15a",
+          "id": "b8ab250f-245b-5b20-afc9-74f487dc9ec6",
           "title": "CHRIST Bangalore Central Campus MBA",
           "status": "verified",
           "url": "https://christuniversity.in/courses/MzM0",
@@ -393,6 +443,28 @@
           },
           "documentSha256": "4b78a02dd1dd14ce0f9ec17e18a8dddec6fa20ef6e7be638024dc5e586114a10"
         },
+        "academicFeeEvidence": {
+          "rawValue": 580000.0,
+          "rawUnit": "INR/year",
+          "factor": 1,
+          "normalizedValue": 580000,
+          "notes": "Official programme page Fee Structure – 2027 content, retained unchanged from its public fee-content response. MBA Business Analytics, Marketing, Finance, HR and Lean Operations list ₹5,80,000 per year for Other Indian States; Karnataka ₹5,70,000 and NRI ₹6,70,000 differ. Registration ₹8,000 non-refundable and caution deposit ₹10,000 refundable are additional; periodic nominal increases remain possible. This is programme fee, not separately identified tuition.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "c58aaa21-4152-5d6d-b896-e0a04074c308",
+            "title": "CHRIST Bangalore Central Campus MBA programme fee structure 2027",
+            "status": "verified",
+            "url": "https://www.christuniversity.in/courses/MzM0",
+            "reportingYear": 2027,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3aa837ab15723c4689fbe0917333d11544677865268e9b5823e13ff9080122a5",
+            "documentFormat": "html",
+            "notes": "Official programme page Fee Structure – 2027 content, retained unchanged from its public fee-content response. MBA Business Analytics, Marketing, Finance, HR and Lean Operations list ₹5,80,000 per year for Other Indian States; Karnataka ₹5,70,000 and NRI ₹6,70,000 differ. Registration ₹8,000 non-refundable and caution deposit ₹10,000 refundable are additional; periodic nominal increases remain possible. This is programme fee, not separately identified tuition."
+          },
+          "documentSha256": "3aa837ab15723c4689fbe0917333d11544677865268e9b5823e13ff9080122a5"
+        },
+        "seatsEvidence": null,
         "legacyId": "christ-university-3"
       }
     ],
@@ -401,16 +473,26 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "CHRIST reporting institution, PG two-year management programmes; not the Bangalore Central Campus MBA only.",
+      "medianPackage": 975342,
+      "graduates": 1206,
+      "placed": 1087,
+      "higherStudies": 24,
+      "source": {
+        "id": "24fec9e2-f5e6-56aa-ac4f-2d60c7033fec",
+        "title": "CHRIST University NIRF 2026 Management submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://christuniversity.in/uploads/userfiles/file/Management%20Christ%20University20260210.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-11-11T10:04:56Z",
+        "documentSha256": "611cca1d38cc81f110d97459db1fbd8ab3c706ed1dc1a5a0897883723331bfd9",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Christ University [IR-M-U-0217], PG two-year management programmes as reported by the institution; not the Bangalore Central Campus MBA only."
+      }
     },
     "source": {
-      "id": "579f8456-4c47-5ec3-aa51-936dd4aa20c0",
+      "id": "e7e04359-d2ce-5c66-bbfc-dfc8f1f74485",
       "title": "CHRIST institution history",
       "status": "verified",
       "url": "https://christuniversity.in/history",
@@ -420,7 +502,76 @@
       "documentFormat": "html",
       "notes": "Founded as Christ College in 1969; Bengaluru central-campus institution history."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 975342.0,
+        "unit": "INR/year",
+        "scope": "CHRIST reporting institution, PG two-year management programmes; not the Bangalore Central Campus MBA only.",
+        "source": {
+          "id": "24fec9e2-f5e6-56aa-ac4f-2d60c7033fec",
+          "title": "CHRIST University NIRF 2026 Management submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://christuniversity.in/uploads/userfiles/file/Management%20Christ%20University20260210.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "611cca1d38cc81f110d97459db1fbd8ab3c706ed1dc1a5a0897883723331bfd9",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Christ University [IR-M-U-0217], PG two-year management programmes as reported by the institution; not the Bangalore Central Campus MBA only."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 1206.0,
+        "unit": "students",
+        "scope": "CHRIST reporting institution, PG two-year management programmes; not the Bangalore Central Campus MBA only.",
+        "source": {
+          "id": "24fec9e2-f5e6-56aa-ac4f-2d60c7033fec",
+          "title": "CHRIST University NIRF 2026 Management submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://christuniversity.in/uploads/userfiles/file/Management%20Christ%20University20260210.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "611cca1d38cc81f110d97459db1fbd8ab3c706ed1dc1a5a0897883723331bfd9",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Christ University [IR-M-U-0217], PG two-year management programmes as reported by the institution; not the Bangalore Central Campus MBA only."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 1087.0,
+        "unit": "students",
+        "scope": "CHRIST reporting institution, PG two-year management programmes; not the Bangalore Central Campus MBA only.",
+        "source": {
+          "id": "24fec9e2-f5e6-56aa-ac4f-2d60c7033fec",
+          "title": "CHRIST University NIRF 2026 Management submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://christuniversity.in/uploads/userfiles/file/Management%20Christ%20University20260210.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "611cca1d38cc81f110d97459db1fbd8ab3c706ed1dc1a5a0897883723331bfd9",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Christ University [IR-M-U-0217], PG two-year management programmes as reported by the institution; not the Bangalore Central Campus MBA only."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 24.0,
+        "unit": "students",
+        "scope": "CHRIST reporting institution, PG two-year management programmes; not the Bangalore Central Campus MBA only.",
+        "source": {
+          "id": "24fec9e2-f5e6-56aa-ac4f-2d60c7033fec",
+          "title": "CHRIST University NIRF 2026 Management submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://christuniversity.in/uploads/userfiles/file/Management%20Christ%20University20260210.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "611cca1d38cc81f110d97459db1fbd8ab3c706ed1dc1a5a0897883723331bfd9",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Christ University [IR-M-U-0217], PG two-year management programmes as reported by the institution; not the Bangalore Central Campus MBA only."
+        }
+      }
+    ]
   },
   {
     "id": "f6c3f132-ea59-5cce-a0a8-5a27ec6206d5",
@@ -430,11 +581,30 @@
     "city": "Ahmedabad",
     "state": "Gujarat",
     "type": "Institute",
-    "established": null,
+    "established": 1961,
     "description": "Indian Institute of Management Ahmedabad offers management education and research. Its full-time Post Graduate Programme in Management spans two years.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Vikram Sarabhai Library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Vikram Sarabhai Library",
+        "scope": "IIMA hybrid print and digital library supporting students, faculty and research; no claim about hostel allocation.",
+        "source": {
+          "id": "b9ba5ceb-9701-5137-a8d9-f034a721320a",
+          "title": "IIM Ahmedabad Vikram Sarabhai Library",
+          "status": "verified",
+          "url": "https://www.iima.ac.in/faculty-research/vikram-sarabhai-library",
+          "reportingYear": null,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "6ad2e0c2501e5e9e0b57609e0b5c7628c7a27a6e13c75fad34a7d93ef4f44c34",
+          "documentFormat": "html",
+          "notes": "IIMA hybrid print and digital library supporting students, faculty and research; no claim about hostel allocation."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -446,7 +616,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "4c2594f0-031d-52bc-b976-ef40625070f1",
+          "id": "0496bdae-964f-55e5-b0fb-96176aa823d1",
           "title": "IIM Ahmedabad PGP programme",
           "status": "verified",
           "url": "https://iima.ac.in/academics/mba/about-program",
@@ -478,6 +648,8 @@
           },
           "documentSha256": "cb2d0d6297093511328d839193473ba8780359054df79128caa53c702dd6605f"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "iim-ahmedabad-1"
       }
     ],
@@ -486,26 +658,105 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "Institution-wide PG two-year management programmes; not a PGP-only outcome report.",
+      "medianPackage": 3300000,
+      "graduates": 453,
+      "placed": 444,
+      "higherStudies": 9,
+      "source": {
+        "id": "00b9990c-9e39-5f42-8563-7007875addcb",
+        "title": "Indian Institute of Management Ahmedabad NIRF 2026 submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://www.iima.ac.in/sites/default/files/2026-04/NIRF%202026%20%28Management%29%20Category-IIMA-February%205%2C%202026.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-10-09T10:44:00.681887Z",
+        "documentSha256": "fc7690d1e8ecadf06e0348bd194c264a4ae5ae67d049898020547215e8aba4e0",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a PGP-only outcome report."
+      }
     },
     "source": {
-      "id": "81b71484-5b16-50b5-a16d-957ec92ae336",
-      "title": "IIM Ahmedabad official institution page",
+      "id": "8612d502-30eb-575b-a593-f475f7fa8527",
+      "title": "IIM Ahmedabad Archives — about the institute",
       "status": "verified",
-      "url": "https://www.iima.ac.in/the-institute/about-iima",
+      "url": "https://www.iima.ac.in/the-institute/archives",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "34e3f9343512723d9d0eeed2684d96a7a6a1d7959d7db44468f66b6ffb73e42b",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "7f04b12b0e60b902e51fa4f07f0f06d154c5d260cde2c499c5835f50346eddc9",
       "documentFormat": "html",
-      "notes": "Institution identity and management education; programme duration has a separate official source."
+      "notes": "Institution history: IIMA “was founded in 1961”. Programme duration has a separate official source."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 3300000.0,
+        "unit": "INR/year",
+        "scope": "Institution-wide PG two-year management programmes; not a PGP-only outcome report.",
+        "source": {
+          "id": "00b9990c-9e39-5f42-8563-7007875addcb",
+          "title": "Indian Institute of Management Ahmedabad NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iima.ac.in/sites/default/files/2026-04/NIRF%202026%20%28Management%29%20Category-IIMA-February%205%2C%202026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "fc7690d1e8ecadf06e0348bd194c264a4ae5ae67d049898020547215e8aba4e0",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a PGP-only outcome report."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 453.0,
+        "unit": "students",
+        "scope": "Institution-wide PG two-year management programmes; not a PGP-only outcome report.",
+        "source": {
+          "id": "00b9990c-9e39-5f42-8563-7007875addcb",
+          "title": "Indian Institute of Management Ahmedabad NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iima.ac.in/sites/default/files/2026-04/NIRF%202026%20%28Management%29%20Category-IIMA-February%205%2C%202026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "fc7690d1e8ecadf06e0348bd194c264a4ae5ae67d049898020547215e8aba4e0",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a PGP-only outcome report."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 444.0,
+        "unit": "students",
+        "scope": "Institution-wide PG two-year management programmes; not a PGP-only outcome report.",
+        "source": {
+          "id": "00b9990c-9e39-5f42-8563-7007875addcb",
+          "title": "Indian Institute of Management Ahmedabad NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iima.ac.in/sites/default/files/2026-04/NIRF%202026%20%28Management%29%20Category-IIMA-February%205%2C%202026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "fc7690d1e8ecadf06e0348bd194c264a4ae5ae67d049898020547215e8aba4e0",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a PGP-only outcome report."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 9.0,
+        "unit": "students",
+        "scope": "Institution-wide PG two-year management programmes; not a PGP-only outcome report.",
+        "source": {
+          "id": "00b9990c-9e39-5f42-8563-7007875addcb",
+          "title": "Indian Institute of Management Ahmedabad NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iima.ac.in/sites/default/files/2026-04/NIRF%202026%20%28Management%29%20Category-IIMA-February%205%2C%202026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "fc7690d1e8ecadf06e0348bd194c264a4ae5ae67d049898020547215e8aba4e0",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a PGP-only outcome report."
+        }
+      }
+    ]
   },
   {
     "id": "000b0193-3cce-532e-97b9-6c196d28f6b3",
@@ -515,12 +766,13 @@
     "city": "Bengaluru",
     "state": "Karnataka",
     "type": "Institute",
-    "established": null,
+    "established": 1973,
     "description": "Indian Institute of Management Bangalore offers the two-year full-time PGP leading to an MBA. Its PGPEM is a separate two-year weekend MBA for working professionals.",
     "image": "",
     "accreditation": "",
     "facilities": [],
-    "dataStatus": "unverified",
+    "facilityEvidence": [],
+    "dataStatus": "verified",
     "courses": [
       {
         "id": "27976a30-73a5-54d6-af5e-4eb90a510cfb",
@@ -531,18 +783,40 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "1d9ff823-addc-5872-9956-1bd8a00f66f2",
-          "title": "IIM Bangalore PGP official programme page",
-          "status": "unverified",
-          "url": "https://www.iimb.ac.in/index.php/programmes/pgp",
-          "reportingYear": null,
-          "verifiedAt": null,
-          "documentSha256": null,
-          "documentFormat": null,
-          "notes": "Institution and two-year full-time MBA identity from the indexed official programme page; retained original document is unavailable."
+          "id": "ed12d0dc-88a3-500f-8a7b-9d415d25204d",
+          "title": "IIM Bangalore international MBA admission brochure 2026 — Indian Embassy copy",
+          "status": "verified",
+          "url": "https://www.indembkathmandu.gov.in/storage/press-release/9698542.pdf#page=2",
+          "reportingYear": 2026,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "d55496474167decc14fb867274b5a55b27bb103d67de565f641d97f2d2411ace",
+          "documentFormat": "pdf",
+          "notes": "IIMB-authored brochure, release 7 November 2025, retained from the Embassy of India Kathmandu. Page 2 identifies PGP as a two-year full-time residential MBA; page 4 gives Bangalore address and establishment in 1973. Admissions eligibility is international-category specific. Its ₹26,00,000 bundled two-year fee is explicitly a 2025–27 amount indicative for 2026–28, so no current tuition amount is imported."
         },
         "tuitionEvidence": null,
-        "durationEvidence": null,
+        "durationEvidence": {
+          "rawValue": 2.0,
+          "rawUnit": "years",
+          "factor": 12,
+          "normalizedValue": 24,
+          "notes": "PGP is a two-year full-time residential MBA. Programme duration applies independently of the international admissions category. No indicative fees or aggregate seats are used as course claims.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "76168963-13c2-5db0-9de3-8608f6cb619f",
+            "title": "IIM Bangalore international MBA admission brochure 2026 — Indian Embassy copy",
+            "status": "verified",
+            "url": "https://www.indembkathmandu.gov.in/storage/press-release/9698542.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "d55496474167decc14fb867274b5a55b27bb103d67de565f641d97f2d2411ace",
+            "documentFormat": "pdf",
+            "notes": "PGP is a two-year full-time residential MBA. Programme duration applies independently of the international admissions category. No indicative fees or aggregate seats are used as course claims."
+          },
+          "documentSha256": "d55496474167decc14fb867274b5a55b27bb103d67de565f641d97f2d2411ace"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "iim-bangalore-1"
       },
       {
@@ -554,7 +828,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "4cb81e11-5219-5c38-99f9-7da23261f707",
+          "id": "0b3121e7-5844-54e2-9846-e6c9e4e9b272",
           "title": "IIM Bangalore PGPEM admissions",
           "status": "unverified",
           "url": "https://www.iimb.ac.in/admissions/pgpem-admissions/admission-process",
@@ -566,6 +840,8 @@
         },
         "tuitionEvidence": null,
         "durationEvidence": null,
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "iim-bangalore-2"
       }
     ],
@@ -574,26 +850,105 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2024,
+      "scope": "Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report.",
+      "medianPackage": 3250000,
+      "graduates": 517,
+      "placed": 517,
+      "higherStudies": 0,
+      "source": {
+        "id": "51116aee-c255-50a7-815c-66001003b659",
+        "title": "Indian Institute of Management Bangalore NIRF 2025 submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/Management/IR-M-S-8903.pdf",
+        "reportingYear": 2024,
+        "verifiedAt": "2026-10-09T10:44:00.681887Z",
+        "documentSha256": "4a77bfb59cf2e9cfca4bfae6bd0b62b2f345f4ef3ced286f5760cc65588523af",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2023–24; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report."
+      }
     },
     "source": {
-      "id": "1d9ff823-addc-5872-9956-1bd8a00f66f2",
-      "title": "IIM Bangalore PGP official programme page",
-      "status": "unverified",
-      "url": "https://www.iimb.ac.in/index.php/programmes/pgp",
-      "reportingYear": null,
-      "verifiedAt": null,
-      "documentSha256": null,
-      "documentFormat": null,
-      "notes": "Institution and two-year full-time MBA identity from the indexed official programme page; retained original document is unavailable."
+      "id": "ed12d0dc-88a3-500f-8a7b-9d415d25204d",
+      "title": "IIM Bangalore international MBA admission brochure 2026 — Indian Embassy copy",
+      "status": "verified",
+      "url": "https://www.indembkathmandu.gov.in/storage/press-release/9698542.pdf#page=2",
+      "reportingYear": 2026,
+      "verifiedAt": "2026-10-09T10:44:00.681887Z",
+      "documentSha256": "d55496474167decc14fb867274b5a55b27bb103d67de565f641d97f2d2411ace",
+      "documentFormat": "pdf",
+      "notes": "IIMB-authored brochure, release 7 November 2025, retained from the Embassy of India Kathmandu. Page 2 identifies PGP as a two-year full-time residential MBA; page 4 gives Bangalore address and establishment in 1973. Admissions eligibility is international-category specific. Its ₹26,00,000 bundled two-year fee is explicitly a 2025–27 amount indicative for 2026–28, so no current tuition amount is imported."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 3250000.0,
+        "unit": "INR/year",
+        "scope": "Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report.",
+        "source": {
+          "id": "51116aee-c255-50a7-815c-66001003b659",
+          "title": "Indian Institute of Management Bangalore NIRF 2025 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/Management/IR-M-S-8903.pdf",
+          "reportingYear": 2024,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "4a77bfb59cf2e9cfca4bfae6bd0b62b2f345f4ef3ced286f5760cc65588523af",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2023–24; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 517.0,
+        "unit": "students",
+        "scope": "Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report.",
+        "source": {
+          "id": "51116aee-c255-50a7-815c-66001003b659",
+          "title": "Indian Institute of Management Bangalore NIRF 2025 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/Management/IR-M-S-8903.pdf",
+          "reportingYear": 2024,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "4a77bfb59cf2e9cfca4bfae6bd0b62b2f345f4ef3ced286f5760cc65588523af",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2023–24; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 517.0,
+        "unit": "students",
+        "scope": "Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report.",
+        "source": {
+          "id": "51116aee-c255-50a7-815c-66001003b659",
+          "title": "Indian Institute of Management Bangalore NIRF 2025 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/Management/IR-M-S-8903.pdf",
+          "reportingYear": 2024,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "4a77bfb59cf2e9cfca4bfae6bd0b62b2f345f4ef3ced286f5760cc65588523af",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2023–24; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 0.0,
+        "unit": "students",
+        "scope": "Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report.",
+        "source": {
+          "id": "51116aee-c255-50a7-815c-66001003b659",
+          "title": "Indian Institute of Management Bangalore NIRF 2025 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/Management/IR-M-S-8903.pdf",
+          "reportingYear": 2024,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "4a77bfb59cf2e9cfca4bfae6bd0b62b2f345f4ef3ced286f5760cc65588523af",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2023–24; median annual salary of placed graduates only. Institution-wide PG two-year management programmes; not a separate PGP or PGPEM placement report."
+        }
+      }
+    ]
   },
   {
     "id": "94961299-2e01-54f7-9545-497cf5e92af0",
@@ -603,11 +958,12 @@
     "city": "Bengaluru",
     "state": "Karnataka",
     "type": "Institute",
-    "established": null,
+    "established": 1909,
     "description": "Indian Institute of Science in Bengaluru offers undergraduate science study alongside postgraduate and research programmes. Its Bachelor of Science (Research) is a four-year programme; tuition depends on the entry cohort and applicable exemptions.",
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -619,7 +975,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "7c677015-d75e-5a40-849e-58d8f6d05401",
+          "id": "0a579746-eb94-5a9a-87a5-d67f5eb000f7",
           "title": "IISc general information",
           "status": "verified",
           "url": "https://www.iisc.ac.in/about/general-information/",
@@ -636,14 +992,14 @@
           "normalizedValue": 80000,
           "notes": "Bachelor of Science (Research), students joining from AY 2026–27 onward: General/EWS/OBC annual tuition before applicable financial support. This is an annual rate, not a semester fee; earlier entrants have a different rate. SC/ST/PwD tuition is waived. Other academic fees, hostel, mess and deposits are excluded; confirm applicable support and future rates with IISc.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:54:31.467294Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "edf6a42d-6033-5845-9b60-f9c0dc4fc86b",
+            "id": "06cab66f-5436-5ad5-94dc-f5cf288d40e1",
             "title": "IISc fee circular, AY 2026–27, new entrants section 1A (PDF page 1)",
             "status": "verified",
             "url": "https://bs-ug.iisc.ac.in/assets/Fee-Structure-Circular-AY-2026-27.pdf#page=1",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:54:31.467294Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "f2167ea7e472beba5ff648b971b54bf64a6e5768a8a7b796e5a2ff9b1455d914",
             "documentFormat": "pdf",
             "notes": "Bachelor of Science (Research), students joining from AY 2026–27 onward: General/EWS/OBC annual tuition before applicable financial support. This is an annual rate, not a semester fee; earlier entrants have a different rate. SC/ST/PwD tuition is waived. Other academic fees, hostel, mess and deposits are excluded; confirm applicable support and future rates with IISc."
@@ -671,6 +1027,8 @@
           },
           "documentSha256": "58fdcb4b1f8e0b9595268324a7f7789973095d5bd78882a45145e7a79ea04c73"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "iisc-bangalore-1"
       }
     ],
@@ -686,7 +1044,7 @@
       "placed": 3,
       "higherStudies": 93,
       "source": {
-        "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
+        "id": "4980b857-46fe-53cb-95b5-0b86821958b3",
         "title": "IISc NIRF Overall submission 2026",
         "status": "verified",
         "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -698,15 +1056,15 @@
       }
     },
     "source": {
-      "id": "7c677015-d75e-5a40-849e-58d8f6d05401",
-      "title": "IISc general information",
+      "id": "f9899279-69ca-5820-8564-97a2a08309d5",
+      "title": "Indian Institute of Science — history",
       "status": "verified",
-      "url": "https://www.iisc.ac.in/about/general-information/",
+      "url": "https://www.iisc.ac.in/history/",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "b12296c331c84d71bf3d5947e8d85b94e0a5c0d779dbfc9aaf264d6ef1ff303a",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "0a29086e5e126e82499175332a8fa12981ab4512b11c351299c251d4be1dd896",
       "documentFormat": "html",
-      "notes": "Institution identity, Bengaluru location and links to undergraduate, postgraduate and research programmes."
+      "notes": "Institution history: IISc “came into existence on 27 May 1909 in Bangalore”."
     },
     "metrics": [
       {
@@ -715,7 +1073,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
+          "id": "4980b857-46fe-53cb-95b5-0b86821958b3",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -732,7 +1090,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
+          "id": "4980b857-46fe-53cb-95b5-0b86821958b3",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -749,7 +1107,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
+          "id": "4980b857-46fe-53cb-95b5-0b86821958b3",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -766,7 +1124,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "580e3273-d3e0-5d81-9861-a438d67bc3a1",
+          "id": "4980b857-46fe-53cb-95b5-0b86821958b3",
           "title": "IISc NIRF Overall submission 2026",
           "status": "verified",
           "url": "https://www.iisc.ac.in/wp-content/uploads/2026/04/Indian-Institute-of-Science20260406-Overall.pdf",
@@ -787,11 +1145,30 @@
     "city": "Mumbai",
     "state": "Maharashtra",
     "type": "Institute",
-    "established": null,
+    "established": 1958,
     "description": "IIT Bombay is an engineering and research institute in Mumbai. Its undergraduate academic office lists Computer Science and Engineering and Electrical Engineering among its programmes.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Central library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Central library",
+        "scope": "IIT Bombay Central Library with catalogue, e-resources and a 24×7 reading hall; access follows library rules.",
+        "source": {
+          "id": "7259a01a-4da8-5534-8458-cbfc7dfb85cc",
+          "title": "IIT Bombay Central Library",
+          "status": "verified",
+          "url": "https://www.library.iitb.ac.in/",
+          "reportingYear": null,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "c26beaee03a9905ee0c9f8d2cde6f53d6e6a159bf8792cebc48f0c91c630facc",
+          "documentFormat": "html",
+          "notes": "IIT Bombay Central Library with catalogue, e-resources and a 24×7 reading hall; access follows library rules."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -801,9 +1178,9 @@
         "durationMonths": 48,
         "annualTuition": 200000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 199,
         "source": {
-          "id": "e38f18d6-f962-5abf-ac3d-6dac9a1b3f59",
+          "id": "01b5178e-24db-5bdf-8127-044e5ccc278a",
           "title": "IIT Bombay bachelor admissions",
           "status": "verified",
           "url": "https://acad.iitb.ac.in/admissions/bachelors",
@@ -820,17 +1197,17 @@
           "normalizedValue": 200000,
           "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T16:46:06Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "0cfc0f75-632a-5267-9ed8-20be8cf6e168",
+            "id": "4b09991a-b929-5ef9-bfae-54b65d8ae915",
             "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
             "status": "verified",
             "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T16:46:06Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49",
             "documentFormat": "pdf",
-            "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration."
+            "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay."
           },
           "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
         },
@@ -854,6 +1231,28 @@
             "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration."
           },
           "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 199.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 199,
+          "notes": "JoSAA 2026–27, Indian Institute of Technology Bombay, four-year Computer Science and Engineering: programme capacity 170 + female supernumerary 29 = 199 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
         },
         "legacyId": "iit-bombay-1"
       },
@@ -864,9 +1263,9 @@
         "durationMonths": 48,
         "annualTuition": 200000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 112,
         "source": {
-          "id": "e38f18d6-f962-5abf-ac3d-6dac9a1b3f59",
+          "id": "01b5178e-24db-5bdf-8127-044e5ccc278a",
           "title": "IIT Bombay bachelor admissions",
           "status": "verified",
           "url": "https://acad.iitb.ac.in/admissions/bachelors",
@@ -883,17 +1282,17 @@
           "normalizedValue": 200000,
           "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:03:28.525849Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "285d48a9-c204-5299-963a-8942bf639b57",
+            "id": "4b09991a-b929-5ef9-bfae-54b65d8ae915",
             "title": "IIT Bombay UG new entrants fee circular, Autumn 2026–27, page 2",
             "status": "verified",
             "url": "https://acad.iitb.ac.in/sites/default/files/FeeCircularAutumn2026-27.pdf#page=2",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:03:28.525849Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49",
             "documentFormat": "pdf",
-            "notes": "The circular states a four-year, eight-semester B.Tech programme. This is the standard programme duration."
+            "notes": "Base statutory tuition for Indian UG new entrants in 2026–27, before exemptions. Annualized using two semesters at the listed rate; future semester fees may change. SC/ST/PwD tuition exemption applies. Hostel, other charges and deposits are excluded. Check other applicable remissions with IIT Bombay."
           },
           "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
         },
@@ -918,6 +1317,28 @@
           },
           "documentSha256": "83a1fd593fc14c4dce86a802a163e7c729db0998df1ad975fb1dd0716244ee49"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 112.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 112,
+          "notes": "JoSAA 2026–27, Indian Institute of Technology Bombay, four-year Electrical Engineering: programme capacity 90 + female supernumerary 22 = 112 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
+        },
         "legacyId": "iit-bombay-2"
       }
     ],
@@ -926,26 +1347,105 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "Institution-wide UG four-year engineering programmes across departments; not CSE-only.",
+      "medianPackage": 2020860,
+      "graduates": 1017,
+      "placed": 730,
+      "higherStudies": 287,
+      "source": {
+        "id": "5e3e7e94-6f4b-588b-a412-e1897bd77c45",
+        "title": "Indian Institute of Technology Bombay NIRF 2026 submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://www.iitb.ac.in/sites/default/files/2026-04/NIRF_IITBombay_2026_Engineering_Category.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-10-09T10:44:00.681887Z",
+        "documentSha256": "7d96edbca0fa3c72e919ae987508abe090526fc801cb257d90ae75b23b109fab",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not CSE-only."
+      }
     },
     "source": {
-      "id": "12217c7d-fb65-5c17-959a-d0825821402d",
-      "title": "IIT Bombay official website",
+      "id": "b790e30d-29c3-5e55-b057-558ddbeba739",
+      "title": "About IIT Bombay",
       "status": "verified",
-      "url": "https://www.iitb.ac.in/",
+      "url": "https://www.iitb.ac.in/about-iit-bombay",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "d7fa333094f55b8b2f488d3b733a97564ea870f5dbbdcfca21eb5a4211c26af8",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "12e7bdf7206b700f72584e25f3fa073baf6c6bf0a8d9d7cc0bd8706565226e0d",
       "documentFormat": "html",
-      "notes": "Institution identity and Mumbai campus; published programme and financial claims have separate sources."
+      "notes": "Institution profile: “Established in 1958”; Powai, Mumbai campus. Programme and financial claims have separate sources."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 2020860.0,
+        "unit": "INR/year",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not CSE-only.",
+        "source": {
+          "id": "5e3e7e94-6f4b-588b-a412-e1897bd77c45",
+          "title": "Indian Institute of Technology Bombay NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iitb.ac.in/sites/default/files/2026-04/NIRF_IITBombay_2026_Engineering_Category.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "7d96edbca0fa3c72e919ae987508abe090526fc801cb257d90ae75b23b109fab",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not CSE-only."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 1017.0,
+        "unit": "students",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not CSE-only.",
+        "source": {
+          "id": "5e3e7e94-6f4b-588b-a412-e1897bd77c45",
+          "title": "Indian Institute of Technology Bombay NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iitb.ac.in/sites/default/files/2026-04/NIRF_IITBombay_2026_Engineering_Category.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "7d96edbca0fa3c72e919ae987508abe090526fc801cb257d90ae75b23b109fab",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not CSE-only."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 730.0,
+        "unit": "students",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not CSE-only.",
+        "source": {
+          "id": "5e3e7e94-6f4b-588b-a412-e1897bd77c45",
+          "title": "Indian Institute of Technology Bombay NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iitb.ac.in/sites/default/files/2026-04/NIRF_IITBombay_2026_Engineering_Category.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "7d96edbca0fa3c72e919ae987508abe090526fc801cb257d90ae75b23b109fab",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not CSE-only."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 287.0,
+        "unit": "students",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not CSE-only.",
+        "source": {
+          "id": "5e3e7e94-6f4b-588b-a412-e1897bd77c45",
+          "title": "Indian Institute of Technology Bombay NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.iitb.ac.in/sites/default/files/2026-04/NIRF_IITBombay_2026_Engineering_Category.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "7d96edbca0fa3c72e919ae987508abe090526fc801cb257d90ae75b23b109fab",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not CSE-only."
+        }
+      }
+    ]
   },
   {
     "id": "f598bfc6-932d-510e-9a81-55df745e78e2",
@@ -959,7 +1459,42 @@
     "description": "IIT Delhi is an autonomous research institution whose main campus is in Hauz Khas, New Delhi. It offers undergraduate, postgraduate and doctoral programmes in science and technology.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Hostels",
+      "Central library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Hostels",
+        "scope": "IIT Delhi main-campus hostels, 2026–27 prospectus PDF page 48. Accommodation cannot be provided to every student and allotment follows institute policy.",
+        "source": {
+          "id": "107ae2fd-0e2d-5eb2-8f22-a4bb7cdc3404",
+          "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+          "status": "verified",
+          "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
+          "reportingYear": 2026,
+          "verifiedAt": "2026-10-07T17:03:28.525849Z",
+          "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+          "documentFormat": "pdf",
+          "notes": "2026–27 prospectus: programme list and four-year B.Tech structure; tuition has category-dependent remissions."
+        }
+      },
+      {
+        "name": "Central library",
+        "scope": "IIT Delhi library system, 2026–27 prospectus PDF pages 60–61; central and departmental libraries serving institute members.",
+        "source": {
+          "id": "107ae2fd-0e2d-5eb2-8f22-a4bb7cdc3404",
+          "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
+          "status": "verified",
+          "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
+          "reportingYear": 2026,
+          "verifiedAt": "2026-10-07T17:03:28.525849Z",
+          "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
+          "documentFormat": "pdf",
+          "notes": "2026–27 prospectus: programme list and four-year B.Tech structure; tuition has category-dependent remissions."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -969,9 +1504,9 @@
         "durationMonths": 48,
         "annualTuition": 200000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 99,
         "source": {
-          "id": "da38415f-3625-525d-bdf5-2433059838a1",
+          "id": "107ae2fd-0e2d-5eb2-8f22-a4bb7cdc3404",
           "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
           "status": "verified",
           "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
@@ -988,14 +1523,14 @@
           "normalizedValue": 200000,
           "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:03:28.525849Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "0870a780-1a92-5da0-9d75-d764474c6caf",
+            "id": "64340e2c-44bd-5e3e-8ae7-19234cb41aec",
             "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
             "status": "verified",
             "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:03:28.525849Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
             "documentFormat": "pdf",
             "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi."
@@ -1022,6 +1557,28 @@
             "notes": "The prospectus identifies four-year B.Tech programmes. Standard programme duration; individual completion time can vary."
           },
           "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 99.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 99,
+          "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
         },
         "legacyId": "iit-delhi-1"
       },
@@ -1032,9 +1589,9 @@
         "durationMonths": 48,
         "annualTuition": 200000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 85,
         "source": {
-          "id": "da38415f-3625-525d-bdf5-2433059838a1",
+          "id": "107ae2fd-0e2d-5eb2-8f22-a4bb7cdc3404",
           "title": "IIT Delhi Prospectus 2026–27, printed page 20 (PDF page 25)",
           "status": "verified",
           "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=25",
@@ -1051,14 +1608,14 @@
           "normalizedValue": 200000,
           "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:03:28.525849Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "0870a780-1a92-5da0-9d75-d764474c6caf",
+            "id": "64340e2c-44bd-5e3e-8ae7-19234cb41aec",
             "title": "IIT Delhi Prospectus 2026–27, printed page 33 (PDF page 38)",
             "status": "verified",
             "url": "https://home.iitd.ac.in/uploads/PROSPECTUS%202026-27.pdf#page=38",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:03:28.525849Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1",
             "documentFormat": "pdf",
             "notes": "Indian B.Tech entrants in 2026: standard tuition before income/category remissions. Annualized using two semesters at the listed rate; later fees may change. Other charges, hostel and deposits are excluded. Confirm the applicable remission and required documentation with IIT Delhi."
@@ -1086,6 +1643,28 @@
           },
           "documentSha256": "a4791ff095de2605c228e967265fd1ebc7222055b5f11fc105b6a011fa4dc1a1"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 85.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 85,
+          "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Mechanical Engineering: programme capacity 85 + female supernumerary 0 = 85 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
+        },
         "legacyId": "iit-delhi-2"
       }
     ],
@@ -1094,16 +1673,26 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort.",
+      "medianPackage": 2000000,
+      "graduates": 986,
+      "placed": 818,
+      "higherStudies": 73,
+      "source": {
+        "id": "1b18c08a-65f7-5e90-b1ff-0ba3a9b852d8",
+        "title": "Indian Institute of Technology Delhi NIRF 2026 submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-10-09T10:44:00.681887Z",
+        "documentSha256": "10732d1b0bb9343195257d3c879a1132251e29f468643ced0945590d1391a4a4",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort."
+      }
     },
     "source": {
-      "id": "2cb57ba3-2472-5f67-abd9-5a93c0ba1b72",
+      "id": "59704544-2f91-51d2-ac15-2c88425d9a70",
       "title": "IIT Delhi institution profile",
       "status": "verified",
       "url": "https://home.iitd.ac.in/for-faculty-thinking-what-iitd.php",
@@ -1113,7 +1702,76 @@
       "documentFormat": "html",
       "notes": "Institution history, Hauz Khas campus and academic focus; establishment year 1961."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 2000000.0,
+        "unit": "INR/year",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort.",
+        "source": {
+          "id": "1b18c08a-65f7-5e90-b1ff-0ba3a9b852d8",
+          "title": "Indian Institute of Technology Delhi NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "10732d1b0bb9343195257d3c879a1132251e29f468643ced0945590d1391a4a4",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 986.0,
+        "unit": "students",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort.",
+        "source": {
+          "id": "1b18c08a-65f7-5e90-b1ff-0ba3a9b852d8",
+          "title": "Indian Institute of Technology Delhi NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "10732d1b0bb9343195257d3c879a1132251e29f468643ced0945590d1391a4a4",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 818.0,
+        "unit": "students",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort.",
+        "source": {
+          "id": "1b18c08a-65f7-5e90-b1ff-0ba3a9b852d8",
+          "title": "Indian Institute of Technology Delhi NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "10732d1b0bb9343195257d3c879a1132251e29f468643ced0945590d1391a4a4",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 73.0,
+        "unit": "students",
+        "scope": "Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort.",
+        "source": {
+          "id": "1b18c08a-65f7-5e90-b1ff-0ba3a9b852d8",
+          "title": "Indian Institute of Technology Delhi NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "10732d1b0bb9343195257d3c879a1132251e29f468643ced0945590d1391a4a4",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Institution-wide UG four-year engineering programmes across departments; not the selected course or the separate UG five-year cohort."
+        }
+      }
+    ]
   },
   {
     "id": "58592c02-5ab4-556b-8c01-02e74fc48f8f",
@@ -1127,7 +1785,26 @@
     "description": "IIT Madras is an engineering and science research institute in Chennai. Its residential campus houses academic departments and research centres in engineering and the sciences.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Central library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Central library",
+        "scope": "IIT Madras Central Library with circulation, inter-library loan and book search services; access follows library rules.",
+        "source": {
+          "id": "d22586e9-89b4-51c0-ac84-8e6f067e6684",
+          "title": "Central Library, IIT Madras",
+          "status": "verified",
+          "url": "https://cenlib.iitm.ac.in/",
+          "reportingYear": null,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "7ebafdd9028049a8f8ecb7c7fce74e4080ae829125ef34c0847ef07b896ecbea",
+          "documentFormat": "html",
+          "notes": "IIT Madras Central Library with circulation, inter-library loan and book search services; access follows library rules."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -1137,9 +1814,9 @@
         "durationMonths": 48,
         "annualTuition": 200000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 87,
         "source": {
-          "id": "7923b732-40fe-5882-9dd6-2d8d8887892c",
+          "id": "2be5612c-50f3-5e83-ab6e-e435f725c037",
           "title": "IIT Madras institution profile",
           "status": "verified",
           "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
@@ -1156,14 +1833,14 @@
           "normalizedValue": 200000,
           "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:54:31.467294Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "ab429598-e5f9-5d2b-b81c-34ab25f7ed1c",
+            "id": "a809b699-c17e-5fd4-bd19-8ea1c7b3eb95",
             "title": "IIT Madras Jul–Nov 2026 fee circular, Annexure I (PDF page 5)",
             "status": "verified",
             "url": "https://fees.iitm.ac.in/assets/circular/Institute_fee_circular_for_jul_nov_2026.pdf#page=5",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:54:31.467294Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "7b14be024226db07006d6e3b561959fa3c817dec2ada077308e5cbe9bf824570",
             "documentFormat": "pdf",
             "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras."
@@ -1190,6 +1867,28 @@
             "notes": "The 2015-onward ordinance specifies eight regular semesters, corroborated by the current institute undergraduate page listing a four-year B.Tech. Converted to 48 planning months using two semesters per year; this is standard programme length, not teaching weeks or a guarantee of individual completion time."
           },
           "documentSha256": "a1354f1519366f5a996573153c4ac6deaeb8e28c18cc5acd62f23d2ab18fe93e"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 87.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 87,
+          "notes": "JoSAA 2026–27, Indian Institute of Technology Madras, four-year Computer Science and Engineering: programme capacity 81 + female supernumerary 6 = 87 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
         },
         "legacyId": "iit-madras-1"
       },
@@ -1200,9 +1899,9 @@
         "durationMonths": 48,
         "annualTuition": 200000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 104,
         "source": {
-          "id": "7923b732-40fe-5882-9dd6-2d8d8887892c",
+          "id": "2be5612c-50f3-5e83-ab6e-e435f725c037",
           "title": "IIT Madras institution profile",
           "status": "verified",
           "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
@@ -1219,14 +1918,14 @@
           "normalizedValue": 200000,
           "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:54:31.467294Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "ab429598-e5f9-5d2b-b81c-34ab25f7ed1c",
+            "id": "a809b699-c17e-5fd4-bd19-8ea1c7b3eb95",
             "title": "IIT Madras Jul–Nov 2026 fee circular, Annexure I (PDF page 5)",
             "status": "verified",
             "url": "https://fees.iitm.ac.in/assets/circular/Institute_fee_circular_for_jul_nov_2026.pdf#page=5",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:54:31.467294Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "7b14be024226db07006d6e3b561959fa3c817dec2ada077308e5cbe9bf824570",
             "documentFormat": "pdf",
             "notes": "Indian B.Tech entrants in 2026–27: base tuition before category/income remissions. Annualized using two semesters; future fees may change. SC/ST/PwD tuition is exempt. General/OBC-NCL/EWS income-based remissions may apply. Hostel, mess, other charges and deposits are excluded; confirm your fee category with IIT Madras."
@@ -1253,6 +1952,28 @@
             "notes": "The 2015-onward ordinance specifies eight regular semesters, corroborated by the current institute undergraduate page listing a four-year B.Tech. Converted to 48 planning months using two semesters per year; this is standard programme length, not teaching weeks or a guarantee of individual completion time."
           },
           "documentSha256": "a1354f1519366f5a996573153c4ac6deaeb8e28c18cc5acd62f23d2ab18fe93e"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 104.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 104,
+          "notes": "JoSAA 2026–27, Indian Institute of Technology Madras, four-year Chemical Engineering: programme capacity 102 + female supernumerary 2 = 104 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
         },
         "legacyId": "iit-madras-2"
       }
@@ -1269,7 +1990,7 @@
       "placed": 631,
       "higherStudies": 147,
       "source": {
-        "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+        "id": "e7b32bf7-bf38-5d49-8df7-efcb4743a987",
         "title": "IIT Madras NIRF Engineering submission 2026",
         "status": "verified",
         "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1281,7 +2002,7 @@
       }
     },
     "source": {
-      "id": "7923b732-40fe-5882-9dd6-2d8d8887892c",
+      "id": "2be5612c-50f3-5e83-ab6e-e435f725c037",
       "title": "IIT Madras institution profile",
       "status": "verified",
       "url": "https://www.iitm.ac.in/the-institute/about-iit-madras",
@@ -1298,7 +2019,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+          "id": "e7b32bf7-bf38-5d49-8df7-efcb4743a987",
           "title": "IIT Madras NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1315,7 +2036,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+          "id": "e7b32bf7-bf38-5d49-8df7-efcb4743a987",
           "title": "IIT Madras NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1332,7 +2053,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+          "id": "e7b32bf7-bf38-5d49-8df7-efcb4743a987",
           "title": "IIT Madras NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1349,7 +2070,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "54dcc905-23fd-5871-8e59-0c603fe63c15",
+          "id": "e7b32bf7-bf38-5d49-8df7-efcb4743a987",
           "title": "IIT Madras NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.iitm.ac.in/sites/default/files/NIRF/NIRF_Engineering_2026.pdf",
@@ -1375,6 +2096,7 @@
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -1386,7 +2108,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "b10afde3-1644-52fa-bcdf-add88fdf84a3",
+          "id": "464fcf80-42aa-505b-aa9c-1e6cd41b22b5",
           "title": "Jadavpur University programme and duration directory",
           "status": "verified",
           "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
@@ -1418,6 +2140,8 @@
           },
           "documentSha256": "982a50c98ae67f7cb52e7064debf14cdb83b7bf8c532de1902a301470f961ea4"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "jadavpur-university-1"
       },
       {
@@ -1429,7 +2153,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "b10afde3-1644-52fa-bcdf-add88fdf84a3",
+          "id": "464fcf80-42aa-505b-aa9c-1e6cd41b22b5",
           "title": "Jadavpur University programme and duration directory",
           "status": "verified",
           "url": "https://jadavpuruniversity.in/students-landing-page/foreign-students/",
@@ -1460,7 +2184,9 @@
             "notes": "University programme table: B.E. Computer Science and Engineering and B.E. Electronics and Telecommunication Engineering are four-year programmes. Admissions route on this page concerns foreign students; no eligibility or fee assumptions are reused."
           },
           "documentSha256": "982a50c98ae67f7cb52e7064debf14cdb83b7bf8c532de1902a301470f961ea4"
-        }
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null
       }
     ],
     "placements": {
@@ -1468,16 +2194,26 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "Jadavpur University, UG four-year engineering programmes across departments; not CSE- or ETCE-only.",
+      "medianPackage": 1050000,
+      "graduates": 989,
+      "placed": 819,
+      "higherStudies": 165,
+      "source": {
+        "id": "cefd209b-d3e6-5f8a-b3eb-3b9d9efb30bb",
+        "title": "Jadavpur University NIRF 2026 Engineering submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://jadavpuruniversity.in/storage/2026/04/Jadavpur-University_ENGINEERING-2026.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-11-11T10:04:56Z",
+        "documentSha256": "af7095559f19f5a696166779f50262d14ddef470eafe27679561294dd81cdeb1",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Jadavpur University [IR-E-U-0575], UG four-year engineering programmes across departments; not CSE- or ETCE-only."
+      }
     },
     "source": {
-      "id": "d8dbdaff-0884-5c14-ba95-5e64df0fde48",
+      "id": "45c6c76d-5303-5e77-a532-daef1f62a814",
       "title": "Jadavpur University institution profile",
       "status": "verified",
       "url": "https://jadavpuruniversity.in/about/",
@@ -1487,7 +2223,76 @@
       "documentFormat": "html",
       "notes": "State university established on 24 December 1955; Kolkata main campus and academic disciplines."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 1050000.0,
+        "unit": "INR/year",
+        "scope": "Jadavpur University, UG four-year engineering programmes across departments; not CSE- or ETCE-only.",
+        "source": {
+          "id": "cefd209b-d3e6-5f8a-b3eb-3b9d9efb30bb",
+          "title": "Jadavpur University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://jadavpuruniversity.in/storage/2026/04/Jadavpur-University_ENGINEERING-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "af7095559f19f5a696166779f50262d14ddef470eafe27679561294dd81cdeb1",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Jadavpur University [IR-E-U-0575], UG four-year engineering programmes across departments; not CSE- or ETCE-only."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 989.0,
+        "unit": "students",
+        "scope": "Jadavpur University, UG four-year engineering programmes across departments; not CSE- or ETCE-only.",
+        "source": {
+          "id": "cefd209b-d3e6-5f8a-b3eb-3b9d9efb30bb",
+          "title": "Jadavpur University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://jadavpuruniversity.in/storage/2026/04/Jadavpur-University_ENGINEERING-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "af7095559f19f5a696166779f50262d14ddef470eafe27679561294dd81cdeb1",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Jadavpur University [IR-E-U-0575], UG four-year engineering programmes across departments; not CSE- or ETCE-only."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 819.0,
+        "unit": "students",
+        "scope": "Jadavpur University, UG four-year engineering programmes across departments; not CSE- or ETCE-only.",
+        "source": {
+          "id": "cefd209b-d3e6-5f8a-b3eb-3b9d9efb30bb",
+          "title": "Jadavpur University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://jadavpuruniversity.in/storage/2026/04/Jadavpur-University_ENGINEERING-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "af7095559f19f5a696166779f50262d14ddef470eafe27679561294dd81cdeb1",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Jadavpur University [IR-E-U-0575], UG four-year engineering programmes across departments; not CSE- or ETCE-only."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 165.0,
+        "unit": "students",
+        "scope": "Jadavpur University, UG four-year engineering programmes across departments; not CSE- or ETCE-only.",
+        "source": {
+          "id": "cefd209b-d3e6-5f8a-b3eb-3b9d9efb30bb",
+          "title": "Jadavpur University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://jadavpuruniversity.in/storage/2026/04/Jadavpur-University_ENGINEERING-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "af7095559f19f5a696166779f50262d14ddef470eafe27679561294dd81cdeb1",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. Jadavpur University [IR-E-U-0575], UG four-year engineering programmes across departments; not CSE- or ETCE-only."
+        }
+      }
+    ]
   },
   {
     "id": "ac36e41c-ad91-5fe9-ae71-7e42bb61613a",
@@ -1497,11 +2302,12 @@
     "city": "Manipal",
     "state": "Karnataka",
     "type": "University",
-    "established": null,
+    "established": 1953,
     "description": "Manipal Academy of Higher Education includes Manipal Institute of Technology. The Computer Science and Engineering programme shown here is taught at MIT Manipal, rather than the Bengaluru or overseas campuses.",
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -1509,11 +2315,11 @@
         "name": "B.Tech Computer Science and Engineering (MIT Manipal)",
         "degree": "B.Tech",
         "durationMonths": 48,
-        "annualTuition": null,
-        "feeBasis": "unknown",
+        "annualTuition": 376000,
+        "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "7dc62730-ebd6-5468-85c7-fcc2516c9555",
+          "id": "977a70c5-5012-5714-8b66-a360bf37f062",
           "title": "MIT Manipal Computer Science and Engineering",
           "status": "verified",
           "url": "https://www.manipal.edu/mit/program-list/btech/btech-computer-science-engineering.html",
@@ -1523,7 +2329,27 @@
           "documentFormat": "html",
           "notes": "B.Tech CSE at MIT Manipal: four years / eight semesters; campus-specific programme page."
         },
-        "tuitionEvidence": null,
+        "tuitionEvidence": {
+          "rawValue": 376000.0,
+          "rawUnit": "INR/year",
+          "factor": 1,
+          "normalizedValue": 376000,
+          "notes": "General-category 2026–27 entrants, standard four-year B.Tech CSE at MIT Manipal. Tuition is ₹3,76,000 in the first yearly installment; the remaining three years total ₹11,28,000 tuition. ₹2,32,000 first-year other fees, ₹10,000 refundable caution deposit, hostel and living costs are excluded from tuition. Dual degrees, lateral entry and MIT Bengaluru are separate rows.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
+          "source": {
+            "id": "4ca52e54-359a-594a-a769-e5ca326b8feb",
+            "title": "MAHE general-category fee schedule 2026–27, MIT Manipal CSE (PDF page 11)",
+            "status": "verified",
+            "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20General%20Fees%20as%20on%2018-06-2026.pdf#page=11",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
+            "documentSha256": "6719bb24e7ac67d85b8e0e408d46342190e7bfd92161c382ca1f16a2ae570549",
+            "documentFormat": "pdf",
+            "notes": "General-category 2026–27 entrants, standard four-year B.Tech CSE at MIT Manipal. Tuition is ₹3,76,000 in the first yearly installment; the remaining three years total ₹11,28,000 tuition. ₹2,32,000 first-year other fees, ₹10,000 refundable caution deposit, hostel and living costs are excluded from tuition. Dual degrees, lateral entry and MIT Bengaluru are separate rows."
+          },
+          "documentSha256": "6719bb24e7ac67d85b8e0e408d46342190e7bfd92161c382ca1f16a2ae570549"
+        },
         "durationEvidence": {
           "rawValue": 4.0,
           "rawUnit": "years",
@@ -1545,6 +2371,8 @@
           },
           "documentSha256": "b6206776fe01088584362339d832b1fe17deea5a56ff26801c092ef278f64e80"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "manipal-university-2"
       }
     ],
@@ -1562,15 +2390,15 @@
       "source": null
     },
     "source": {
-      "id": "1400453e-5bdb-55b5-960b-58b3113e795f",
-      "title": "Manipal Academy of Higher Education official website",
+      "id": "ac977590-4c7d-5d14-9a5d-230e245fdcf9",
+      "title": "Manipal Academy of Higher Education — about",
       "status": "verified",
-      "url": "https://www.manipal.edu/mu/about-us.html",
+      "url": "https://www.manipal.edu/about-us/world-wide-manipal",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "d03d867817be1ee59e8f97ee3e61123058e70784a755a7502e5a0fca61137122",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "d517962b383f895b93e0cf0733c8bea5d947f108545f93daf5c761166ba4baf3",
       "documentFormat": "html",
-      "notes": "MAHE institution identity and Manipal location. This entry does not merge fees or outcomes across MAHE campuses."
+      "notes": "MAHE institution identity: “Founded in 1953”. The year refers to MAHE's origin, not to Manipal Institute of Technology or a later campus. Fees and outcomes are not merged across campuses."
     },
     "metrics": []
   },
@@ -1582,11 +2410,30 @@
     "city": "Tiruchirappalli",
     "state": "Tamil Nadu",
     "type": "Institute",
-    "established": null,
+    "established": 1964,
     "description": "National Institute of Technology Tiruchirappalli offers undergraduate, postgraduate and doctoral study in engineering and related disciplines. The courses shown here are its four-year B.Tech programmes.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Central library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Central library",
+        "scope": "NIT Tiruchirappalli Central Library and Digital Knowledge Centre with print collection and e-resources; access follows library rules.",
+        "source": {
+          "id": "04c29ff7-e97e-513b-aab0-db543e6244c6",
+          "title": "NIT Tiruchirappalli Central Library",
+          "status": "verified",
+          "url": "https://www.nitt.edu/home/students/facilitiesnservices/library/",
+          "reportingYear": null,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "3662ed938e774097a67d7951c0e27002e0b2e33ce67ddde4a6aa078facd7fd65",
+          "documentFormat": "html",
+          "notes": "NIT Tiruchirappalli Central Library and Digital Knowledge Centre with print collection and e-resources; access follows library rules."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -1596,9 +2443,9 @@
         "durationMonths": 48,
         "annualTuition": 125000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 118,
         "source": {
-          "id": "bca943f3-4d3b-525b-b4b5-b16b9ac34038",
+          "id": "cb75deee-0567-57dc-a40b-e30236a40cfb",
           "title": "NIT Tiruchirappalli institution profile",
           "status": "verified",
           "url": "https://www.nitt.edu/home/about/",
@@ -1615,14 +2462,14 @@
           "normalizedValue": 125000,
           "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:54:31.467294Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "006a67ba-cf8c-5c9a-af27-ec9ffd3b9730",
+            "id": "e2ae99e4-07c3-5eff-a277-6e75cef7acd8",
             "title": "NIT Trichy B.Tech fee structure, 2026 admission batch (PDF page 1)",
             "status": "verified",
             "url": "https://www.nitt.edu/home/academics/fees_section/ug_courses_fee_structure/B.Tech%202026.pdf#page=1",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:54:31.467294Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "e69d5f107fa8518f1ea28f430a28f9278d2113ca2610092ea159caf408c741f1",
             "documentFormat": "pdf",
             "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy."
@@ -1649,6 +2496,28 @@
             "notes": "The regulations applicable from the 2024 batch define a normal eight-semester B.Tech. Converted to 48 planning months using two regular semesters per year. This describes standard programme length; permitted extensions, breaks and individual completion time are separate."
           },
           "documentSha256": "a621afa7e7f6bded15029b79c4a887882304d89ff9ea46f160820341fef5c267"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 118.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 118,
+          "notes": "JoSAA 2026–27, National Institute of Technology, Tiruchirappalli, four-year Civil Engineering: programme capacity 118 + female supernumerary 0 = 118 reported intake. Includes both Tamil Nadu home-state and other-state pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
         },
         "legacyId": "nit-trichy-1"
       },
@@ -1659,9 +2528,9 @@
         "durationMonths": 48,
         "annualTuition": 125000,
         "feeBasis": "reported",
-        "seats": null,
+        "seats": 119,
         "source": {
-          "id": "bca943f3-4d3b-525b-b4b5-b16b9ac34038",
+          "id": "cb75deee-0567-57dc-a40b-e30236a40cfb",
           "title": "NIT Tiruchirappalli institution profile",
           "status": "verified",
           "url": "https://www.nitt.edu/home/about/",
@@ -1678,14 +2547,14 @@
           "normalizedValue": 125000,
           "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy.",
           "reviewer": "College Finder source review",
-          "reviewedAt": "2026-10-07T17:54:31.467294Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "006a67ba-cf8c-5c9a-af27-ec9ffd3b9730",
+            "id": "e2ae99e4-07c3-5eff-a277-6e75cef7acd8",
             "title": "NIT Trichy B.Tech fee structure, 2026 admission batch (PDF page 1)",
             "status": "verified",
             "url": "https://www.nitt.edu/home/academics/fees_section/ug_courses_fee_structure/B.Tech%202026.pdf#page=1",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T17:54:31.467294Z",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
             "documentSha256": "e69d5f107fa8518f1ea28f430a28f9278d2113ca2610092ea159caf408c741f1",
             "documentFormat": "pdf",
             "notes": "B.Tech 2026 entrants: OPEN/OPEN-EWS/OBC-NCL base tuition before income remissions; the same table also lists ICCR/DASA (CIWG). Annualized using two semesters. Income-based remissions require the specified supporting documents. Other annual fees, hostel, mess, one-time charges and deposits are excluded; confirm applicable category and later changes with NIT Trichy."
@@ -1712,6 +2581,28 @@
             "notes": "The regulations applicable from the 2024 batch define a normal eight-semester B.Tech. Converted to 48 planning months using two regular semesters per year. This describes standard programme length; permitted extensions, breaks and individual completion time are separate."
           },
           "documentSha256": "a621afa7e7f6bded15029b79c4a887882304d89ff9ea46f160820341fef5c267"
+        },
+        "academicFeeEvidence": null,
+        "seatsEvidence": {
+          "rawValue": 119.0,
+          "rawUnit": "students",
+          "factor": 1,
+          "normalizedValue": 119,
+          "notes": "JoSAA 2026–27, National Institute of Technology, Tiruchirappalli, four-year Computer Science and Engineering: programme capacity 119 + female supernumerary 0 = 119 reported intake. Includes both Tamil Nadu home-state and other-state pools. Not available vacancies. Separate five-year/other-campus programmes are excluded.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "f8a2ee24-87bd-573b-9d53-562d614c29a2",
+            "title": "JoSAA 2026–27 official programme seat matrix — all institutions",
+            "status": "verified",
+            "url": "https://josaa.admissions.nic.in/applicant/seatmatrix/seatmatrixinfo.aspx",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4",
+            "documentFormat": "html",
+            "notes": "JoSAA 2026–27, Indian Institute of Technology Delhi, four-year Computer Science and Engineering: programme capacity 99 + female supernumerary 0 = 99 reported intake. Includes gender-neutral and female-only pools. Not available vacancies. Separate five-year/other-campus programmes are excluded."
+          },
+          "documentSha256": "3fb195bcd13763ff6cf4536052a16b44a356a4052a8fe080308c414df5ac87a4"
         },
         "legacyId": "nit-trichy-2"
       }
@@ -1728,7 +2619,7 @@
       "placed": 738,
       "higherStudies": 159,
       "source": {
-        "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
+        "id": "1798867e-ef64-5954-bd21-23ec54d5c2d5",
         "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
         "status": "verified",
         "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1740,15 +2631,15 @@
       }
     },
     "source": {
-      "id": "bca943f3-4d3b-525b-b4b5-b16b9ac34038",
-      "title": "NIT Tiruchirappalli institution profile",
+      "id": "5e1b2a40-0953-5b0e-bf05-f4e6f73e85bb",
+      "title": "NIT Tiruchirappalli at a glance",
       "status": "verified",
-      "url": "https://www.nitt.edu/home/about/",
+      "url": "https://nitt.edu/home/about/nitt/",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "037d022aa6dcd34349f6d86e9502d357c77a427e4157208281ebb8362bc3f26a",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "88b0f6fe7d153de55acfc64bf290c85c710dcf40ceaaf9d4cbdd49e8607e6c39",
       "documentFormat": "html",
-      "notes": "Institution identity, academic mission and Tiruchirappalli campus."
+      "notes": "Institution profile: established 1964; started on 13 July 1964 as a Regional Engineering College and later became a National Institute of Technology."
     },
     "metrics": [
       {
@@ -1757,7 +2648,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
+          "id": "1798867e-ef64-5954-bd21-23ec54d5c2d5",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1774,7 +2665,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
+          "id": "1798867e-ef64-5954-bd21-23ec54d5c2d5",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1791,7 +2682,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
+          "id": "1798867e-ef64-5954-bd21-23ec54d5c2d5",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1808,7 +2699,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "7e48bcc1-a67c-5fde-9369-6749b27e7ef4",
+          "id": "1798867e-ef64-5954-bd21-23ec54d5c2d5",
           "title": "NIT Tiruchirappalli NIRF Engineering submission 2026",
           "status": "verified",
           "url": "https://www.nitt.edu/home/academics/nirf/nirf2026/2.%20NIRF%202026%20IR-E-U-0467_Engineering.pdf",
@@ -1829,11 +2720,30 @@
     "city": "Hyderabad",
     "state": "Telangana",
     "type": "University",
-    "established": null,
+    "established": 1917,
     "description": "Osmania University in Hyderabad offers study through its departments and constituent colleges. The Civil Engineering degree listed here belongs to University College of Engineering, Osmania University.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Engineering library"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Engineering library",
+        "scope": "Library serving UCE Osmania undergraduate and postgraduate engineering programmes, including Civil; not all affiliated colleges.",
+        "source": {
+          "id": "22c70e0b-cf96-59d0-a355-912ce220524b",
+          "title": "University College of Engineering Osmania library",
+          "status": "verified",
+          "url": "https://www.uceou.edu/library.php",
+          "reportingYear": null,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "f05d90a065defc892cf97d3b422863f2f022f13284b59fe503db7696b8290254",
+          "documentFormat": "html",
+          "notes": "Library serving UCE Osmania undergraduate and postgraduate engineering programmes, including Civil; not all affiliated colleges."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -1845,7 +2755,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "69a441be-51d7-59ce-9692-289363e186c1",
+          "id": "4f4bea96-b5e5-5ec2-8b88-2cb0f7977a1e",
           "title": "University College of Engineering, Osmania — Civil",
           "status": "verified",
           "url": "https://uceou.edu/dept-civil.php",
@@ -1877,6 +2787,8 @@
           },
           "documentSha256": "b925431b35c234c4b5a981a23bb0e094c2ffb1b33ef7da3e169d347a8ac56344"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "osmania-university-1"
       }
     ],
@@ -1885,16 +2797,26 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "University College of Engineering, Osmania University: UG four-year engineering programmes across departments; not Civil-only and not the wider university.",
+      "medianPackage": 600000,
+      "graduates": 354,
+      "placed": 264,
+      "higherStudies": 55,
+      "source": {
+        "id": "910a04a4-9832-5bd7-b1c1-9e8403845a35",
+        "title": "University College of Engineering, Osmania University NIRF 2026 Engineering submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://www.uceou.edu/22-04-2026/UCE%20OU%20NIRF%20-2026%20SUBMITTED%20REPORT.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-11-11T10:04:56Z",
+        "documentSha256": "dfbd14da237e13b331d82fb59e4e2682afe9a4deb485542bf53eb538b68687ca",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. University College of Engineering [IR-E-C-61514], UG four-year engineering programmes across departments; not Civil-only and not the wider university."
+      }
     },
     "source": {
-      "id": "74145302-538d-509f-a717-112609a8725f",
+      "id": "aa142b75-6743-5b64-bfca-7868c9cd446c",
       "title": "Osmania University institution history",
       "status": "verified",
       "url": "https://www.osmania.ac.in/aboutus.php",
@@ -1902,9 +2824,78 @@
       "verifiedAt": "2026-10-07T19:57:04Z",
       "documentSha256": "adf2507bb8cdc643dd85ea5ecb84e2016afbfd2e1b98d4e14d0cf36b5d1d3455",
       "documentFormat": "html",
-      "notes": "Institution history and Hyderabad campus; programme details use the separate University College of Engineering page."
+      "notes": "Institution history and Hyderabad campus: a 1917 firman “brought the University into existence”, the year used here. Programme details use the separate University College of Engineering page."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 600000.0,
+        "unit": "INR/year",
+        "scope": "University College of Engineering, Osmania University: UG four-year engineering programmes across departments; not Civil-only and not the wider university.",
+        "source": {
+          "id": "910a04a4-9832-5bd7-b1c1-9e8403845a35",
+          "title": "University College of Engineering, Osmania University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.uceou.edu/22-04-2026/UCE%20OU%20NIRF%20-2026%20SUBMITTED%20REPORT.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "dfbd14da237e13b331d82fb59e4e2682afe9a4deb485542bf53eb538b68687ca",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. University College of Engineering [IR-E-C-61514], UG four-year engineering programmes across departments; not Civil-only and not the wider university."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 354.0,
+        "unit": "students",
+        "scope": "University College of Engineering, Osmania University: UG four-year engineering programmes across departments; not Civil-only and not the wider university.",
+        "source": {
+          "id": "910a04a4-9832-5bd7-b1c1-9e8403845a35",
+          "title": "University College of Engineering, Osmania University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.uceou.edu/22-04-2026/UCE%20OU%20NIRF%20-2026%20SUBMITTED%20REPORT.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "dfbd14da237e13b331d82fb59e4e2682afe9a4deb485542bf53eb538b68687ca",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. University College of Engineering [IR-E-C-61514], UG four-year engineering programmes across departments; not Civil-only and not the wider university."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 264.0,
+        "unit": "students",
+        "scope": "University College of Engineering, Osmania University: UG four-year engineering programmes across departments; not Civil-only and not the wider university.",
+        "source": {
+          "id": "910a04a4-9832-5bd7-b1c1-9e8403845a35",
+          "title": "University College of Engineering, Osmania University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.uceou.edu/22-04-2026/UCE%20OU%20NIRF%20-2026%20SUBMITTED%20REPORT.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "dfbd14da237e13b331d82fb59e4e2682afe9a4deb485542bf53eb538b68687ca",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. University College of Engineering [IR-E-C-61514], UG four-year engineering programmes across departments; not Civil-only and not the wider university."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 55.0,
+        "unit": "students",
+        "scope": "University College of Engineering, Osmania University: UG four-year engineering programmes across departments; not Civil-only and not the wider university.",
+        "source": {
+          "id": "910a04a4-9832-5bd7-b1c1-9e8403845a35",
+          "title": "University College of Engineering, Osmania University NIRF 2026 Engineering submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://www.uceou.edu/22-04-2026/UCE%20OU%20NIRF%20-2026%20SUBMITTED%20REPORT.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-11-11T10:04:56Z",
+          "documentSha256": "dfbd14da237e13b331d82fb59e4e2682afe9a4deb485542bf53eb538b68687ca",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. University College of Engineering [IR-E-C-61514], UG four-year engineering programmes across departments; not Civil-only and not the wider university."
+        }
+      }
+    ]
   },
   {
     "id": "98f420ed-8554-565f-b6d4-052d74bad96f",
@@ -1919,6 +2910,7 @@
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -1930,7 +2922,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "258fdf39-dc84-5d89-aa7e-ba9f82331892",
+          "id": "9d1118ba-0468-58a8-aacb-910fa686bf70",
           "title": "PUMBA MBA course structure",
           "status": "verified",
           "url": "https://www.pumba.in/programs/mba-plus-course-structure.htm",
@@ -1962,6 +2954,28 @@
           },
           "documentSha256": "f0fbf4e95f4ff8fc7142f20bd577bdbdf7b42bbdecce4cbc2419269c0af1d256"
         },
+        "academicFeeEvidence": {
+          "rawValue": 163983.0,
+          "rawUnit": "INR/admission",
+          "factor": 1,
+          "normalizedValue": 163983,
+          "notes": "OPEN-category listed payment ₹1,63,983 at CAP admission for MBA academic year 2026–27. The document does not separate tuition or establish an annual fee period. OMS ₹1,64,483; reserved/foreign categories differ. No second-year fee, hostel cost or full-course total is inferred.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-09T10:44:00.681887Z",
+          "source": {
+            "id": "6c29ee0a-8280-5246-90d1-ca4a5d9ffea6",
+            "title": "PUMBA MBA CAP admission instructions 2026–27 (PDF page 2)",
+            "status": "verified",
+            "url": "https://pumba.in/pdf/Instructions%20for%20Candidate%20seeking%20admission%20to%20MBA%20A.Y.2026-27_31072026.pdf#page=2",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-09T10:44:00.681887Z",
+            "documentSha256": "17cebda7d096afda0a1b361667a65de5f73b94c051654376fb255e1997a78bf3",
+            "documentFormat": "pdf",
+            "notes": "OPEN-category listed payment ₹1,63,983 at CAP admission for MBA academic year 2026–27. The document does not separate tuition or establish an annual fee period. OMS ₹1,64,483; reserved/foreign categories differ. No second-year fee, hostel cost or full-course total is inferred."
+          },
+          "documentSha256": "17cebda7d096afda0a1b361667a65de5f73b94c051654376fb255e1997a78bf3"
+        },
+        "seatsEvidence": null,
         "legacyId": "pune-university-3"
       }
     ],
@@ -1979,7 +2993,7 @@
       "source": null
     },
     "source": {
-      "id": "51e8f983-be7c-5ad7-80a4-b89eb3749bf6",
+      "id": "e4a9a30d-0082-5b7a-99d8-c74ec441f342",
       "title": "Savitribai Phule Pune University institution profile",
       "status": "verified",
       "url": "https://www.unipune.ac.in/university_files/about_university.htm",
@@ -1999,11 +3013,12 @@
     "city": "Kattankulathur",
     "state": "Tamil Nadu",
     "type": "University",
-    "established": null,
+    "established": 1985,
     "description": "SRM Institute of Science and Technology offers B.Tech programmes at its main Kattankulathur campus. The listed core CSE and AI/ML specialization are distinct programmes; other SRM campuses have separate admissions contexts.",
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -2015,7 +3030,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "accdea9f-386d-5c26-9f39-7be28488c400",
+          "id": "8917315a-df2f-5206-afad-65e332435a23",
           "title": "SRMIST B.Tech campus programme directory",
           "status": "verified",
           "url": "https://applications.srmist.edu.in/btech",
@@ -2047,6 +3062,8 @@
           },
           "documentSha256": "7c5ed5f56f0eb8e2f90eacaed4c5302bcb7ff0a39be33a99d79812594b518791"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "srm-university-1"
       },
       {
@@ -2058,7 +3075,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "accdea9f-386d-5c26-9f39-7be28488c400",
+          "id": "8917315a-df2f-5206-afad-65e332435a23",
           "title": "SRMIST B.Tech campus programme directory",
           "status": "verified",
           "url": "https://applications.srmist.edu.in/btech",
@@ -2090,6 +3107,8 @@
           },
           "documentSha256": "7c5ed5f56f0eb8e2f90eacaed4c5302bcb7ff0a39be33a99d79812594b518791"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "srm-university-2"
       }
     ],
@@ -2105,7 +3124,7 @@
       "placed": 4144,
       "higherStudies": 142,
       "source": {
-        "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
+        "id": "e7f946b1-90cb-5703-911f-fd01ce9d8e7e",
         "title": "SRMIST NIRF Engineering submission 2026, p. 1",
         "status": "verified",
         "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2117,15 +3136,15 @@
       }
     },
     "source": {
-      "id": "accdea9f-386d-5c26-9f39-7be28488c400",
-      "title": "SRMIST B.Tech campus programme directory",
+      "id": "bfc6ab4c-f02c-5756-ab3d-b45e3911b99c",
+      "title": "SRM Institute of Science and Technology — about",
       "status": "verified",
-      "url": "https://applications.srmist.edu.in/btech",
+      "url": "https://www.srmist.edu.in/about-us/",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "0e719e0f434fa6dfc15e290e7859546d61e2cca4439dc9a57c18dddd1ca2b7a6",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "c8c8dc0937fe691d88f3a39bf7248d0bdea392b338f861b40d3e857464dbba79",
       "documentFormat": "html",
-      "notes": "SRMIST main campus at Kattankulathur: core CSE and CSE with AI/ML are listed separately. Other SRM institutions and campuses are excluded."
+      "notes": "Institution profile: “Established 1985 – SRMIST”, the launch of SRM Engineering College at Kattankulathur; deemed-university status followed in 2002. Other SRM campuses have separate contexts."
     },
     "metrics": [
       {
@@ -2134,7 +3153,7 @@
         "unit": "INR/year",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
+          "id": "e7f946b1-90cb-5703-911f-fd01ce9d8e7e",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2151,7 +3170,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
+          "id": "e7f946b1-90cb-5703-911f-fd01ce9d8e7e",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2168,7 +3187,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
+          "id": "e7f946b1-90cb-5703-911f-fd01ce9d8e7e",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2185,7 +3204,7 @@
         "unit": "students",
         "scope": "UG four-year programmes (institution-wide)",
         "source": {
-          "id": "f364bffb-4bf1-5721-b709-5039bc209ca3",
+          "id": "e7f946b1-90cb-5703-911f-fd01ce9d8e7e",
           "title": "SRMIST NIRF Engineering submission 2026, p. 1",
           "status": "verified",
           "url": "https://webstor.srmist.edu.in/web_assets/downloads/2026/flipbook/engineering-nirf-mandatory-srm/files/basic-html/page1.html",
@@ -2206,11 +3225,12 @@
     "city": "Pune",
     "state": "Maharashtra",
     "type": "University",
-    "established": null,
+    "established": 1971,
     "description": "Symbiosis International includes constituent institutes with separate programmes and admissions. The MBA listed here is the two-year residential programme at Symbiosis Institute of Business Management, Pune.",
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -2218,41 +3238,21 @@
         "name": "MBA (SIBM Pune)",
         "degree": "MBA",
         "durationMonths": 24,
-        "annualTuition": 1310000,
-        "feeBasis": "reported",
+        "annualTuition": null,
+        "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "cf30641b-cb02-542b-9dbb-f06dcfb479b6",
-          "title": "SIBM Pune MBA programme",
+          "id": "064237a5-5d98-5253-b6f5-149e7098b05e",
+          "title": "SIBM Pune MBA fee structure 2026–28",
           "status": "verified",
-          "url": "https://sibm.edu/mobile/mba",
+          "url": "https://sibm.edu/mobile/assets/mobile/pdf/mbafee2026-28.pdf",
           "reportingYear": 2026,
-          "verifiedAt": "2026-10-07T19:57:04Z",
-          "documentSha256": "dd74e2a88a52056af052b314c5633420a75a85fc4dd619a5fc695452160f8238",
-          "documentFormat": "html",
-          "notes": "Two-year full-time residential MBA at SIBM Pune. Fee evidence applies to the 2026–28 batch."
+          "verifiedAt": "2026-10-08T05:43:30.761712Z",
+          "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443",
+          "documentFormat": "pdf",
+          "notes": "Indian students, SIBM Pune MBA batch 2026–28: academic fees total ₹13,10,000 per year, paid as two ₹6,55,000 instalments. The document does not separate tuition, so this amount is not imported as tuition. First-year three-sharing hostel is ₹1,57,300; mess is ₹1,19,600 across two instalments; refundable institute and hostel deposits total ₹40,000. First-year listed payments total ₹16,26,900, before any applicable government taxes. Later hostel/mess fees will be announced and can increase by up to 15%; no fixed full-course living-cost total is inferred."
         },
-        "tuitionEvidence": {
-          "rawValue": 655000.0,
-          "rawUnit": "INR/installment",
-          "factor": 2,
-          "normalizedValue": 1310000,
-          "notes": "PDF p. 1: Indian MBA academic fee is paid in two instalments of ₹6,55,000 each per year (₹13,10,000 annualized). Deposits, hostel, mess and government taxes are separate.",
-          "reviewer": "College Finder official-source review",
-          "reviewedAt": "2026-10-07T19:57:04Z",
-          "source": {
-            "id": "00f74d22-ee43-54fe-94bf-4728709a90d0",
-            "title": "SIBM Pune MBA fee structure 2026–28",
-            "status": "verified",
-            "url": "https://sibm.edu/mobile/assets/mobile/pdf/mbafee2026-28.pdf",
-            "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T19:57:04Z",
-            "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443",
-            "documentFormat": "pdf",
-            "notes": "PDF p. 1: Indian MBA academic fee is paid in two instalments of ₹6,55,000 each per year (₹13,10,000 annualized). Deposits, hostel, mess and government taxes are separate."
-          },
-          "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443"
-        },
+        "tuitionEvidence": null,
         "durationEvidence": {
           "rawValue": 2.0,
           "rawUnit": "years",
@@ -2273,7 +3273,29 @@
             "notes": "Two-year full-time residential MBA at SIBM Pune. Fee evidence applies to the 2026–28 batch."
           },
           "documentSha256": "dd74e2a88a52056af052b314c5633420a75a85fc4dd619a5fc695452160f8238"
-        }
+        },
+        "academicFeeEvidence": {
+          "rawValue": 655000.0,
+          "rawUnit": "INR/installment",
+          "factor": 2,
+          "normalizedValue": 1310000,
+          "notes": "Indian students, SIBM Pune MBA batch 2026–28: academic fees total ₹13,10,000 per year, paid as two ₹6,55,000 instalments. The document does not separate tuition, so this amount is not imported as tuition. First-year three-sharing hostel is ₹1,57,300; mess is ₹1,19,600 across two instalments; refundable institute and hostel deposits total ₹40,000. First-year listed payments total ₹16,26,900, before any applicable government taxes. Later hostel/mess fees will be announced and can increase by up to 15%; no fixed full-course living-cost total is inferred.",
+          "reviewer": "College Finder official-source review",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
+          "source": {
+            "id": "40d272e0-3ea0-5cea-8805-d2883a6f9e1b",
+            "title": "SIBM Pune MBA fee structure 2026–28",
+            "status": "verified",
+            "url": "https://sibm.edu/mobile/assets/mobile/pdf/mbafee2026-28.pdf",
+            "reportingYear": 2026,
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
+            "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443",
+            "documentFormat": "pdf",
+            "notes": "Indian students, SIBM Pune MBA batch 2026–28: academic fees total ₹13,10,000 per year, paid as two ₹6,55,000 instalments. The document does not separate tuition, so this amount is not imported as tuition. First-year three-sharing hostel is ₹1,57,300; mess is ₹1,19,600 across two instalments; refundable institute and hostel deposits total ₹40,000. First-year listed payments total ₹16,26,900, before any applicable government taxes. Later hostel/mess fees will be announced and can increase by up to 15%; no fixed full-course living-cost total is inferred."
+          },
+          "documentSha256": "4f0e18c216ad4457f670f165bc8937501c0a0647c1d75b11d0bfd2055dd72443"
+        },
+        "seatsEvidence": null
       }
     ],
     "placements": {
@@ -2290,15 +3312,15 @@
       "source": null
     },
     "source": {
-      "id": "4833fae8-df4f-57bf-a480-a275fa17ac7f",
-      "title": "Symbiosis International official website",
+      "id": "1db1e25e-50ee-52f3-b5f1-4cce16247e8c",
+      "title": "Symbiosis International — overview",
       "status": "verified",
-      "url": "https://www.siu.edu.in/",
+      "url": "https://www.siu.edu.in/about-us/overview",
       "reportingYear": null,
-      "verifiedAt": "2026-10-07T19:57:04Z",
-      "documentSha256": "7111dfe90dc28809afe36306e2c0c5a0e199c38d6df7a04b442d3de89b8a89be",
+      "verifiedAt": "2026-11-11T10:04:56Z",
+      "documentSha256": "a4c42282ad97e0f30e3190e790dffb49d177728e444b187d6fa5885f3d748b9b",
       "documentFormat": "html",
-      "notes": "University identity and constituent-institution structure. The listed MBA is taught at SIBM Pune, not every Symbiosis institute."
+      "notes": "Institution overview: “Symbiosis was established in 1971”. The year refers to the founding of Symbiosis, not to deemed-university status or to SIBM Pune specifically."
     },
     "metrics": []
   },
@@ -2315,6 +3337,7 @@
     "image": "",
     "accreditation": "",
     "facilities": [],
+    "facilityEvidence": [],
     "dataStatus": "verified",
     "courses": [
       {
@@ -2326,7 +3349,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "2e71f439-b064-58fd-b7ae-ce6aae798362",
+          "id": "0f439f56-7c02-5bef-8f82-8b40a1759ce6",
           "title": "University of Delhi undergraduate bulletin 2026–27",
           "status": "verified",
           "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
@@ -2358,6 +3381,8 @@
           },
           "documentSha256": "2025dff70c0d90b0585742643711e8ad9bcd3d8a5109fff3664fcb8d5f396d7a"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "delhi-university-1"
       },
       {
@@ -2369,7 +3394,7 @@
         "feeBasis": "unknown",
         "seats": null,
         "source": {
-          "id": "2e71f439-b064-58fd-b7ae-ce6aae798362",
+          "id": "0f439f56-7c02-5bef-8f82-8b40a1759ce6",
           "title": "University of Delhi undergraduate bulletin 2026–27",
           "status": "verified",
           "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
@@ -2401,6 +3426,8 @@
           },
           "documentSha256": "2025dff70c0d90b0585742643711e8ad9bcd3d8a5109fff3664fcb8d5f396d7a"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "delhi-university-2"
       }
     ],
@@ -2418,7 +3445,7 @@
       "source": null
     },
     "source": {
-      "id": "2e71f439-b064-58fd-b7ae-ce6aae798362",
+      "id": "0f439f56-7c02-5bef-8f82-8b40a1759ce6",
       "title": "University of Delhi undergraduate bulletin 2026–27",
       "status": "verified",
       "url": "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
@@ -2442,7 +3469,58 @@
     "description": "Vellore Institute of Technology began as Vellore Engineering College in 1984. This entry covers its Vellore campus; fee categories and programmes differ across campuses.",
     "image": "",
     "accreditation": "",
-    "facilities": [],
+    "facilities": [
+      "Central library",
+      "Hostels",
+      "Sports facilities"
+    ],
+    "facilityEvidence": [
+      {
+        "name": "Central library",
+        "scope": "Vellore campus central library and information resources; service access follows library rules.",
+        "source": {
+          "id": "fd8ecbc0-112d-5e65-9cfb-f1c4c3f3ea0f",
+          "title": "VIT Periyar E.V.R. Central Library",
+          "status": "verified",
+          "url": "https://vit.ac.in/academics/library",
+          "reportingYear": null,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "e86adcaf1de8f75ba5aff9dd277f4b34aa9200797965dcbefd4b02e2e234a21f",
+          "documentFormat": "html",
+          "notes": "Vellore campus central library and information resources; service access follows library rules."
+        }
+      },
+      {
+        "name": "Hostels",
+        "scope": "Vellore men’s and ladies’ hostel administration; a room or particular room type is not guaranteed.",
+        "source": {
+          "id": "9181c85b-46a2-5806-8853-1f33e24de6b0",
+          "title": "VIT Vellore hostel administration",
+          "status": "verified",
+          "url": "https://vit.ac.in/campuslife/hostels",
+          "reportingYear": null,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "f2a336312ccb225c21a384612ffe48a00dff27198ee8552b42e8eb50ad4909cf",
+          "documentFormat": "html",
+          "notes": "Vellore men’s and ladies’ hostel administration; a room or particular room type is not guaranteed."
+        }
+      },
+      {
+        "name": "Sports facilities",
+        "scope": "Official page explicitly describes indoor and outdoor sports facilities at the Vellore campus.",
+        "source": {
+          "id": "5c603e97-6974-515f-95d2-3b0a0091c487",
+          "title": "VIT Vellore sports facilities",
+          "status": "verified",
+          "url": "https://vit.ac.in/campuslife/sports",
+          "reportingYear": null,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "6c4a875316c46b51bccc3ae076727b5a94d9bf5c359336decac9fa727a6b7a74",
+          "documentFormat": "html",
+          "notes": "Official page explicitly describes indoor and outdoor sports facilities at the Vellore campus."
+        }
+      }
+    ],
     "dataStatus": "verified",
     "courses": [
       {
@@ -2454,7 +3532,7 @@
         "feeBasis": "reported",
         "seats": null,
         "source": {
-          "id": "6ac8d05d-c768-5341-864f-241b86714f22",
+          "id": "93a75326-fc2f-5a11-adc2-1498fb4f41fa",
           "title": "VIT Vellore School of Computer Science programmes",
           "status": "verified",
           "url": "https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses",
@@ -2471,19 +3549,19 @@
           "normalizedValue": 490000,
           "notes": "Group B, no-scholarship fee category 5: ₹4,90,000 tuition per year. Lower scholarship categories and counselling allocation change tuition. ₹5,000 caution deposit is separate.",
           "reviewer": "College Finder official-source review",
-          "reviewedAt": "2026-10-07T19:57:04Z",
+          "reviewedAt": "2026-10-08T05:43:30.761712Z",
           "source": {
-            "id": "25fe3200-d99e-5553-b4d0-d39e57d472c9",
+            "id": "11714f3d-d331-56b2-af01-59afaf3c3aa9",
             "title": "VIT undergraduate fee structure",
             "status": "verified",
             "url": "https://vit.ac.in/admission/ug/fee-structure",
             "reportingYear": 2026,
-            "verifiedAt": "2026-10-07T19:57:04Z",
-            "documentSha256": "5959b75d4cc05e1f1c91f14b02a1825962b8b085304faaed0895e763fc298c50",
+            "verifiedAt": "2026-10-08T05:43:30.761712Z",
+            "documentSha256": "7b1810c49e3ffd7df0ba67e12ec8bf0a9284a3840be6e061e372191fc25e7a74",
             "documentFormat": "html",
             "notes": "Group B, no-scholarship fee category 5: ₹4,90,000 tuition per year. Lower scholarship categories and counselling allocation change tuition. ₹5,000 caution deposit is separate."
           },
-          "documentSha256": "5959b75d4cc05e1f1c91f14b02a1825962b8b085304faaed0895e763fc298c50"
+          "documentSha256": "7b1810c49e3ffd7df0ba67e12ec8bf0a9284a3840be6e061e372191fc25e7a74"
         },
         "durationEvidence": {
           "rawValue": 4.0,
@@ -2506,6 +3584,8 @@
           },
           "documentSha256": "5d0d5606d42d33d3a2a3454f1dc3574ea1091159b9f401dd3ced84aa084e49ff"
         },
+        "academicFeeEvidence": null,
+        "seatsEvidence": null,
         "legacyId": "vit-vellore-1"
       }
     ],
@@ -2514,16 +3594,26 @@
       "highestPackage": null,
       "placementRate": null,
       "topRecruiters": [],
-      "reportingYear": null,
-      "scope": null,
-      "medianPackage": null,
-      "graduates": null,
-      "placed": null,
-      "higherStudies": null,
-      "source": null
+      "reportingYear": 2025,
+      "scope": "VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only.",
+      "medianPackage": 600000,
+      "graduates": 11913,
+      "placed": 7023,
+      "higherStudies": 1660,
+      "source": {
+        "id": "3ead7bc0-3c46-5f27-993f-fb2421f43bba",
+        "title": "Vellore Institute of Technology — Vellore NIRF 2026 submission (PDF page 1)",
+        "status": "verified",
+        "url": "https://vit.ac.in/files/nirf/Engineering-NIRF-2026.pdf",
+        "reportingYear": 2025,
+        "verifiedAt": "2026-10-09T10:44:00.681887Z",
+        "documentSha256": "201c8a8b3b62c827d1281de4d2a182b25ce3e6950fcf726f15f45e5cbba9ec24",
+        "documentFormat": "pdf",
+        "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only."
+      }
     },
     "source": {
-      "id": "40c930ab-75d8-56b7-97b1-d28aa5cf163a",
+      "id": "d04411d8-4a7c-53f2-bb25-458205a00b0d",
       "title": "VIT institution profile",
       "status": "verified",
       "url": "https://vit.ac.in/about-vit",
@@ -2533,6 +3623,75 @@
       "documentFormat": "html",
       "notes": "Vellore institution profile: founded in 1984 as Vellore Engineering College; university status in 2001."
     },
-    "metrics": []
+    "metrics": [
+      {
+        "kind": "medianPackage",
+        "amount": 600000.0,
+        "unit": "INR/year",
+        "scope": "VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only.",
+        "source": {
+          "id": "3ead7bc0-3c46-5f27-993f-fb2421f43bba",
+          "title": "Vellore Institute of Technology — Vellore NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://vit.ac.in/files/nirf/Engineering-NIRF-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "201c8a8b3b62c827d1281de4d2a182b25ce3e6950fcf726f15f45e5cbba9ec24",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only."
+        }
+      },
+      {
+        "kind": "graduates",
+        "amount": 11913.0,
+        "unit": "students",
+        "scope": "VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only.",
+        "source": {
+          "id": "3ead7bc0-3c46-5f27-993f-fb2421f43bba",
+          "title": "Vellore Institute of Technology — Vellore NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://vit.ac.in/files/nirf/Engineering-NIRF-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "201c8a8b3b62c827d1281de4d2a182b25ce3e6950fcf726f15f45e5cbba9ec24",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only."
+        }
+      },
+      {
+        "kind": "placed",
+        "amount": 7023.0,
+        "unit": "students",
+        "scope": "VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only.",
+        "source": {
+          "id": "3ead7bc0-3c46-5f27-993f-fb2421f43bba",
+          "title": "Vellore Institute of Technology — Vellore NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://vit.ac.in/files/nirf/Engineering-NIRF-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "201c8a8b3b62c827d1281de4d2a182b25ce3e6950fcf726f15f45e5cbba9ec24",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only."
+        }
+      },
+      {
+        "kind": "higherStudies",
+        "amount": 1660.0,
+        "unit": "students",
+        "scope": "VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only.",
+        "source": {
+          "id": "3ead7bc0-3c46-5f27-993f-fb2421f43bba",
+          "title": "Vellore Institute of Technology — Vellore NIRF 2026 submission (PDF page 1)",
+          "status": "verified",
+          "url": "https://vit.ac.in/files/nirf/Engineering-NIRF-2026.pdf",
+          "reportingYear": 2025,
+          "verifiedAt": "2026-10-09T10:44:00.681887Z",
+          "documentSha256": "201c8a8b3b62c827d1281de4d2a182b25ce3e6950fcf726f15f45e5cbba9ec24",
+          "documentFormat": "pdf",
+          "notes": "Institution-reported graduating academic year 2024–25; median annual salary of placed graduates only. VIT reporting institution, UG four-year engineering programmes across departments and campuses; not Vellore CSE-only."
+        }
+      }
+    ]
   }
 ]
